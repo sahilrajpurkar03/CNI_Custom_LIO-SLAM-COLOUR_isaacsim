@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-018fa9a150a9180fe65d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "isaac_sim_pointcloud_tool",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "converter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-converter-6a46b0c58bb28a6e117c.json",
+					"name" : "converter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "isaac_sim_pointcloud_tool_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-isaac_sim_pointcloud_tool_uninstall-3cc6da8594654532444d.json",
+					"name" : "isaac_sim_pointcloud_tool_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a82cc9cd3d66ecbd3890.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool",
+		"source" : "/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/src/isaac_sim_pointcloud_tool"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

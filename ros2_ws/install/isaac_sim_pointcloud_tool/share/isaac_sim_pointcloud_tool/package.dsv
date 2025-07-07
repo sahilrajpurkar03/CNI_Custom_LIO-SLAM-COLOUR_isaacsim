@@ -1,0 +1,8 @@
+source;share/isaac_sim_pointcloud_tool/hook/cmake_prefix_path.ps1
+source;share/isaac_sim_pointcloud_tool/hook/cmake_prefix_path.dsv
+source;share/isaac_sim_pointcloud_tool/hook/cmake_prefix_path.sh
+source;share/isaac_sim_pointcloud_tool/local_setup.bash
+source;share/isaac_sim_pointcloud_tool/local_setup.dsv
+source;share/isaac_sim_pointcloud_tool/local_setup.ps1
+source;share/isaac_sim_pointcloud_tool/local_setup.sh
+source;share/isaac_sim_pointcloud_tool/local_setup.zsh

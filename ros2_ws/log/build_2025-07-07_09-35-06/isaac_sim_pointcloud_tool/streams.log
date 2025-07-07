@@ -1,0 +1,23 @@
+[0.008s] Invoking command in '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool -- -j16 -l16
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target converter[0m
+[0.049s] [100%] Built target converter
+[0.056s] Invoked command in '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool -- -j16 -l16
+[0.062s] Invoking command in '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool
+[0.066s] -- Install configuration: ""
+[0.067s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/lib/isaac_sim_pointcloud_tool/converter
+[0.067s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/ament_index/resource_index/package_run_dependencies/isaac_sim_pointcloud_tool
+[0.067s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/ament_index/resource_index/parent_prefix_path/isaac_sim_pointcloud_tool
+[0.067s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/environment/ament_prefix_path.sh
+[0.067s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/environment/ament_prefix_path.dsv
+[0.067s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/environment/path.sh
+[0.067s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/environment/path.dsv
+[0.068s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/local_setup.bash
+[0.068s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/local_setup.sh
+[0.068s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/local_setup.zsh
+[0.068s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/local_setup.dsv
+[0.068s] -- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/package.dsv
+[0.068s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/ament_index/resource_index/packages/isaac_sim_pointcloud_tool
+[0.068s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/cmake/isaac_sim_pointcloud_toolConfig.cmake
+[0.068s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/cmake/isaac_sim_pointcloud_toolConfig-version.cmake
+[0.068s] -- Up-to-date: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/package.xml
+[0.069s] Invoked command in '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool

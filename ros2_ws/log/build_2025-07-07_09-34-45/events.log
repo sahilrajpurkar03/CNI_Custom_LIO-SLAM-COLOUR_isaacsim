@@ -1,0 +1,297 @@
+[0.000000] (-) TimerEvent: {}
+[0.000280] (isaac_sim_pointcloud_tool) JobQueued: {'identifier': 'isaac_sim_pointcloud_tool', 'dependencies': OrderedDict()}
+[0.000304] (isaac_sim_pointcloud_tool) JobStarted: {'identifier': 'isaac_sim_pointcloud_tool'}
+[0.006108] (isaac_sim_pointcloud_tool) JobProgress: {'identifier': 'isaac_sim_pointcloud_tool', 'progress': 'cmake'}
+[0.006384] (isaac_sim_pointcloud_tool) Command: {'cmd': ['/usr/bin/cmake', '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/src/isaac_sim_pointcloud_tool', '-DCMAKE_INSTALL_PREFIX=/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool'], 'cwd': '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '3970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus,guid=83f761dc05d7cf37510e1c7f686b764a'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/miniconda3/bin:/home/rajpurkar/miniconda3/condabin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/3970,unix/cni-mothership:/tmp/.ICE-unix/3970'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e65dec05_d5ba_4811_996d_3de02d3708b8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/rajpurkar/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/rajpurkar/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1001/bus,guid=83f761dc05d7cf37510e1c7f686b764a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('CONDA_PREFIX', '/home/rajpurkar/miniconda3'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.072570] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.100001] (-) TimerEvent: {}
+[0.127276] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.134866] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.181667] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.187318] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.187603] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.188006] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.190662] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200092] (-) TimerEvent: {}
+[0.242562] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.248493] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.248658] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.248946] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.253499] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300158] (-) TimerEvent: {}
+[0.400350] (-) TimerEvent: {}
+[0.500548] (-) TimerEvent: {}
+[0.509308] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found Python3: /home/rajpurkar/miniconda3/bin/python3 (found version "3.13.5") found components: Interpreter \n'}
+[0.598927] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.600607] (-) TimerEvent: {}
+[0.642559] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.647728] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.656690] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.669549] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.685264] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700672] (-) TimerEvent: {}
+[0.729247] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.732241] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.795892] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.800790] (-) TimerEvent: {}
+[0.815600] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.844942] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.853293] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.900886] (-) TimerEvent: {}
+[0.902595] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.902929] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.949753] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.950587] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.001007] (-) TimerEvent: {}
+[1.007480] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.045586] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.052535] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.070503] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.070632] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.090828] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[1.101099] (-) TimerEvent: {}
+[1.102078] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.109311] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.132798] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.132905] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.160647] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[1.164621] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[1.201193] (-) TimerEvent: {}
+[1.261822] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[1.262128] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[1.263869] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[1.270928] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.284270] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[1.299121] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[1.301252] (-) TimerEvent: {}
+[1.353061] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.353379] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.400638] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.400776] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.401315] (-) TimerEvent: {}
+[1.443944] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.444113] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.487659] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.487792] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.501438] (-) TimerEvent: {}
+[1.531225] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.531502] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.574225] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.574419] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.601560] (-) TimerEvent: {}
+[1.618190] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.666841] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[1.668204] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[1.669892] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[1.671231] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[1.680268] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[1.684027] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[1.686822] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[1.691197] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[1.701655] (-) TimerEvent: {}
+[1.738958] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.746468] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.765792] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.766670] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[1.766746] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.797085] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[1.797197] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.797325] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.801754] (-) TimerEvent: {}
+[1.900826] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.901855] (-) TimerEvent: {}
+[1.904746] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.908572] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.002062] (-) TimerEvent: {}
+[2.017721] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.102109] (-) TimerEvent: {}
+[2.118817] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.202233] (-) TimerEvent: {}
+[2.215330] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[2.215947] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.216148] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[2.216691] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.216827] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[2.217308] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.217461] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[2.218043] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.218262] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[2.218791] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.218884] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[2.219465] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.219651] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[2.219771] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[2.219852] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[2.220108] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[2.220249] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[2.220750] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.220842] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[2.221475] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.221625] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[2.222278] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.222357] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[2.222953] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.223171] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[2.223741] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.223926] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[2.224556] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.224708] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[2.225265] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.225432] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[2.226039] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.226207] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[2.226771] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.226912] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[2.227520] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.227726] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[2.228395] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.228513] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[2.229091] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.229505] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[2.229687] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[2.229773] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[2.230046] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[2.230252] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[2.230495] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[2.230619] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[2.231292] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.231438] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[2.232074] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.232653] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[2.241594] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[2.302320] (-) TimerEvent: {}
+[2.338995] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.383058] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:19 (add_executable):\n'}
+[2.383161] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target converter because\n'}
+[2.383206] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'  files in some directories may conflict with libraries in implicit\n'}
+[2.383266] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'  directories:\n'}
+[2.383307] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'\n'}
+[2.383352] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.383392] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'      /home/rajpurkar/miniconda3/lib\n'}
+[2.383430] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'    runtime library [libX11.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.383469] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'      /home/rajpurkar/miniconda3/lib\n'}
+[2.383507] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'\n'}
+[2.383544] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[2.383582] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'\n'}
+[2.383619] (isaac_sim_pointcloud_tool) StderrLine: {'line': b'\x1b[0m\n'}
+[2.384144] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Generating done\n'}
+[2.390742] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Build files have been written to: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool\n'}
+[2.401609] (isaac_sim_pointcloud_tool) CommandEnded: {'returncode': 0}
+[2.402827] (-) TimerEvent: {}
+[2.403719] (isaac_sim_pointcloud_tool) JobProgress: {'identifier': 'isaac_sim_pointcloud_tool', 'progress': 'build'}
+[2.403779] (isaac_sim_pointcloud_tool) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool', '--', '-j16', '-l16'], 'cwd': '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '3970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus,guid=83f761dc05d7cf37510e1c7f686b764a'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/miniconda3/bin:/home/rajpurkar/miniconda3/condabin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/3970,unix/cni-mothership:/tmp/.ICE-unix/3970'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e65dec05_d5ba_4811_996d_3de02d3708b8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/rajpurkar/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/rajpurkar/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1001/bus,guid=83f761dc05d7cf37510e1c7f686b764a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('CONDA_PREFIX', '/home/rajpurkar/miniconda3'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.435739] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/converter.dir/src/converter.cpp.o\x1b[0m\n'}
+[2.502976] (-) TimerEvent: {}
+[2.603224] (-) TimerEvent: {}
+[2.703459] (-) TimerEvent: {}
+[2.803693] (-) TimerEvent: {}
+[2.903931] (-) TimerEvent: {}
+[3.004252] (-) TimerEvent: {}
+[3.104491] (-) TimerEvent: {}
+[3.204753] (-) TimerEvent: {}
+[3.305019] (-) TimerEvent: {}
+[3.405263] (-) TimerEvent: {}
+[3.505503] (-) TimerEvent: {}
+[3.605741] (-) TimerEvent: {}
+[3.706060] (-) TimerEvent: {}
+[3.806335] (-) TimerEvent: {}
+[3.906577] (-) TimerEvent: {}
+[4.006839] (-) TimerEvent: {}
+[4.107077] (-) TimerEvent: {}
+[4.207351] (-) TimerEvent: {}
+[4.307611] (-) TimerEvent: {}
+[4.407890] (-) TimerEvent: {}
+[4.508192] (-) TimerEvent: {}
+[4.608449] (-) TimerEvent: {}
+[4.708715] (-) TimerEvent: {}
+[4.808977] (-) TimerEvent: {}
+[4.909282] (-) TimerEvent: {}
+[5.009528] (-) TimerEvent: {}
+[5.109775] (-) TimerEvent: {}
+[5.210062] (-) TimerEvent: {}
+[5.310315] (-) TimerEvent: {}
+[5.410575] (-) TimerEvent: {}
+[5.510836] (-) TimerEvent: {}
+[5.611101] (-) TimerEvent: {}
+[5.711365] (-) TimerEvent: {}
+[5.811624] (-) TimerEvent: {}
+[5.911881] (-) TimerEvent: {}
+[6.012143] (-) TimerEvent: {}
+[6.112402] (-) TimerEvent: {}
+[6.212667] (-) TimerEvent: {}
+[6.312925] (-) TimerEvent: {}
+[6.413190] (-) TimerEvent: {}
+[6.513449] (-) TimerEvent: {}
+[6.613711] (-) TimerEvent: {}
+[6.713973] (-) TimerEvent: {}
+[6.814272] (-) TimerEvent: {}
+[6.914521] (-) TimerEvent: {}
+[7.014783] (-) TimerEvent: {}
+[7.115075] (-) TimerEvent: {}
+[7.215353] (-) TimerEvent: {}
+[7.315612] (-) TimerEvent: {}
+[7.415899] (-) TimerEvent: {}
+[7.516208] (-) TimerEvent: {}
+[7.616478] (-) TimerEvent: {}
+[7.716754] (-) TimerEvent: {}
+[7.817039] (-) TimerEvent: {}
+[7.917290] (-) TimerEvent: {}
+[8.017612] (-) TimerEvent: {}
+[8.117852] (-) TimerEvent: {}
+[8.218100] (-) TimerEvent: {}
+[8.318350] (-) TimerEvent: {}
+[8.418600] (-) TimerEvent: {}
+[8.518851] (-) TimerEvent: {}
+[8.619103] (-) TimerEvent: {}
+[8.719354] (-) TimerEvent: {}
+[8.819605] (-) TimerEvent: {}
+[8.919858] (-) TimerEvent: {}
+[9.020111] (-) TimerEvent: {}
+[9.120345] (-) TimerEvent: {}
+[9.220582] (-) TimerEvent: {}
+[9.320853] (-) TimerEvent: {}
+[9.421107] (-) TimerEvent: {}
+[9.521359] (-) TimerEvent: {}
+[9.621608] (-) TimerEvent: {}
+[9.721857] (-) TimerEvent: {}
+[9.822129] (-) TimerEvent: {}
+[9.922401] (-) TimerEvent: {}
+[10.022632] (-) TimerEvent: {}
+[10.122879] (-) TimerEvent: {}
+[10.223135] (-) TimerEvent: {}
+[10.323388] (-) TimerEvent: {}
+[10.423640] (-) TimerEvent: {}
+[10.523897] (-) TimerEvent: {}
+[10.624161] (-) TimerEvent: {}
+[10.716715] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable converter\x1b[0m\n'}
+[10.724278] (-) TimerEvent: {}
+[10.824518] (-) TimerEvent: {}
+[10.924782] (-) TimerEvent: {}
+[11.025080] (-) TimerEvent: {}
+[11.125353] (-) TimerEvent: {}
+[11.225617] (-) TimerEvent: {}
+[11.257668] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'[100%] Built target converter\n'}
+[11.266725] (isaac_sim_pointcloud_tool) CommandEnded: {'returncode': 0}
+[11.267294] (isaac_sim_pointcloud_tool) JobProgress: {'identifier': 'isaac_sim_pointcloud_tool', 'progress': 'install'}
+[11.272410] (isaac_sim_pointcloud_tool) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool'], 'cwd': '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '3970'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus,guid=83f761dc05d7cf37510e1c7f686b764a'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/miniconda3/bin:/home/rajpurkar/miniconda3/condabin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/3970,unix/cni-mothership:/tmp/.ICE-unix/3970'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e65dec05_d5ba_4811_996d_3de02d3708b8'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/rajpurkar/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/build/isaac_sim_pointcloud_tool'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/rajpurkar/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1001/bus,guid=83f761dc05d7cf37510e1c7f686b764a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('CONDA_PREFIX', '/home/rajpurkar/miniconda3'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[11.277051] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.277295] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/lib/isaac_sim_pointcloud_tool/converter\n'}
+[11.279196] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Set runtime path of "/home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/lib/isaac_sim_pointcloud_tool/converter" to ""\n'}
+[11.279396] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/ament_index/resource_index/package_run_dependencies/isaac_sim_pointcloud_tool\n'}
+[11.279474] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/ament_index/resource_index/parent_prefix_path/isaac_sim_pointcloud_tool\n'}
+[11.279544] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/environment/ament_prefix_path.sh\n'}
+[11.279628] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/environment/ament_prefix_path.dsv\n'}
+[11.279687] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/environment/path.sh\n'}
+[11.279749] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/environment/path.dsv\n'}
+[11.279804] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/local_setup.bash\n'}
+[11.279869] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/local_setup.sh\n'}
+[11.279949] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/local_setup.zsh\n'}
+[11.280096] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/local_setup.dsv\n'}
+[11.280182] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/package.dsv\n'}
+[11.280281] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/ament_index/resource_index/packages/isaac_sim_pointcloud_tool\n'}
+[11.280366] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/cmake/isaac_sim_pointcloud_toolConfig.cmake\n'}
+[11.280425] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/cmake/isaac_sim_pointcloud_toolConfig-version.cmake\n'}
+[11.280494] (isaac_sim_pointcloud_tool) StdoutLine: {'line': b'-- Installing: /home/rajpurkar/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/install/isaac_sim_pointcloud_tool/share/isaac_sim_pointcloud_tool/package.xml\n'}
+[11.281560] (isaac_sim_pointcloud_tool) CommandEnded: {'returncode': 0}
+[11.295131] (isaac_sim_pointcloud_tool) JobEnded: {'identifier': 'isaac_sim_pointcloud_tool', 'rc': 0}
+[11.295672] (-) EventReactorShutdown: {}
