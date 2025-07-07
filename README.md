@@ -4,9 +4,10 @@
 
 Ensure the following are properly installed:
 - [NVIDIA IsaacSim](https://developer.nvidia.com/isaac-sim)
-- ROS 2 Humble
-- LIO-SAM (Color version)
-- Custom `isaac_sim_pointcloud_tool` package
+- [ROS2 Humble](https://docs.ros.org/en/humble/)
+- [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM/tree/ros2)
+- [LIO-SAM (Color version)](https://github.com/leo-drive/LIO-SAM-COLOR)
+- [isaac_sim_pointcloud_tool](https://github.com/liuxiao916/isaac_sim_pointcloud_tool)
 
 ---
 
