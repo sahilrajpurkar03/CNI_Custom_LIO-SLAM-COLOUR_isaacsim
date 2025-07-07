@@ -1,0 +1,508 @@
+[0.000000] (-) TimerEvent: {}
+[0.000332] (lio_sam) JobQueued: {'identifier': 'lio_sam', 'dependencies': OrderedDict()}
+[0.000435] (lio_sam) JobStarted: {'identifier': 'lio_sam'}
+[0.006923] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'cmake'}
+[0.007728] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'build'}
+[0.008624] (lio_sam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam', '--', '-j16', '-l16'], 'cwd': '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/rajpurkar/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '13848'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install:/home/rajpurkar/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/miniconda3/condabin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/3927,unix/cni-mothership:/tmp/.ICE-unix/3927'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/01e4fc5e_033c_44ff_85c1_2fa4c9e3c2dd'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.160'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam:/home/rajpurkar/ros2_ws/install/robot_slam:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_tool:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_full_publisher:/home/rajpurkar/ros2_ws/install/isaac-sim-mobile-robot-rtab-map:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/rajpurkar/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/rajpurkar/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam:/home/rajpurkar/ros2_ws/install/robot_slam:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_tool:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_full_publisher:/home/rajpurkar/ros2_ws/install/isaac-sim-mobile-robot-rtab-map:/opt/ros/humble')]), 'shell': False}
+[0.052589] (lio_sam) StdoutLine: {'line': b'[  2%] Built target lio_sam__cpp\n'}
+[0.053000] (lio_sam) StdoutLine: {'line': b'[ 10%] Built target lio_sam__rosidl_generator_c\n'}
+[0.058938] (lio_sam) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_symlink_lio_sam\n'}
+[0.070092] (lio_sam) StdoutLine: {'line': b'[ 19%] Built target lio_sam__rosidl_typesupport_c\n'}
+[0.070438] (lio_sam) StdoutLine: {'line': b'[ 27%] Built target lio_sam__rosidl_typesupport_cpp\n'}
+[0.070687] (lio_sam) StdoutLine: {'line': b'[ 36%] Built target lio_sam__rosidl_typesupport_fastrtps_c\n'}
+[0.070809] (lio_sam) StdoutLine: {'line': b'[ 53%] Built target lio_sam__rosidl_typesupport_introspection_cpp\n'}
+[0.070887] (lio_sam) StdoutLine: {'line': b'[ 53%] Built target lio_sam__rosidl_typesupport_introspection_c\n'}
+[0.071785] (lio_sam) StdoutLine: {'line': b'[ 61%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp\n'}
+[0.087387] (lio_sam) StdoutLine: {'line': b'[ 61%] Built target lio_sam\n'}
+[0.099770] (-) TimerEvent: {}
+[0.105150] (lio_sam) StdoutLine: {'line': b'[ 63%] Built target lio_sam__py\n'}
+[0.105771] (lio_sam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lio_sam_mapOptimization\x1b[0m\n'}
+[0.118756] (lio_sam) StdoutLine: {'line': b'[ 72%] Built target lio_sam_featureExtraction\n'}
+[0.118913] (lio_sam) StdoutLine: {'line': b'[ 72%] Built target lio_sam_imageProjection\n'}
+[0.122597] (lio_sam) StdoutLine: {'line': b'[ 78%] Built target lio_sam__rosidl_generator_py\n'}
+[0.127290] (lio_sam) StdoutLine: {'line': b'[ 82%] Built target lio_sam_imuPreintegration\n'}
+[0.139107] (lio_sam) StdoutLine: {'line': b'[ 95%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext\n'}
+[0.139319] (lio_sam) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o\x1b[0m\n'}
+[0.139411] (lio_sam) StdoutLine: {'line': b'[ 95%] Built target lio_sam__rosidl_typesupport_c__pyext\n'}
+[0.139489] (lio_sam) StdoutLine: {'line': b'[ 97%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.199848] (-) TimerEvent: {}
+[0.300096] (-) TimerEvent: {}
+[0.319407] (lio_sam) StdoutLine: {'line': b'running egg_info\n'}
+[0.320054] (lio_sam) StdoutLine: {'line': b'writing lio_sam.egg-info/PKG-INFO\n'}
+[0.320229] (lio_sam) StdoutLine: {'line': b'writing dependency_links to lio_sam.egg-info/dependency_links.txt\n'}
+[0.320408] (lio_sam) StdoutLine: {'line': b'writing top-level names to lio_sam.egg-info/top_level.txt\n'}
+[0.322730] (lio_sam) StdoutLine: {'line': b"reading manifest file 'lio_sam.egg-info/SOURCES.txt'\n"}
+[0.323249] (lio_sam) StdoutLine: {'line': b"writing manifest file 'lio_sam.egg-info/SOURCES.txt'\n"}
+[0.347881] (lio_sam) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_lio_sam_egg\n'}
+[0.400196] (-) TimerEvent: {}
+[0.500461] (-) TimerEvent: {}
+[0.600726] (-) TimerEvent: {}
+[0.701000] (-) TimerEvent: {}
+[0.801251] (-) TimerEvent: {}
+[0.901514] (-) TimerEvent: {}
+[1.001764] (-) TimerEvent: {}
+[1.102021] (-) TimerEvent: {}
+[1.202274] (-) TimerEvent: {}
+[1.302544] (-) TimerEvent: {}
+[1.402774] (-) TimerEvent: {}
+[1.503009] (-) TimerEvent: {}
+[1.603234] (-) TimerEvent: {}
+[1.703469] (-) TimerEvent: {}
+[1.803799] (-) TimerEvent: {}
+[1.904018] (-) TimerEvent: {}
+[2.004266] (-) TimerEvent: {}
+[2.104543] (-) TimerEvent: {}
+[2.204781] (-) TimerEvent: {}
+[2.305032] (-) TimerEvent: {}
+[2.405312] (-) TimerEvent: {}
+[2.505572] (-) TimerEvent: {}
+[2.605830] (-) TimerEvent: {}
+[2.706084] (-) TimerEvent: {}
+[2.806329] (-) TimerEvent: {}
+[2.906597] (-) TimerEvent: {}
+[3.006866] (-) TimerEvent: {}
+[3.107111] (-) TimerEvent: {}
+[3.207379] (-) TimerEvent: {}
+[3.307594] (-) TimerEvent: {}
+[3.407841] (-) TimerEvent: {}
+[3.508064] (-) TimerEvent: {}
+[3.608279] (-) TimerEvent: {}
+[3.708500] (-) TimerEvent: {}
+[3.808729] (-) TimerEvent: {}
+[3.908961] (-) TimerEvent: {}
+[4.009182] (-) TimerEvent: {}
+[4.109412] (-) TimerEvent: {}
+[4.209648] (-) TimerEvent: {}
+[4.309876] (-) TimerEvent: {}
+[4.410126] (-) TimerEvent: {}
+[4.510350] (-) TimerEvent: {}
+[4.610599] (-) TimerEvent: {}
+[4.710892] (-) TimerEvent: {}
+[4.811216] (-) TimerEvent: {}
+[4.911478] (-) TimerEvent: {}
+[5.011726] (-) TimerEvent: {}
+[5.112007] (-) TimerEvent: {}
+[5.212384] (-) TimerEvent: {}
+[5.312581] (-) TimerEvent: {}
+[5.412804] (-) TimerEvent: {}
+[5.513103] (-) TimerEvent: {}
+[5.613336] (-) TimerEvent: {}
+[5.713590] (-) TimerEvent: {}
+[5.813829] (-) TimerEvent: {}
+[5.914063] (-) TimerEvent: {}
+[6.014296] (-) TimerEvent: {}
+[6.114579] (-) TimerEvent: {}
+[6.214828] (-) TimerEvent: {}
+[6.315102] (-) TimerEvent: {}
+[6.415395] (-) TimerEvent: {}
+[6.515801] (-) TimerEvent: {}
+[6.615996] (-) TimerEvent: {}
+[6.716228] (-) TimerEvent: {}
+[6.816489] (-) TimerEvent: {}
+[6.916745] (-) TimerEvent: {}
+[7.017043] (-) TimerEvent: {}
+[7.117315] (-) TimerEvent: {}
+[7.217587] (-) TimerEvent: {}
+[7.317778] (-) TimerEvent: {}
+[7.418065] (-) TimerEvent: {}
+[7.518285] (-) TimerEvent: {}
+[7.618574] (-) TimerEvent: {}
+[7.718844] (-) TimerEvent: {}
+[7.819079] (-) TimerEvent: {}
+[7.919308] (-) TimerEvent: {}
+[8.019578] (-) TimerEvent: {}
+[8.119811] (-) TimerEvent: {}
+[8.220038] (-) TimerEvent: {}
+[8.320293] (-) TimerEvent: {}
+[8.420554] (-) TimerEvent: {}
+[8.520810] (-) TimerEvent: {}
+[8.621094] (-) TimerEvent: {}
+[8.721325] (-) TimerEvent: {}
+[8.821566] (-) TimerEvent: {}
+[8.921803] (-) TimerEvent: {}
+[9.022031] (-) TimerEvent: {}
+[9.122259] (-) TimerEvent: {}
+[9.222509] (-) TimerEvent: {}
+[9.322742] (-) TimerEvent: {}
+[9.422980] (-) TimerEvent: {}
+[9.523273] (-) TimerEvent: {}
+[9.623497] (-) TimerEvent: {}
+[9.723722] (-) TimerEvent: {}
+[9.823952] (-) TimerEvent: {}
+[9.924191] (-) TimerEvent: {}
+[10.024425] (-) TimerEvent: {}
+[10.124695] (-) TimerEvent: {}
+[10.224933] (-) TimerEvent: {}
+[10.325249] (-) TimerEvent: {}
+[10.425515] (-) TimerEvent: {}
+[10.525753] (-) TimerEvent: {}
+[10.625977] (-) TimerEvent: {}
+[10.726259] (-) TimerEvent: {}
+[10.826490] (-) TimerEvent: {}
+[10.926760] (-) TimerEvent: {}
+[11.027064] (-) TimerEvent: {}
+[11.127306] (-) TimerEvent: {}
+[11.227574] (-) TimerEvent: {}
+[11.327830] (-) TimerEvent: {}
+[11.428067] (-) TimerEvent: {}
+[11.528331] (-) TimerEvent: {}
+[11.628599] (-) TimerEvent: {}
+[11.643255] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mapOptimization::saveKeyFramesAndFactor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.643471] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1771:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::x\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.643566] (lio_sam) StderrLine: {'line': b' 1771 |         float dist = sqrt(\x1b[01;31m\x1b[Kx\x1b[m\x1b[K*x + y*y + z*z);\n'}
+[11.643626] (lio_sam) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.643673] (lio_sam) StderrLine: {'line': b'      |                           \x1b[32m\x1b[Kpcl::fields::x\x1b[m\x1b[K\n'}
+[11.643719] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/preprocessor/tuple/elem.hpp:23\x1b[m\x1b[K,\n'}
+[11.643765] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21\x1b[m\x1b[K,\n'}
+[11.643811] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66\x1b[m\x1b[K,\n'}
+[11.643871] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/na_spec.hpp:28\x1b[m\x1b[K,\n'}
+[11.643939] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/not.hpp:20\x1b[m\x1b[K,\n'}
+[11.643990] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/assert.hpp:17\x1b[m\x1b[K,\n'}
+[11.644036] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40\x1b[m\x1b[K,\n'}
+[11.644080] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/type_traits.h:40\x1b[m\x1b[K,\n'}
+[11.644125] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/memory.h:46\x1b[m\x1b[K,\n'}
+[11.644170] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41\x1b[m\x1b[K,\n'}
+[11.644219] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43\x1b[m\x1b[K,\n'}
+[11.644282] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21\x1b[m\x1b[K,\n'}
+[11.644345] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[11.644391] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1941:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::x\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.644437] (lio_sam) StderrLine: {'line': b' 1941 | \x1b[01;36m\x1b[KPOINT_CLOUD_REGISTER_POINT_STRUCT\x1b[m\x1b[K (pcl::_PointXYZ,\n'}
+[11.644482] (lio_sam) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.645471] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1771:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::y\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.645554] (lio_sam) StderrLine: {'line': b' 1771 |         float dist = sqrt(x*x + \x1b[01;31m\x1b[Ky\x1b[m\x1b[K*y + z*z);\n'}
+[11.645663] (lio_sam) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.645710] (lio_sam) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[Kpcl::fields::y\x1b[m\x1b[K\n'}
+[11.645757] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/preprocessor/tuple/elem.hpp:23\x1b[m\x1b[K,\n'}
+[11.645823] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21\x1b[m\x1b[K,\n'}
+[11.645890] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66\x1b[m\x1b[K,\n'}
+[11.645936] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/na_spec.hpp:28\x1b[m\x1b[K,\n'}
+[11.645986] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/not.hpp:20\x1b[m\x1b[K,\n'}
+[11.646030] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/assert.hpp:17\x1b[m\x1b[K,\n'}
+[11.646075] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40\x1b[m\x1b[K,\n'}
+[11.646124] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/type_traits.h:40\x1b[m\x1b[K,\n'}
+[11.646185] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/memory.h:46\x1b[m\x1b[K,\n'}
+[11.646245] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41\x1b[m\x1b[K,\n'}
+[11.646293] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43\x1b[m\x1b[K,\n'}
+[11.646337] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21\x1b[m\x1b[K,\n'}
+[11.646382] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[11.646426] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1941:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::y\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.646470] (lio_sam) StderrLine: {'line': b' 1941 | \x1b[01;36m\x1b[KPOINT_CLOUD_REGISTER_POINT_STRUCT\x1b[m\x1b[K (pcl::_PointXYZ,\n'}
+[11.646526] (lio_sam) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.647328] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1771:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kz\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::z\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.647406] (lio_sam) StderrLine: {'line': b' 1771 |         float dist = sqrt(x*x + y*y + \x1b[01;31m\x1b[Kz\x1b[m\x1b[K*z);\n'}
+[11.647455] (lio_sam) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.647504] (lio_sam) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[Kpcl::fields::z\x1b[m\x1b[K\n'}
+[11.647608] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/preprocessor/tuple/elem.hpp:23\x1b[m\x1b[K,\n'}
+[11.647666] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21\x1b[m\x1b[K,\n'}
+[11.647734] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66\x1b[m\x1b[K,\n'}
+[11.647794] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/na_spec.hpp:28\x1b[m\x1b[K,\n'}
+[11.647839] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/not.hpp:20\x1b[m\x1b[K,\n'}
+[11.647882] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/assert.hpp:17\x1b[m\x1b[K,\n'}
+[11.647927] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40\x1b[m\x1b[K,\n'}
+[11.647972] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/type_traits.h:40\x1b[m\x1b[K,\n'}
+[11.648016] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/memory.h:46\x1b[m\x1b[K,\n'}
+[11.648090] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41\x1b[m\x1b[K,\n'}
+[11.648153] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43\x1b[m\x1b[K,\n'}
+[11.648202] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21\x1b[m\x1b[K,\n'}
+[11.648246] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[11.648291] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1941:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::z\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.648335] (lio_sam) StderrLine: {'line': b' 1941 | \x1b[01;36m\x1b[KPOINT_CLOUD_REGISTER_POINT_STRUCT\x1b[m\x1b[K (pcl::_PointXYZ,\n'}
+[11.648379] (lio_sam) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.648678] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1772:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kroll\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::roll\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.648777] (lio_sam) StderrLine: {'line': b' 1772 |         float angle = sqrt(\x1b[01;31m\x1b[Kroll\x1b[m\x1b[K*roll + pitch*pitch + yaw*yaw);\n'}
+[11.648848] (lio_sam) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.648914] (lio_sam) StderrLine: {'line': b'      |                            \x1b[32m\x1b[Kpcl::fields::roll\x1b[m\x1b[K\n'}
+[11.649007] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/preprocessor/tuple/elem.hpp:23\x1b[m\x1b[K,\n'}
+[11.649053] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21\x1b[m\x1b[K,\n'}
+[11.649098] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66\x1b[m\x1b[K,\n'}
+[11.649142] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/na_spec.hpp:28\x1b[m\x1b[K,\n'}
+[11.649198] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/not.hpp:20\x1b[m\x1b[K,\n'}
+[11.649258] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/assert.hpp:17\x1b[m\x1b[K,\n'}
+[11.649308] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40\x1b[m\x1b[K,\n'}
+[11.649352] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/type_traits.h:40\x1b[m\x1b[K,\n'}
+[11.649395] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/memory.h:46\x1b[m\x1b[K,\n'}
+[11.649439] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41\x1b[m\x1b[K,\n'}
+[11.649499] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43\x1b[m\x1b[K,\n'}
+[11.649567] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21\x1b[m\x1b[K,\n'}
+[11.649634] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[11.649686] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:50:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::roll\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.649731] (lio_sam) StderrLine: {'line': b'   50 |                                    (float, roll, \x1b[01;36m\x1b[Kroll\x1b[m\x1b[K) (float, pitch, pitch) (float, yaw, yaw)\n'}
+[11.649781] (lio_sam) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.650032] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1772:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpitch\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::pitch\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.650111] (lio_sam) StderrLine: {'line': b' 1772 |         float angle = sqrt(roll*roll + \x1b[01;31m\x1b[Kpitch\x1b[m\x1b[K*pitch + yaw*yaw);\n'}
+[11.650164] (lio_sam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.650214] (lio_sam) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[Kpcl::fields::pitch\x1b[m\x1b[K\n'}
+[11.650360] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/preprocessor/tuple/elem.hpp:23\x1b[m\x1b[K,\n'}
+[11.650421] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21\x1b[m\x1b[K,\n'}
+[11.650467] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66\x1b[m\x1b[K,\n'}
+[11.650511] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/na_spec.hpp:28\x1b[m\x1b[K,\n'}
+[11.650567] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/not.hpp:20\x1b[m\x1b[K,\n'}
+[11.650625] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/assert.hpp:17\x1b[m\x1b[K,\n'}
+[11.650669] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40\x1b[m\x1b[K,\n'}
+[11.650728] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/type_traits.h:40\x1b[m\x1b[K,\n'}
+[11.650789] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/memory.h:46\x1b[m\x1b[K,\n'}
+[11.650840] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41\x1b[m\x1b[K,\n'}
+[11.650885] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43\x1b[m\x1b[K,\n'}
+[11.650932] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21\x1b[m\x1b[K,\n'}
+[11.650976] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[11.651020] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:50:71:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::pitch\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.651071] (lio_sam) StderrLine: {'line': b'   50 |                                    (float, roll, roll) (float, pitch, \x1b[01;36m\x1b[Kpitch\x1b[m\x1b[K) (float, yaw, yaw)\n'}
+[11.651139] (lio_sam) StderrLine: {'line': b'      |                                                                       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.651230] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1772:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyaw\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::yaw\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.651285] (lio_sam) StderrLine: {'line': b' 1772 |         float angle = sqrt(roll*roll + pitch*pitch + \x1b[01;31m\x1b[Kyaw\x1b[m\x1b[K*yaw);\n'}
+[11.651330] (lio_sam) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.651379] (lio_sam) StderrLine: {'line': b'      |                                                      \x1b[32m\x1b[Kpcl::fields::yaw\x1b[m\x1b[K\n'}
+[11.651490] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/preprocessor/tuple/elem.hpp:23\x1b[m\x1b[K,\n'}
+[11.651568] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21\x1b[m\x1b[K,\n'}
+[11.651619] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66\x1b[m\x1b[K,\n'}
+[11.651663] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/aux_/na_spec.hpp:28\x1b[m\x1b[K,\n'}
+[11.651706] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/not.hpp:20\x1b[m\x1b[K,\n'}
+[11.651750] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/mpl/assert.hpp:17\x1b[m\x1b[K,\n'}
+[11.651794] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40\x1b[m\x1b[K,\n'}
+[11.651858] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/type_traits.h:40\x1b[m\x1b[K,\n'}
+[11.651918] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/memory.h:46\x1b[m\x1b[K,\n'}
+[11.651972] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41\x1b[m\x1b[K,\n'}
+[11.652016] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43\x1b[m\x1b[K,\n'}
+[11.652059] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21\x1b[m\x1b[K,\n'}
+[11.652102] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[11.652152] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:50:91:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpcl::fields::yaw\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.652212] (lio_sam) StderrLine: {'line': b'   50 |                                    (float, roll, roll) (float, pitch, pitch) (float, yaw, \x1b[01;36m\x1b[Kyaw\x1b[m\x1b[K)\n'}
+[11.652271] (lio_sam) StderrLine: {'line': b'      |                                                                                           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.728691] (-) TimerEvent: {}
+[11.828943] (-) TimerEvent: {}
+[11.929165] (-) TimerEvent: {}
+[12.029437] (-) TimerEvent: {}
+[12.129703] (-) TimerEvent: {}
+[12.230031] (-) TimerEvent: {}
+[12.330290] (-) TimerEvent: {}
+[12.430512] (-) TimerEvent: {}
+[12.530736] (-) TimerEvent: {}
+[12.630975] (-) TimerEvent: {}
+[12.731193] (-) TimerEvent: {}
+[12.831432] (-) TimerEvent: {}
+[12.931696] (-) TimerEvent: {}
+[13.031918] (-) TimerEvent: {}
+[13.132155] (-) TimerEvent: {}
+[13.232377] (-) TimerEvent: {}
+[13.332581] (-) TimerEvent: {}
+[13.432807] (-) TimerEvent: {}
+[13.533057] (-) TimerEvent: {}
+[13.633293] (-) TimerEvent: {}
+[13.733530] (-) TimerEvent: {}
+[13.833756] (-) TimerEvent: {}
+[13.933976] (-) TimerEvent: {}
+[14.034228] (-) TimerEvent: {}
+[14.134467] (-) TimerEvent: {}
+[14.234767] (-) TimerEvent: {}
+[14.335034] (-) TimerEvent: {}
+[14.435270] (-) TimerEvent: {}
+[14.535523] (-) TimerEvent: {}
+[14.635765] (-) TimerEvent: {}
+[14.736004] (-) TimerEvent: {}
+[14.836248] (-) TimerEvent: {}
+[14.936510] (-) TimerEvent: {}
+[15.036748] (-) TimerEvent: {}
+[15.137008] (-) TimerEvent: {}
+[15.237251] (-) TimerEvent: {}
+[15.337500] (-) TimerEvent: {}
+[15.437740] (-) TimerEvent: {}
+[15.537979] (-) TimerEvent: {}
+[15.638241] (-) TimerEvent: {}
+[15.738481] (-) TimerEvent: {}
+[15.838711] (-) TimerEvent: {}
+[15.938934] (-) TimerEvent: {}
+[16.039154] (-) TimerEvent: {}
+[16.139392] (-) TimerEvent: {}
+[16.239587] (-) TimerEvent: {}
+[16.339804] (-) TimerEvent: {}
+[16.440066] (-) TimerEvent: {}
+[16.540296] (-) TimerEvent: {}
+[16.640519] (-) TimerEvent: {}
+[16.740749] (-) TimerEvent: {}
+[16.840997] (-) TimerEvent: {}
+[16.941258] (-) TimerEvent: {}
+[17.041518] (-) TimerEvent: {}
+[17.141794] (-) TimerEvent: {}
+[17.242025] (-) TimerEvent: {}
+[17.342267] (-) TimerEvent: {}
+[17.442484] (-) TimerEvent: {}
+[17.542717] (-) TimerEvent: {}
+[17.642951] (-) TimerEvent: {}
+[17.743179] (-) TimerEvent: {}
+[17.843417] (-) TimerEvent: {}
+[17.943684] (-) TimerEvent: {}
+[18.043948] (-) TimerEvent: {}
+[18.144209] (-) TimerEvent: {}
+[18.244468] (-) TimerEvent: {}
+[18.344713] (-) TimerEvent: {}
+[18.444941] (-) TimerEvent: {}
+[18.545196] (-) TimerEvent: {}
+[18.645452] (-) TimerEvent: {}
+[18.745738] (-) TimerEvent: {}
+[18.846002] (-) TimerEvent: {}
+[18.946226] (-) TimerEvent: {}
+[19.046493] (-) TimerEvent: {}
+[19.146725] (-) TimerEvent: {}
+[19.246958] (-) TimerEvent: {}
+[19.347214] (-) TimerEvent: {}
+[19.447429] (-) TimerEvent: {}
+[19.547647] (-) TimerEvent: {}
+[19.647864] (-) TimerEvent: {}
+[19.748084] (-) TimerEvent: {}
+[19.848309] (-) TimerEvent: {}
+[19.948551] (-) TimerEvent: {}
+[20.048843] (-) TimerEvent: {}
+[20.149136] (-) TimerEvent: {}
+[20.249403] (-) TimerEvent: {}
+[20.349646] (-) TimerEvent: {}
+[20.449869] (-) TimerEvent: {}
+[20.550092] (-) TimerEvent: {}
+[20.650319] (-) TimerEvent: {}
+[20.750591] (-) TimerEvent: {}
+[20.850885] (-) TimerEvent: {}
+[20.951163] (-) TimerEvent: {}
+[21.051394] (-) TimerEvent: {}
+[21.151591] (-) TimerEvent: {}
+[21.251790] (-) TimerEvent: {}
+[21.352051] (-) TimerEvent: {}
+[21.452305] (-) TimerEvent: {}
+[21.552573] (-) TimerEvent: {}
+[21.652842] (-) TimerEvent: {}
+[21.753100] (-) TimerEvent: {}
+[21.853405] (-) TimerEvent: {}
+[21.953648] (-) TimerEvent: {}
+[22.053926] (-) TimerEvent: {}
+[22.154321] (-) TimerEvent: {}
+[22.254554] (-) TimerEvent: {}
+[22.354798] (-) TimerEvent: {}
+[22.455052] (-) TimerEvent: {}
+[22.555297] (-) TimerEvent: {}
+[22.655585] (-) TimerEvent: {}
+[22.755834] (-) TimerEvent: {}
+[22.856093] (-) TimerEvent: {}
+[22.956329] (-) TimerEvent: {}
+[23.056573] (-) TimerEvent: {}
+[23.156874] (-) TimerEvent: {}
+[23.257160] (-) TimerEvent: {}
+[23.357426] (-) TimerEvent: {}
+[23.457690] (-) TimerEvent: {}
+[23.557956] (-) TimerEvent: {}
+[23.658212] (-) TimerEvent: {}
+[23.758462] (-) TimerEvent: {}
+[23.858708] (-) TimerEvent: {}
+[23.958941] (-) TimerEvent: {}
+[24.059194] (-) TimerEvent: {}
+[24.159419] (-) TimerEvent: {}
+[24.259666] (-) TimerEvent: {}
+[24.359925] (-) TimerEvent: {}
+[24.460201] (-) TimerEvent: {}
+[24.560485] (-) TimerEvent: {}
+[24.660755] (-) TimerEvent: {}
+[24.760989] (-) TimerEvent: {}
+[24.861224] (-) TimerEvent: {}
+[24.961475] (-) TimerEvent: {}
+[25.061721] (-) TimerEvent: {}
+[25.161949] (-) TimerEvent: {}
+[25.262176] (-) TimerEvent: {}
+[25.362406] (-) TimerEvent: {}
+[25.462595] (-) TimerEvent: {}
+[25.562830] (-) TimerEvent: {}
+[25.663075] (-) TimerEvent: {}
+[25.763309] (-) TimerEvent: {}
+[25.863611] (-) TimerEvent: {}
+[25.963910] (-) TimerEvent: {}
+[26.064172] (-) TimerEvent: {}
+[26.164417] (-) TimerEvent: {}
+[26.264701] (-) TimerEvent: {}
+[26.364965] (-) TimerEvent: {}
+[26.465290] (-) TimerEvent: {}
+[26.565573] (-) TimerEvent: {}
+[26.665801] (-) TimerEvent: {}
+[26.766048] (-) TimerEvent: {}
+[26.866287] (-) TimerEvent: {}
+[26.966582] (-) TimerEvent: {}
+[27.066823] (-) TimerEvent: {}
+[27.167068] (-) TimerEvent: {}
+[27.267325] (-) TimerEvent: {}
+[27.367585] (-) TimerEvent: {}
+[27.467837] (-) TimerEvent: {}
+[27.568063] (-) TimerEvent: {}
+[27.668288] (-) TimerEvent: {}
+[27.768515] (-) TimerEvent: {}
+[27.868745] (-) TimerEvent: {}
+[27.968996] (-) TimerEvent: {}
+[28.069234] (-) TimerEvent: {}
+[28.169466] (-) TimerEvent: {}
+[28.269752] (-) TimerEvent: {}
+[28.369997] (-) TimerEvent: {}
+[28.470256] (-) TimerEvent: {}
+[28.570505] (-) TimerEvent: {}
+[28.670797] (-) TimerEvent: {}
+[28.771026] (-) TimerEvent: {}
+[28.871260] (-) TimerEvent: {}
+[28.971511] (-) TimerEvent: {}
+[29.071793] (-) TimerEvent: {}
+[29.172036] (-) TimerEvent: {}
+[29.272287] (-) TimerEvent: {}
+[29.372521] (-) TimerEvent: {}
+[29.472762] (-) TimerEvent: {}
+[29.572999] (-) TimerEvent: {}
+[29.673258] (-) TimerEvent: {}
+[29.773488] (-) TimerEvent: {}
+[29.873714] (-) TimerEvent: {}
+[29.973953] (-) TimerEvent: {}
+[30.074190] (-) TimerEvent: {}
+[30.174411] (-) TimerEvent: {}
+[30.274656] (-) TimerEvent: {}
+[30.375026] (-) TimerEvent: {}
+[30.475292] (-) TimerEvent: {}
+[30.575568] (-) TimerEvent: {}
+[30.675814] (-) TimerEvent: {}
+[30.776037] (-) TimerEvent: {}
+[30.876297] (-) TimerEvent: {}
+[30.976591] (-) TimerEvent: {}
+[31.076819] (-) TimerEvent: {}
+[31.177040] (-) TimerEvent: {}
+[31.277264] (-) TimerEvent: {}
+[31.377535] (-) TimerEvent: {}
+[31.477781] (-) TimerEvent: {}
+[31.578020] (-) TimerEvent: {}
+[31.678269] (-) TimerEvent: {}
+[31.778526] (-) TimerEvent: {}
+[31.878778] (-) TimerEvent: {}
+[31.979045] (-) TimerEvent: {}
+[32.079418] (-) TimerEvent: {}
+[32.179713] (-) TimerEvent: {}
+[32.279973] (-) TimerEvent: {}
+[32.380225] (-) TimerEvent: {}
+[32.480457] (-) TimerEvent: {}
+[32.580718] (-) TimerEvent: {}
+[32.681007] (-) TimerEvent: {}
+[32.781246] (-) TimerEvent: {}
+[32.881447] (-) TimerEvent: {}
+[32.981694] (-) TimerEvent: {}
+[33.081985] (-) TimerEvent: {}
+[33.182224] (-) TimerEvent: {}
+[33.282451] (-) TimerEvent: {}
+[33.382709] (-) TimerEvent: {}
+[33.482967] (-) TimerEvent: {}
+[33.583225] (-) TimerEvent: {}
+[33.683475] (-) TimerEvent: {}
+[33.783703] (-) TimerEvent: {}
+[33.883943] (-) TimerEvent: {}
+[33.984178] (-) TimerEvent: {}
+[34.084450] (-) TimerEvent: {}
+[34.184735] (-) TimerEvent: {}
+[34.285021] (-) TimerEvent: {}
+[34.385295] (-) TimerEvent: {}
+[34.485557] (-) TimerEvent: {}
+[34.585837] (-) TimerEvent: {}
+[34.686071] (-) TimerEvent: {}
+[34.786302] (-) TimerEvent: {}
+[34.886569] (-) TimerEvent: {}
+[34.897890] (lio_sam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lio_sam_mapOptimization.dir/build.make:76: CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o] Error 1\n'}
+[34.898140] (lio_sam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:684: CMakeFiles/lio_sam_mapOptimization.dir/all] Error 2\n'}
+[34.898296] (lio_sam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[34.900461] (lio_sam) CommandEnded: {'returncode': 2}
+[34.912082] (lio_sam) JobEnded: {'identifier': 'lio_sam', 'rc': 2}
+[34.922682] (-) EventReactorShutdown: {}

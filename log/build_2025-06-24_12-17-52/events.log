@@ -1,0 +1,511 @@
+[0.000000] (-) TimerEvent: {}
+[0.000355] (lio_sam) JobQueued: {'identifier': 'lio_sam', 'dependencies': OrderedDict()}
+[0.000489] (lio_sam) JobStarted: {'identifier': 'lio_sam'}
+[0.006931] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'cmake'}
+[0.007777] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'build'}
+[0.008556] (lio_sam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam', '--', '-j16', '-l16'], 'cwd': '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4009'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install:/home/rajpurkar/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/3985,unix/cni-mothership:/tmp/.ICE-unix/3985'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d36e418a_169d_4cf2_b5ff_2689db0be4ec'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.111'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam:/home/rajpurkar/ros2_ws/install/robot_slam:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_tool:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_full_publisher:/home/rajpurkar/ros2_ws/install/isaac-sim-mobile-robot-rtab-map:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam:/home/rajpurkar/ros2_ws/install/robot_slam:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_tool:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_full_publisher:/home/rajpurkar/ros2_ws/install/isaac-sim-mobile-robot-rtab-map:/opt/ros/humble')]), 'shell': False}
+[0.053635] (lio_sam) StdoutLine: {'line': b'[  6%] Built target lio_sam__cpp\n'}
+[0.053834] (lio_sam) StdoutLine: {'line': b'[ 10%] Built target lio_sam__rosidl_generator_c\n'}
+[0.059668] (lio_sam) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_symlink_lio_sam\n'}
+[0.070422] (lio_sam) StdoutLine: {'line': b'[ 27%] Built target lio_sam__rosidl_typesupport_c\n'}
+[0.070640] (lio_sam) StdoutLine: {'line': b'[ 27%] Built target lio_sam__rosidl_typesupport_introspection_c\n'}
+[0.070770] (lio_sam) StdoutLine: {'line': b'[ 36%] Built target lio_sam__rosidl_typesupport_fastrtps_c\n'}
+[0.071590] (lio_sam) StdoutLine: {'line': b'[ 44%] Built target lio_sam__rosidl_typesupport_introspection_cpp\n'}
+[0.071853] (lio_sam) StdoutLine: {'line': b'[ 53%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp\n'}
+[0.077109] (lio_sam) StdoutLine: {'line': b'[ 61%] Built target lio_sam__rosidl_typesupport_cpp\n'}
+[0.093167] (lio_sam) StdoutLine: {'line': b'[ 61%] Built target lio_sam\n'}
+[0.099808] (-) TimerEvent: {}
+[0.110990] (lio_sam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lio_sam_mapOptimization\x1b[0m\n'}
+[0.111234] (lio_sam) StdoutLine: {'line': b'[ 63%] Built target lio_sam__py\n'}
+[0.126745] (lio_sam) StdoutLine: {'line': b'[ 72%] Built target lio_sam_imageProjection\n'}
+[0.126940] (lio_sam) StdoutLine: {'line': b'[ 72%] Built target lio_sam_featureExtraction\n'}
+[0.131401] (lio_sam) StdoutLine: {'line': b'[ 76%] Built target lio_sam_imuPreintegration\n'}
+[0.133227] (lio_sam) StdoutLine: {'line': b'[ 82%] Built target lio_sam__rosidl_generator_py\n'}
+[0.149422] (lio_sam) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o\x1b[0m\n'}
+[0.150379] (lio_sam) StdoutLine: {'line': b'[ 91%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext\n'}
+[0.150736] (lio_sam) StdoutLine: {'line': b'[ 93%] Built target lio_sam__rosidl_typesupport_c__pyext\n'}
+[0.150841] (lio_sam) StdoutLine: {'line': b'[ 97%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.201538] (-) TimerEvent: {}
+[0.301826] (-) TimerEvent: {}
+[0.321178] (lio_sam) StdoutLine: {'line': b'running egg_info\n'}
+[0.321947] (lio_sam) StdoutLine: {'line': b'writing lio_sam.egg-info/PKG-INFO\n'}
+[0.322196] (lio_sam) StdoutLine: {'line': b'writing dependency_links to lio_sam.egg-info/dependency_links.txt\n'}
+[0.322350] (lio_sam) StdoutLine: {'line': b'writing top-level names to lio_sam.egg-info/top_level.txt\n'}
+[0.325220] (lio_sam) StdoutLine: {'line': b"reading manifest file 'lio_sam.egg-info/SOURCES.txt'\n"}
+[0.325779] (lio_sam) StdoutLine: {'line': b"writing manifest file 'lio_sam.egg-info/SOURCES.txt'\n"}
+[0.352018] (lio_sam) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_lio_sam_egg\n'}
+[0.401913] (-) TimerEvent: {}
+[0.502156] (-) TimerEvent: {}
+[0.602394] (-) TimerEvent: {}
+[0.702639] (-) TimerEvent: {}
+[0.802877] (-) TimerEvent: {}
+[0.903170] (-) TimerEvent: {}
+[1.003440] (-) TimerEvent: {}
+[1.103674] (-) TimerEvent: {}
+[1.203933] (-) TimerEvent: {}
+[1.304163] (-) TimerEvent: {}
+[1.404381] (-) TimerEvent: {}
+[1.504624] (-) TimerEvent: {}
+[1.604865] (-) TimerEvent: {}
+[1.705103] (-) TimerEvent: {}
+[1.805371] (-) TimerEvent: {}
+[1.905622] (-) TimerEvent: {}
+[2.005876] (-) TimerEvent: {}
+[2.106080] (-) TimerEvent: {}
+[2.206300] (-) TimerEvent: {}
+[2.306529] (-) TimerEvent: {}
+[2.406793] (-) TimerEvent: {}
+[2.507021] (-) TimerEvent: {}
+[2.607243] (-) TimerEvent: {}
+[2.707491] (-) TimerEvent: {}
+[2.807690] (-) TimerEvent: {}
+[2.907953] (-) TimerEvent: {}
+[3.008238] (-) TimerEvent: {}
+[3.108498] (-) TimerEvent: {}
+[3.208783] (-) TimerEvent: {}
+[3.309073] (-) TimerEvent: {}
+[3.409338] (-) TimerEvent: {}
+[3.509614] (-) TimerEvent: {}
+[3.609896] (-) TimerEvent: {}
+[3.710123] (-) TimerEvent: {}
+[3.810348] (-) TimerEvent: {}
+[3.910589] (-) TimerEvent: {}
+[4.010878] (-) TimerEvent: {}
+[4.111168] (-) TimerEvent: {}
+[4.211428] (-) TimerEvent: {}
+[4.311692] (-) TimerEvent: {}
+[4.411989] (-) TimerEvent: {}
+[4.512255] (-) TimerEvent: {}
+[4.612528] (-) TimerEvent: {}
+[4.712816] (-) TimerEvent: {}
+[4.813105] (-) TimerEvent: {}
+[4.913367] (-) TimerEvent: {}
+[5.013642] (-) TimerEvent: {}
+[5.113920] (-) TimerEvent: {}
+[5.214163] (-) TimerEvent: {}
+[5.314379] (-) TimerEvent: {}
+[5.414622] (-) TimerEvent: {}
+[5.514976] (-) TimerEvent: {}
+[5.615240] (-) TimerEvent: {}
+[5.715462] (-) TimerEvent: {}
+[5.815673] (-) TimerEvent: {}
+[5.915923] (-) TimerEvent: {}
+[6.016203] (-) TimerEvent: {}
+[6.116446] (-) TimerEvent: {}
+[6.216684] (-) TimerEvent: {}
+[6.316941] (-) TimerEvent: {}
+[6.417211] (-) TimerEvent: {}
+[6.517496] (-) TimerEvent: {}
+[6.617743] (-) TimerEvent: {}
+[6.718060] (-) TimerEvent: {}
+[6.818299] (-) TimerEvent: {}
+[6.918527] (-) TimerEvent: {}
+[7.018783] (-) TimerEvent: {}
+[7.119012] (-) TimerEvent: {}
+[7.219256] (-) TimerEvent: {}
+[7.319639] (-) TimerEvent: {}
+[7.419906] (-) TimerEvent: {}
+[7.520166] (-) TimerEvent: {}
+[7.620391] (-) TimerEvent: {}
+[7.720616] (-) TimerEvent: {}
+[7.820852] (-) TimerEvent: {}
+[7.921083] (-) TimerEvent: {}
+[8.021318] (-) TimerEvent: {}
+[8.121550] (-) TimerEvent: {}
+[8.221792] (-) TimerEvent: {}
+[8.322023] (-) TimerEvent: {}
+[8.422305] (-) TimerEvent: {}
+[8.522537] (-) TimerEvent: {}
+[8.622778] (-) TimerEvent: {}
+[8.723005] (-) TimerEvent: {}
+[8.823237] (-) TimerEvent: {}
+[8.923523] (-) TimerEvent: {}
+[9.023803] (-) TimerEvent: {}
+[9.123993] (-) TimerEvent: {}
+[9.224233] (-) TimerEvent: {}
+[9.324469] (-) TimerEvent: {}
+[9.424828] (-) TimerEvent: {}
+[9.525066] (-) TimerEvent: {}
+[9.625310] (-) TimerEvent: {}
+[9.725552] (-) TimerEvent: {}
+[9.825808] (-) TimerEvent: {}
+[9.926069] (-) TimerEvent: {}
+[10.026299] (-) TimerEvent: {}
+[10.126523] (-) TimerEvent: {}
+[10.226760] (-) TimerEvent: {}
+[10.326995] (-) TimerEvent: {}
+[10.427218] (-) TimerEvent: {}
+[10.527450] (-) TimerEvent: {}
+[10.627683] (-) TimerEvent: {}
+[10.727927] (-) TimerEvent: {}
+[10.828192] (-) TimerEvent: {}
+[10.928476] (-) TimerEvent: {}
+[11.028687] (-) TimerEvent: {}
+[11.128961] (-) TimerEvent: {}
+[11.229254] (-) TimerEvent: {}
+[11.329506] (-) TimerEvent: {}
+[11.429765] (-) TimerEvent: {}
+[11.529993] (-) TimerEvent: {}
+[11.630327] (-) TimerEvent: {}
+[11.730604] (-) TimerEvent: {}
+[11.830892] (-) TimerEvent: {}
+[11.931126] (-) TimerEvent: {}
+[12.031351] (-) TimerEvent: {}
+[12.131633] (-) TimerEvent: {}
+[12.231882] (-) TimerEvent: {}
+[12.332141] (-) TimerEvent: {}
+[12.399361] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[12.399599] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[12.399708] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.399804] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.399878] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.399950] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.400053] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.400128] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.400291] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.400364] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.400459] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.400532] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:6\x1b[m\x1b[K,\n'}
+[12.400606] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[12.400704] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[12.400777] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:528:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.400853] (lio_sam) StderrLine: {'line': b'  528 |                                           RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Corner Point %d: (%.2f, %.2f, %.2f) -> (%.1f, %.1f) Color: (%d, %d, %d)"\x1b[m\x1b[K,\n'}
+[12.400927] (lio_sam) StderrLine: {'line': b'      |                                                                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.401005] (lio_sam) StderrLine: {'line': b'  529 |                                                       \x1b[32m\x1b[Ki\x1b[m\x1b[K, point.x, point.y, point.z, x, y,\n'}
+[12.401078] (lio_sam) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[K~\x1b[m\x1b[K                    \n'}
+[12.401148] (lio_sam) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[12.401219] (lio_sam) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[12.401290] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:528:90:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[12.401361] (lio_sam) StderrLine: {'line': b'  528 |                                           RCLCPP_INFO(this->get_logger(), "Corner Point \x1b[01;36m\x1b[K%d\x1b[m\x1b[K: (%.2f, %.2f, %.2f) -> (%.1f, %.1f) Color: (%d, %d, %d)",\n'}
+[12.401444] (lio_sam) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[12.401515] (lio_sam) StderrLine: {'line': b'      |                                                                                          \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[12.401585] (lio_sam) StderrLine: {'line': b'      |                                                                                          \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[12.401688] (lio_sam) StderrLine: {'line': b'      |                                                                                         \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[12.401779] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[12.401849] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[12.401919] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.402141] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.402214] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.402284] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.402354] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.402423] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.402492] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.402593] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.402791] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.402867] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:6\x1b[m\x1b[K,\n'}
+[12.402941] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[12.403015] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:545:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.403094] (lio_sam) StderrLine: {'line': b'  545 |                                           RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Corner Point %d not colored: %s"\x1b[m\x1b[K, \x1b[32m\x1b[Ki\x1b[m\x1b[K, reason.c_str());\n'}
+[12.403169] (lio_sam) StderrLine: {'line': b'      |                                                                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[12.403243] (lio_sam) StderrLine: {'line': b'      |                                                                                                              \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[12.403318] (lio_sam) StderrLine: {'line': b'      |                                                                                                              \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[12.403397] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:545:90:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[12.403472] (lio_sam) StderrLine: {'line': b'  545 |                                           RCLCPP_INFO(this->get_logger(), "Corner Point \x1b[01;36m\x1b[K%d\x1b[m\x1b[K not colored: %s", i, reason.c_str());\n'}
+[12.403546] (lio_sam) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[12.403623] (lio_sam) StderrLine: {'line': b'      |                                                                                          \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[12.403710] (lio_sam) StderrLine: {'line': b'      |                                                                                          \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[12.403783] (lio_sam) StderrLine: {'line': b'      |                                                                                         \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[12.403856] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[12.403929] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[12.404003] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.404076] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.404149] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.404221] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.404299] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.404373] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.404446] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.404519] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.404592] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.404674] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:6\x1b[m\x1b[K,\n'}
+[12.404750] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[12.404823] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:630:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.404901] (lio_sam) StderrLine: {'line': b'  630 |                                           RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Surface Point %d: (%.2f, %.2f, %.2f) -> (%.1f, %.1f) Color: (%d, %d, %d)"\x1b[m\x1b[K,\n'}
+[12.404981] (lio_sam) StderrLine: {'line': b'      |                                                                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.405061] (lio_sam) StderrLine: {'line': b'  631 |                                                       \x1b[32m\x1b[Ki\x1b[m\x1b[K, point.x, point.y, point.z, x, y,\n'}
+[12.405135] (lio_sam) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[K~\x1b[m\x1b[K                    \n'}
+[12.405209] (lio_sam) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[12.405282] (lio_sam) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[12.405355] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:630:91:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[12.405429] (lio_sam) StderrLine: {'line': b'  630 |                                           RCLCPP_INFO(this->get_logger(), "Surface Point \x1b[01;36m\x1b[K%d\x1b[m\x1b[K: (%.2f, %.2f, %.2f) -> (%.1f, %.1f) Color: (%d, %d, %d)",\n'}
+[12.405502] (lio_sam) StderrLine: {'line': b'      |                                                                                          \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[12.405576] (lio_sam) StderrLine: {'line': b'      |                                                                                           \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[12.405656] (lio_sam) StderrLine: {'line': b'      |                                                                                           \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[12.405735] (lio_sam) StderrLine: {'line': b'      |                                                                                          \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[12.405809] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[12.405882] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[12.405956] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.406035] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.406109] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.406182] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.406254] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.406328] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.406401] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.406475] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.406547] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.406620] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:6\x1b[m\x1b[K,\n'}
+[12.406701] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[12.406783] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:647:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.406868] (lio_sam) StderrLine: {'line': b'  647 |                                           RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Surface Point %d not colored: %s"\x1b[m\x1b[K, \x1b[32m\x1b[Ki\x1b[m\x1b[K, reason.c_str());\n'}
+[12.406943] (lio_sam) StderrLine: {'line': b'      |                                                                           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[12.407017] (lio_sam) StderrLine: {'line': b'      |                                                                                                               \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[12.407090] (lio_sam) StderrLine: {'line': b'      |                                                                                                               \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[12.407164] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:647:91:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[12.407238] (lio_sam) StderrLine: {'line': b'  647 |                                           RCLCPP_INFO(this->get_logger(), "Surface Point \x1b[01;36m\x1b[K%d\x1b[m\x1b[K not colored: %s", i, reason.c_str());\n'}
+[12.407311] (lio_sam) StderrLine: {'line': b'      |                                                                                          \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[12.407384] (lio_sam) StderrLine: {'line': b'      |                                                                                           \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[12.407458] (lio_sam) StderrLine: {'line': b'      |                                                                                           \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[12.407530] (lio_sam) StderrLine: {'line': b'      |                                                                                          \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[12.432232] (-) TimerEvent: {}
+[12.532494] (-) TimerEvent: {}
+[12.632761] (-) TimerEvent: {}
+[12.733019] (-) TimerEvent: {}
+[12.833247] (-) TimerEvent: {}
+[12.933475] (-) TimerEvent: {}
+[13.033671] (-) TimerEvent: {}
+[13.133903] (-) TimerEvent: {}
+[13.234167] (-) TimerEvent: {}
+[13.334410] (-) TimerEvent: {}
+[13.434677] (-) TimerEvent: {}
+[13.534971] (-) TimerEvent: {}
+[13.635209] (-) TimerEvent: {}
+[13.735462] (-) TimerEvent: {}
+[13.835670] (-) TimerEvent: {}
+[13.935951] (-) TimerEvent: {}
+[14.036210] (-) TimerEvent: {}
+[14.136477] (-) TimerEvent: {}
+[14.236672] (-) TimerEvent: {}
+[14.336912] (-) TimerEvent: {}
+[14.437144] (-) TimerEvent: {}
+[14.537377] (-) TimerEvent: {}
+[14.637640] (-) TimerEvent: {}
+[14.737911] (-) TimerEvent: {}
+[14.838190] (-) TimerEvent: {}
+[14.938452] (-) TimerEvent: {}
+[15.038687] (-) TimerEvent: {}
+[15.138972] (-) TimerEvent: {}
+[15.239237] (-) TimerEvent: {}
+[15.339677] (-) TimerEvent: {}
+[15.439943] (-) TimerEvent: {}
+[15.540189] (-) TimerEvent: {}
+[15.640502] (-) TimerEvent: {}
+[15.740805] (-) TimerEvent: {}
+[15.841086] (-) TimerEvent: {}
+[15.941328] (-) TimerEvent: {}
+[16.041559] (-) TimerEvent: {}
+[16.141801] (-) TimerEvent: {}
+[16.242066] (-) TimerEvent: {}
+[16.342249] (-) TimerEvent: {}
+[16.442479] (-) TimerEvent: {}
+[16.542738] (-) TimerEvent: {}
+[16.642986] (-) TimerEvent: {}
+[16.743210] (-) TimerEvent: {}
+[16.755635] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:164\x1b[m\x1b[K,\n'}
+[16.755784] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/memory.h:48\x1b[m\x1b[K,\n'}
+[16.755844] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41\x1b[m\x1b[K,\n'}
+[16.755894] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43\x1b[m\x1b[K,\n'}
+[16.755949] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21\x1b[m\x1b[K,\n'}
+[16.756013] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[16.756069] (lio_sam) StderrLine: {'line': b'/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<float, 3, 3>; Src = Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>; Func = Eigen::internal::assign_op<float, double>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.756125] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:797:41:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KDerived& Eigen::PlainObjectBase<Derived>::_set_noalias(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>; Derived = Eigen::Matrix<float, 3, 3>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.756179] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:594:19:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KEigen::PlainObjectBase<Derived>::PlainObjectBase(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>; Derived = Eigen::Matrix<float, 3, 3>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.756227] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:423:29:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = Eigen::Block<Eigen::Matrix<double, 4, 4>, 3, 3, false>; _Scalar = float; int _Rows = 3; int _Cols = 3; int _Options = 0; int _MaxRows = 3; int _MaxCols = 3]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.756286] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:771:52:\x1b[m\x1b[K   required from here\n'}
+[16.756351] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:888:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: YOU_MIXED_DIFFERENT_NUMERIC_TYPES__YOU_NEED_TO_USE_THE_CAST_METHOD_OF_MATRIXBASE_TO_CAST_NUMERIC_TYPES_EXPLICITLY\n'}
+[16.756408] (lio_sam) StderrLine: {'line': b'  888 |   \x1b[01;31m\x1b[KEIGEN_CHECK_BINARY_COMPATIBILIY\x1b[m\x1b[K(Func,typename ActualDstTypeCleaned::Scalar,typename Src::Scalar);\n'}
+[16.756454] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.756499] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:888:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<float, double, Eigen::internal::assign_op<float, double> > >::value\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[16.843301] (-) TimerEvent: {}
+[16.943566] (-) TimerEvent: {}
+[17.043881] (-) TimerEvent: {}
+[17.144132] (-) TimerEvent: {}
+[17.244398] (-) TimerEvent: {}
+[17.344649] (-) TimerEvent: {}
+[17.444885] (-) TimerEvent: {}
+[17.545166] (-) TimerEvent: {}
+[17.645428] (-) TimerEvent: {}
+[17.745673] (-) TimerEvent: {}
+[17.845911] (-) TimerEvent: {}
+[17.946138] (-) TimerEvent: {}
+[18.046400] (-) TimerEvent: {}
+[18.146674] (-) TimerEvent: {}
+[18.246928] (-) TimerEvent: {}
+[18.347187] (-) TimerEvent: {}
+[18.447387] (-) TimerEvent: {}
+[18.547637] (-) TimerEvent: {}
+[18.647891] (-) TimerEvent: {}
+[18.748135] (-) TimerEvent: {}
+[18.848420] (-) TimerEvent: {}
+[18.948672] (-) TimerEvent: {}
+[19.048942] (-) TimerEvent: {}
+[19.149172] (-) TimerEvent: {}
+[19.249397] (-) TimerEvent: {}
+[19.349639] (-) TimerEvent: {}
+[19.449972] (-) TimerEvent: {}
+[19.550323] (-) TimerEvent: {}
+[19.650593] (-) TimerEvent: {}
+[19.750851] (-) TimerEvent: {}
+[19.851118] (-) TimerEvent: {}
+[19.951344] (-) TimerEvent: {}
+[20.051589] (-) TimerEvent: {}
+[20.151848] (-) TimerEvent: {}
+[20.252128] (-) TimerEvent: {}
+[20.352377] (-) TimerEvent: {}
+[20.452604] (-) TimerEvent: {}
+[20.552841] (-) TimerEvent: {}
+[20.653116] (-) TimerEvent: {}
+[20.753384] (-) TimerEvent: {}
+[20.853641] (-) TimerEvent: {}
+[20.953893] (-) TimerEvent: {}
+[21.054120] (-) TimerEvent: {}
+[21.154343] (-) TimerEvent: {}
+[21.254574] (-) TimerEvent: {}
+[21.354912] (-) TimerEvent: {}
+[21.455175] (-) TimerEvent: {}
+[21.555426] (-) TimerEvent: {}
+[21.655683] (-) TimerEvent: {}
+[21.755958] (-) TimerEvent: {}
+[21.856186] (-) TimerEvent: {}
+[21.956418] (-) TimerEvent: {}
+[22.056653] (-) TimerEvent: {}
+[22.156897] (-) TimerEvent: {}
+[22.257193] (-) TimerEvent: {}
+[22.357469] (-) TimerEvent: {}
+[22.457731] (-) TimerEvent: {}
+[22.558005] (-) TimerEvent: {}
+[22.658272] (-) TimerEvent: {}
+[22.758549] (-) TimerEvent: {}
+[22.858819] (-) TimerEvent: {}
+[22.959095] (-) TimerEvent: {}
+[23.059369] (-) TimerEvent: {}
+[23.159592] (-) TimerEvent: {}
+[23.259885] (-) TimerEvent: {}
+[23.360165] (-) TimerEvent: {}
+[23.460461] (-) TimerEvent: {}
+[23.560821] (-) TimerEvent: {}
+[23.661050] (-) TimerEvent: {}
+[23.761291] (-) TimerEvent: {}
+[23.861637] (-) TimerEvent: {}
+[23.961898] (-) TimerEvent: {}
+[24.062163] (-) TimerEvent: {}
+[24.162432] (-) TimerEvent: {}
+[24.262673] (-) TimerEvent: {}
+[24.362940] (-) TimerEvent: {}
+[24.463181] (-) TimerEvent: {}
+[24.563416] (-) TimerEvent: {}
+[24.663664] (-) TimerEvent: {}
+[24.763896] (-) TimerEvent: {}
+[24.864138] (-) TimerEvent: {}
+[24.964377] (-) TimerEvent: {}
+[25.064641] (-) TimerEvent: {}
+[25.164877] (-) TimerEvent: {}
+[25.265118] (-) TimerEvent: {}
+[25.365386] (-) TimerEvent: {}
+[25.465625] (-) TimerEvent: {}
+[25.565894] (-) TimerEvent: {}
+[25.666147] (-) TimerEvent: {}
+[25.766393] (-) TimerEvent: {}
+[25.866644] (-) TimerEvent: {}
+[25.966884] (-) TimerEvent: {}
+[26.067185] (-) TimerEvent: {}
+[26.167418] (-) TimerEvent: {}
+[26.267672] (-) TimerEvent: {}
+[26.367943] (-) TimerEvent: {}
+[26.468231] (-) TimerEvent: {}
+[26.568487] (-) TimerEvent: {}
+[26.668775] (-) TimerEvent: {}
+[26.769020] (-) TimerEvent: {}
+[26.869277] (-) TimerEvent: {}
+[26.969508] (-) TimerEvent: {}
+[27.069784] (-) TimerEvent: {}
+[27.170033] (-) TimerEvent: {}
+[27.270327] (-) TimerEvent: {}
+[27.370575] (-) TimerEvent: {}
+[27.470828] (-) TimerEvent: {}
+[27.571208] (-) TimerEvent: {}
+[27.671487] (-) TimerEvent: {}
+[27.771738] (-) TimerEvent: {}
+[27.871972] (-) TimerEvent: {}
+[27.972219] (-) TimerEvent: {}
+[28.072477] (-) TimerEvent: {}
+[28.172960] (-) TimerEvent: {}
+[28.273205] (-) TimerEvent: {}
+[28.373481] (-) TimerEvent: {}
+[28.473692] (-) TimerEvent: {}
+[28.573922] (-) TimerEvent: {}
+[28.674159] (-) TimerEvent: {}
+[28.774389] (-) TimerEvent: {}
+[28.874648] (-) TimerEvent: {}
+[28.974903] (-) TimerEvent: {}
+[29.075134] (-) TimerEvent: {}
+[29.175376] (-) TimerEvent: {}
+[29.275680] (-) TimerEvent: {}
+[29.375971] (-) TimerEvent: {}
+[29.476217] (-) TimerEvent: {}
+[29.576446] (-) TimerEvent: {}
+[29.676684] (-) TimerEvent: {}
+[29.776921] (-) TimerEvent: {}
+[29.877198] (-) TimerEvent: {}
+[29.977476] (-) TimerEvent: {}
+[30.077730] (-) TimerEvent: {}
+[30.177962] (-) TimerEvent: {}
+[30.278197] (-) TimerEvent: {}
+[30.378467] (-) TimerEvent: {}
+[30.478733] (-) TimerEvent: {}
+[30.578990] (-) TimerEvent: {}
+[30.679251] (-) TimerEvent: {}
+[30.779520] (-) TimerEvent: {}
+[30.879794] (-) TimerEvent: {}
+[30.980027] (-) TimerEvent: {}
+[31.080279] (-) TimerEvent: {}
+[31.180520] (-) TimerEvent: {}
+[31.280756] (-) TimerEvent: {}
+[31.381101] (-) TimerEvent: {}
+[31.481327] (-) TimerEvent: {}
+[31.581568] (-) TimerEvent: {}
+[31.681822] (-) TimerEvent: {}
+[31.782103] (-) TimerEvent: {}
+[31.882328] (-) TimerEvent: {}
+[31.982579] (-) TimerEvent: {}
+[32.082862] (-) TimerEvent: {}
+[32.183095] (-) TimerEvent: {}
+[32.283348] (-) TimerEvent: {}
+[32.383613] (-) TimerEvent: {}
+[32.483896] (-) TimerEvent: {}
+[32.584183] (-) TimerEvent: {}
+[32.684419] (-) TimerEvent: {}
+[32.784664] (-) TimerEvent: {}
+[32.884927] (-) TimerEvent: {}
+[32.985192] (-) TimerEvent: {}
+[33.085447] (-) TimerEvent: {}
+[33.185707] (-) TimerEvent: {}
+[33.285949] (-) TimerEvent: {}
+[33.386205] (-) TimerEvent: {}
+[33.486524] (-) TimerEvent: {}
+[33.586889] (-) TimerEvent: {}
+[33.687149] (-) TimerEvent: {}
+[33.787382] (-) TimerEvent: {}
+[33.887624] (-) TimerEvent: {}
+[33.987913] (-) TimerEvent: {}
+[34.088158] (-) TimerEvent: {}
+[34.188438] (-) TimerEvent: {}
+[34.288672] (-) TimerEvent: {}
+[34.388919] (-) TimerEvent: {}
+[34.489286] (-) TimerEvent: {}
+[34.589598] (-) TimerEvent: {}
+[34.689847] (-) TimerEvent: {}
+[34.790104] (-) TimerEvent: {}
+[34.890336] (-) TimerEvent: {}
+[34.990585] (-) TimerEvent: {}
+[35.090834] (-) TimerEvent: {}
+[35.191151] (-) TimerEvent: {}
+[35.291371] (-) TimerEvent: {}
+[35.391675] (-) TimerEvent: {}
+[35.491898] (-) TimerEvent: {}
+[35.592152] (-) TimerEvent: {}
+[35.692428] (-) TimerEvent: {}
+[35.733529] (lio_sam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lio_sam_mapOptimization.dir/build.make:76: CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o] Error 1\n'}
+[35.733803] (lio_sam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:684: CMakeFiles/lio_sam_mapOptimization.dir/all] Error 2\n'}
+[35.733972] (lio_sam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[35.735988] (lio_sam) CommandEnded: {'returncode': 2}
+[35.747571] (lio_sam) JobEnded: {'identifier': 'lio_sam', 'rc': 2}
+[35.758000] (-) EventReactorShutdown: {}

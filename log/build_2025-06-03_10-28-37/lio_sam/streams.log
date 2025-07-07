@@ -1,0 +1,224 @@
+[0.016s] Invoking command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam -- -j16 -l16
+[0.083s] [  2%] Built target lio_sam__cpp
+[0.088s] [  6%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_generator_c.dir/rosidl_generator_c/lio_sam/srv/detail/save_map__functions.c.o[0m
+[0.088s] [  6%] Built target ament_cmake_python_symlink_lio_sam
+[0.089s] [  6%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_generator_c.dir/rosidl_generator_c/lio_sam/msg/detail/cloud_info__functions.c.o[0m
+[0.104s] [  8%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lio_sam/msg/cloud_info__type_support.cpp.o[0m
+[0.104s] [ 12%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lio_sam/msg/detail/cloud_info__type_support.cpp.o[0m
+[0.104s] [ 12%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lio_sam/srv/detail/save_map__type_support.cpp.o[0m
+[0.104s] [ 14%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lio_sam/srv/save_map__type_support.cpp.o[0m
+[0.106s] [ 17%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lio_sam/msg/detail/dds_fastrtps/cloud_info__type_support.cpp.o[0m
+[0.106s] [ 19%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lio_sam/srv/detail/dds_fastrtps/save_map__type_support.cpp.o[0m
+[0.312s] [ 21%] [32m[1mLinking C shared library liblio_sam__rosidl_generator_c.so[0m
+[0.353s] [ 23%] Built target lio_sam__rosidl_generator_c
+[0.399s] [ 25%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lio_sam/srv/detail/save_map__type_support.c.o[0m
+[0.405s] [ 29%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_c.dir/rosidl_typesupport_c/lio_sam/srv/save_map__type_support.cpp.o[0m
+[0.406s] [ 29%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lio_sam/msg/detail/cloud_info__type_support_c.cpp.o[0m
+[0.412s] [ 34%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_c.dir/rosidl_typesupport_c/lio_sam/msg/cloud_info__type_support.cpp.o[0m
+[0.414s] [ 34%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lio_sam/srv/detail/save_map__type_support_c.cpp.o[0m
+[0.415s] [ 36%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lio_sam/msg/detail/cloud_info__type_support.c.o[0m
+[0.458s] running egg_info
+[0.461s] writing lio_sam.egg-info/PKG-INFO
+[0.462s] writing dependency_links to lio_sam.egg-info/dependency_links.txt
+[0.462s] writing top-level names to lio_sam.egg-info/top_level.txt
+[0.469s] reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.470s] writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.484s] [ 38%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_c.so[0m
+[0.493s] [ 40%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_cpp.so[0m
+[0.503s] [ 40%] Built target ament_cmake_python_build_lio_sam_egg
+[0.514s] [ 42%] [32m[1mLinking C shared library liblio_sam__rosidl_typesupport_introspection_c.so[0m
+[0.523s] [ 44%] Built target lio_sam__rosidl_typesupport_c
+[0.528s] [ 46%] Built target lio_sam__rosidl_typesupport_cpp
+[0.546s] [ 48%] Built target lio_sam__rosidl_typesupport_introspection_c
+[0.869s] [ 51%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_introspection_cpp.so[0m
+[0.932s] [ 53%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[0.935s] [ 55%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_fastrtps_cpp.so[0m
+[0.972s] [ 57%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_fastrtps_c.so[0m
+[1.013s] [ 59%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[1.067s] [ 61%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[1.083s] [ 61%] Built target lio_sam
+[1.100s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_imageProjection[0m
+[1.101s] [ 63%] Built target lio_sam__py
+[1.119s] [ 65%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_generator_py.dir/rosidl_generator_py/lio_sam/srv/_save_map_s.c.o[0m
+[1.119s] [ 68%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_generator_py.dir/rosidl_generator_py/lio_sam/msg/_cloud_info_s.c.o[0m
+[1.133s] [ 70%] [32mBuilding CXX object CMakeFiles/lio_sam_imageProjection.dir/src/imageProjection.cpp.o[0m
+[1.133s] [ 72%] [32mBuilding CXX object CMakeFiles/lio_sam_featureExtraction.dir/src/featureExtraction.cpp.o[0m
+[1.136s] [ 74%] [32mBuilding CXX object CMakeFiles/lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o[0m
+[1.138s] [ 76%] [32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o[0m
+[1.510s] [ 78%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/liblio_sam__rosidl_generator_py.so[0m
+[1.549s] [ 78%] Built target lio_sam__rosidl_generator_py
+[1.577s] [ 80%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lio_sam/_lio_sam_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.577s] [ 82%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lio_sam/_lio_sam_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.589s] [ 85%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lio_sam/_lio_sam_s.ep.rosidl_typesupport_c.c.o[0m
+[1.731s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.756s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.786s] [ 89%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[1.787s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.807s] [ 91%] Built target lio_sam__rosidl_typesupport_c__pyext
+[1.832s] [ 91%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[28.776s] [ 93%] [32m[1mLinking CXX executable lio_sam_featureExtraction[0m
+[29.305s] [ 93%] Built target lio_sam_featureExtraction
+[34.818s] [ 95%] [32m[1mLinking CXX executable lio_sam_imageProjection[0m
+[35.322s] [ 95%] Built target lio_sam_imageProjection
+[41.487s] [ 97%] [32m[1mLinking CXX executable lio_sam_imuPreintegration[0m
+[42.009s] [ 97%] Built target lio_sam_imuPreintegration
+[70.579s] [100%] [32m[1mLinking CXX executable lio_sam_mapOptimization[0m
+[71.051s] /usr/bin/ld: warning: libtbb.so.2, needed by /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d, may conflict with libtbb.so.12
+[71.527s] [100%] Built target lio_sam_mapOptimization
+[71.537s] Invoked command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam -- -j16 -l16
+[71.545s] Invoking command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam
+[71.550s] -- Install configuration: "Release"
+[71.551s] -- Execute custom install script
+[71.551s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/ament_index/resource_index/rosidl_interfaces/lio_sam
+[71.552s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/cloud_info.h
+[71.552s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__functions.h
+[71.552s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__struct.h
+[71.552s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__type_support.h
+[71.552s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_generator_c__visibility_control.h
+[71.553s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__functions.h
+[71.553s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__struct.h
+[71.553s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__type_support.h
+[71.553s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/save_map.h
+[71.553s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/library_path.sh
+[71.553s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/library_path.dsv
+[71.553s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_fastrtps_c.h
+[71.553s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[71.554s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h
+[71.554s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_introspection_c.h
+[71.554s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[71.554s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_introspection_c.h
+[71.554s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/cloud_info.hpp
+[71.554s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__builder.hpp
+[71.554s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__struct.hpp
+[71.554s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__traits.hpp
+[71.555s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__type_support.hpp
+[71.555s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_generator_cpp__visibility_control.hpp
+[71.555s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__builder.hpp
+[71.555s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__struct.hpp
+[71.555s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__traits.hpp
+[71.555s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__type_support.hpp
+[71.555s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/save_map.hpp
+[71.555s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_fastrtps_cpp.hpp
+[71.555s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[71.555s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp
+[71.556s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_introspection_cpp.hpp
+[71.556s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp
+[71.556s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/pythonpath.sh
+[71.556s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/pythonpath.dsv
+[71.556s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/PKG-INFO
+[71.556s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/SOURCES.txt
+[71.556s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/dependency_links.txt
+[71.557s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/top_level.txt
+[71.557s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/__init__.py
+[71.557s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_c.c
+[71.557s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_fastrtps_c.c
+[71.557s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_introspection_c.c
+[71.557s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/liblio_sam__rosidl_generator_py.so
+[71.557s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[71.557s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[71.557s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[71.558s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg/__init__.py
+[71.558s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg/_cloud_info.py
+[71.558s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg/_cloud_info_s.c
+[71.558s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv/__init__.py
+[71.558s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv/_save_map.py
+[71.558s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv/_save_map_s.c
+[71.558s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[71.559s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[71.559s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[71.559s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/msg/CloudInfo.idl
+[71.559s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/srv/SaveMap.idl
+[71.559s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/msg/CloudInfo.msg
+[71.559s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/srv/SaveMap.srv
+[71.559s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/srv/SaveMap_Request.msg
+[71.560s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/srv/SaveMap_Response.msg
+[71.560s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//launch/run.launch.py
+[71.560s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/demo.gif
+[71.560s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/demo.png
+[71.560s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/device-boat.png
+[71.560s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/device-hand-2.png
+[71.560s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/device-hand.png
+[71.560s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/device-jackal.png
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/gps-demo.gif
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/imu-debug.gif
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/imu-transform.png
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/kitti-demo.gif
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/kitti-map.png
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/kitti2bag/README.md
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/kitti2bag/kitti2bag.py
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/loop-closure-2.gif
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/loop-closure.gif
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/ouster-demo.gif
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/ouster-device.jpg
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/paper.pdf
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/system1.png
+[71.561s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/params.yaml
+[71.562s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/robot.urdf.xacro
+[71.562s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/rviz2.rviz
+[71.562s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/lio_sam/lio_sam_imageProjection
+[71.562s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/lio_sam/lio_sam_imuPreintegration
+[71.562s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/lio_sam/lio_sam_featureExtraction
+[71.562s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/lio_sam/lio_sam_mapOptimization
+[71.562s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/color_cloud/Camera.hpp
+[71.563s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/color_cloud/PointCloudType.hpp
+[71.563s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/color_cloud/TransformeProvider.hpp
+[71.563s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/utility.hpp
+[71.563s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/ament_index/resource_index/package_run_dependencies/lio_sam
+[71.563s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/ament_index/resource_index/parent_prefix_path/lio_sam
+[71.563s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/ament_prefix_path.sh
+[71.563s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/ament_prefix_path.dsv
+[71.563s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/path.sh
+[71.563s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/path.dsv
+[71.563s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/local_setup.bash
+[71.564s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/local_setup.sh
+[71.564s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/local_setup.zsh
+[71.564s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/local_setup.dsv
+[71.564s] -- Symlinking: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/package.dsv
+[71.570s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/ament_index/resource_index/packages/lio_sam
+[71.570s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/rosidl_cmake-extras.cmake
+[71.571s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_dependencies-extras.cmake
+[71.571s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_include_directories-extras.cmake
+[71.571s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_libraries-extras.cmake
+[71.571s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_targets-extras.cmake
+[71.571s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[71.571s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[71.571s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_samConfig.cmake
+[71.571s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_samConfig-version.cmake
+[71.571s] -- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/package.xml
+[71.572s] -- Installing: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_generator_c.so
+[71.572s] -- Set runtime path of "/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_generator_c.so" to ""
+[71.573s] -- Installing: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_c.so
+[71.573s] -- Set runtime path of "/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_c.so" to ""
+[71.573s] -- Installing: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_c.so
+[71.574s] -- Set runtime path of "/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_c.so" to ""
+[71.574s] -- Installing: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_c.so
+[71.574s] -- Set runtime path of "/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_c.so" to ""
+[71.574s] -- Installing: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_cpp.so
+[71.574s] -- Set runtime path of "/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_cpp.so" to ""
+[71.575s] -- Installing: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_cpp.so
+[71.575s] -- Set runtime path of "/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_cpp.so" to ""
+[71.575s] -- Installing: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_cpp.so
+[71.575s] -- Set runtime path of "/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_cpp.so" to ""
+[71.601s] Listing '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam'...
+[71.601s] Listing '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg'...
+[71.601s] Listing '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv'...
+[71.605s] -- Installing: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_generator_py.so
+[71.605s] -- Set runtime path of "/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_generator_py.so" to ""
+[71.605s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cExport.cmake
+[71.605s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cExport-release.cmake
+[71.606s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cExport.cmake
+[71.606s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cExport-release.cmake
+[71.606s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cExport.cmake
+[71.606s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cExport-release.cmake
+[71.606s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cExport.cmake
+[71.606s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cExport-release.cmake
+[71.606s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cppExport.cmake
+[71.607s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cppExport.cmake
+[71.607s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[71.607s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cppExport.cmake
+[71.607s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cppExport-release.cmake
+[71.607s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cppExport.cmake
+[71.607s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cppExport-release.cmake
+[71.608s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_pyExport.cmake
+[71.608s] -- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_pyExport-release.cmake
+[71.609s] Invoked command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam

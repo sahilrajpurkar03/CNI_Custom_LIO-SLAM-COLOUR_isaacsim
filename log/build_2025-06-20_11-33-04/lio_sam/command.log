@@ -1,0 +1,4 @@
+Invoking command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam -- -j16 -l16
+Invoked command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam -- -j16 -l16
+Invoking command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam
+Invoked command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam

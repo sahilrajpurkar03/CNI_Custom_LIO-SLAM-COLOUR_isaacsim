@@ -1,0 +1,487 @@
+[0.000000] (-) TimerEvent: {}
+[0.000231] (lio_sam) JobQueued: {'identifier': 'lio_sam', 'dependencies': OrderedDict()}
+[0.000423] (lio_sam) JobStarted: {'identifier': 'lio_sam'}
+[0.007907] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'cmake'}
+[0.008873] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'build'}
+[0.009655] (lio_sam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam', '--', '-j16', '-l16'], 'cwd': '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4049'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install:/home/rajpurkar/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4026,unix/cni-mothership:/tmp/.ICE-unix/4026'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/709cbba3_5f00_44ba_b5f6_bf771ce5dd91'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.188'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam:/home/rajpurkar/ros2_ws/install/robot_slam:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_tool:/home/rajpurkar/ros2_ws/install/isaac-sim-mobile-robot-rtab-map:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam:/home/rajpurkar/ros2_ws/install/robot_slam:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_tool:/home/rajpurkar/ros2_ws/install/isaac-sim-mobile-robot-rtab-map:/opt/ros/humble')]), 'shell': False}
+[0.075772] (lio_sam) StdoutLine: {'line': b'[  2%] Built target lio_sam__cpp\n'}
+[0.077096] (lio_sam) StdoutLine: {'line': b'[ 10%] Built target lio_sam__rosidl_generator_c\n'}
+[0.082733] (lio_sam) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_symlink_lio_sam\n'}
+[0.095189] (lio_sam) StdoutLine: {'line': b'[ 48%] Built target lio_sam__rosidl_typesupport_introspection_c\n'}
+[0.095434] (lio_sam) StdoutLine: {'line': b'[ 48%] Built target lio_sam__rosidl_typesupport_introspection_cpp\n'}
+[0.095562] (lio_sam) StdoutLine: {'line': b'[ 48%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp\n'}
+[0.095678] (lio_sam) StdoutLine: {'line': b'[ 53%] Built target lio_sam__rosidl_typesupport_cpp\n'}
+[0.095797] (lio_sam) StdoutLine: {'line': b'[ 55%] Built target lio_sam__rosidl_typesupport_c\n'}
+[0.095975] (lio_sam) StdoutLine: {'line': b'[ 61%] Built target lio_sam__rosidl_typesupport_fastrtps_c\n'}
+[0.099792] (-) TimerEvent: {}
+[0.112086] (lio_sam) StdoutLine: {'line': b'[ 61%] Built target lio_sam\n'}
+[0.129538] (lio_sam) StdoutLine: {'line': b'[ 63%] Built target lio_sam__py\n'}
+[0.131041] (lio_sam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lio_sam_imageProjection\x1b[0m\n'}
+[0.148533] (lio_sam) StdoutLine: {'line': b'[ 70%] Built target lio_sam__rosidl_generator_py\n'}
+[0.151964] (lio_sam) StdoutLine: {'line': b'[ 74%] Built target lio_sam_featureExtraction\n'}
+[0.152219] (lio_sam) StdoutLine: {'line': b'[ 78%] Built target lio_sam_imuPreintegration\n'}
+[0.161201] (lio_sam) StdoutLine: {'line': b'[ 82%] Built target lio_sam_mapOptimization\n'}
+[0.166440] (lio_sam) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/lio_sam_imageProjection.dir/src/imageProjection.cpp.o\x1b[0m\n'}
+[0.168257] (lio_sam) StdoutLine: {'line': b'[ 89%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext\n'}
+[0.168462] (lio_sam) StdoutLine: {'line': b'[ 97%] Built target lio_sam__rosidl_typesupport_c__pyext\n'}
+[0.168576] (lio_sam) StdoutLine: {'line': b'[ 97%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.199883] (-) TimerEvent: {}
+[0.300147] (-) TimerEvent: {}
+[0.392834] (lio_sam) StdoutLine: {'line': b'running egg_info\n'}
+[0.393042] (lio_sam) StdoutLine: {'line': b'writing lio_sam.egg-info/PKG-INFO\n'}
+[0.393145] (lio_sam) StdoutLine: {'line': b'writing dependency_links to lio_sam.egg-info/dependency_links.txt\n'}
+[0.393241] (lio_sam) StdoutLine: {'line': b'writing top-level names to lio_sam.egg-info/top_level.txt\n'}
+[0.393332] (lio_sam) StdoutLine: {'line': b"reading manifest file 'lio_sam.egg-info/SOURCES.txt'\n"}
+[0.393498] (lio_sam) StdoutLine: {'line': b"writing manifest file 'lio_sam.egg-info/SOURCES.txt'\n"}
+[0.400219] (-) TimerEvent: {}
+[0.418037] (lio_sam) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_lio_sam_egg\n'}
+[0.500322] (-) TimerEvent: {}
+[0.600588] (-) TimerEvent: {}
+[0.700846] (-) TimerEvent: {}
+[0.801128] (-) TimerEvent: {}
+[0.901434] (-) TimerEvent: {}
+[1.001706] (-) TimerEvent: {}
+[1.101984] (-) TimerEvent: {}
+[1.202245] (-) TimerEvent: {}
+[1.302511] (-) TimerEvent: {}
+[1.402789] (-) TimerEvent: {}
+[1.503055] (-) TimerEvent: {}
+[1.603289] (-) TimerEvent: {}
+[1.703562] (-) TimerEvent: {}
+[1.803800] (-) TimerEvent: {}
+[1.904026] (-) TimerEvent: {}
+[2.004315] (-) TimerEvent: {}
+[2.104546] (-) TimerEvent: {}
+[2.204812] (-) TimerEvent: {}
+[2.305168] (-) TimerEvent: {}
+[2.405419] (-) TimerEvent: {}
+[2.505700] (-) TimerEvent: {}
+[2.605968] (-) TimerEvent: {}
+[2.706207] (-) TimerEvent: {}
+[2.806509] (-) TimerEvent: {}
+[2.906788] (-) TimerEvent: {}
+[3.007031] (-) TimerEvent: {}
+[3.107304] (-) TimerEvent: {}
+[3.207622] (-) TimerEvent: {}
+[3.307958] (-) TimerEvent: {}
+[3.408242] (-) TimerEvent: {}
+[3.508542] (-) TimerEvent: {}
+[3.608920] (-) TimerEvent: {}
+[3.709225] (-) TimerEvent: {}
+[3.809502] (-) TimerEvent: {}
+[3.909759] (-) TimerEvent: {}
+[4.009998] (-) TimerEvent: {}
+[4.110229] (-) TimerEvent: {}
+[4.210464] (-) TimerEvent: {}
+[4.310711] (-) TimerEvent: {}
+[4.411213] (-) TimerEvent: {}
+[4.511463] (-) TimerEvent: {}
+[4.611698] (-) TimerEvent: {}
+[4.712000] (-) TimerEvent: {}
+[4.812253] (-) TimerEvent: {}
+[4.912540] (-) TimerEvent: {}
+[5.012808] (-) TimerEvent: {}
+[5.113098] (-) TimerEvent: {}
+[5.213398] (-) TimerEvent: {}
+[5.313639] (-) TimerEvent: {}
+[5.413896] (-) TimerEvent: {}
+[5.514324] (-) TimerEvent: {}
+[5.614618] (-) TimerEvent: {}
+[5.714866] (-) TimerEvent: {}
+[5.815104] (-) TimerEvent: {}
+[5.915409] (-) TimerEvent: {}
+[6.015636] (-) TimerEvent: {}
+[6.115916] (-) TimerEvent: {}
+[6.216181] (-) TimerEvent: {}
+[6.316416] (-) TimerEvent: {}
+[6.416679] (-) TimerEvent: {}
+[6.517372] (-) TimerEvent: {}
+[6.617652] (-) TimerEvent: {}
+[6.717898] (-) TimerEvent: {}
+[6.818153] (-) TimerEvent: {}
+[6.918424] (-) TimerEvent: {}
+[7.018735] (-) TimerEvent: {}
+[7.118985] (-) TimerEvent: {}
+[7.219245] (-) TimerEvent: {}
+[7.319526] (-) TimerEvent: {}
+[7.419811] (-) TimerEvent: {}
+[7.520061] (-) TimerEvent: {}
+[7.620333] (-) TimerEvent: {}
+[7.720597] (-) TimerEvent: {}
+[7.820917] (-) TimerEvent: {}
+[7.921166] (-) TimerEvent: {}
+[8.021421] (-) TimerEvent: {}
+[8.121676] (-) TimerEvent: {}
+[8.221947] (-) TimerEvent: {}
+[8.322157] (-) TimerEvent: {}
+[8.422479] (-) TimerEvent: {}
+[8.522738] (-) TimerEvent: {}
+[8.623012] (-) TimerEvent: {}
+[8.723323] (-) TimerEvent: {}
+[8.823628] (-) TimerEvent: {}
+[8.923889] (-) TimerEvent: {}
+[9.024168] (-) TimerEvent: {}
+[9.124424] (-) TimerEvent: {}
+[9.224696] (-) TimerEvent: {}
+[9.324945] (-) TimerEvent: {}
+[9.425194] (-) TimerEvent: {}
+[9.525432] (-) TimerEvent: {}
+[9.625685] (-) TimerEvent: {}
+[9.725934] (-) TimerEvent: {}
+[9.826219] (-) TimerEvent: {}
+[9.926461] (-) TimerEvent: {}
+[10.026714] (-) TimerEvent: {}
+[10.127060] (-) TimerEvent: {}
+[10.227298] (-) TimerEvent: {}
+[10.327548] (-) TimerEvent: {}
+[10.427796] (-) TimerEvent: {}
+[10.528043] (-) TimerEvent: {}
+[10.628332] (-) TimerEvent: {}
+[10.728639] (-) TimerEvent: {}
+[10.828939] (-) TimerEvent: {}
+[10.929234] (-) TimerEvent: {}
+[11.029473] (-) TimerEvent: {}
+[11.129722] (-) TimerEvent: {}
+[11.230186] (-) TimerEvent: {}
+[11.330449] (-) TimerEvent: {}
+[11.430696] (-) TimerEvent: {}
+[11.530938] (-) TimerEvent: {}
+[11.631204] (-) TimerEvent: {}
+[11.731583] (-) TimerEvent: {}
+[11.831839] (-) TimerEvent: {}
+[11.932085] (-) TimerEvent: {}
+[12.032823] (-) TimerEvent: {}
+[12.133060] (-) TimerEvent: {}
+[12.233297] (-) TimerEvent: {}
+[12.333588] (-) TimerEvent: {}
+[12.433833] (-) TimerEvent: {}
+[12.534074] (-) TimerEvent: {}
+[12.634366] (-) TimerEvent: {}
+[12.734639] (-) TimerEvent: {}
+[12.834931] (-) TimerEvent: {}
+[12.935222] (-) TimerEvent: {}
+[13.035498] (-) TimerEvent: {}
+[13.135790] (-) TimerEvent: {}
+[13.236075] (-) TimerEvent: {}
+[13.336387] (-) TimerEvent: {}
+[13.436730] (-) TimerEvent: {}
+[13.537069] (-) TimerEvent: {}
+[13.637438] (-) TimerEvent: {}
+[13.737714] (-) TimerEvent: {}
+[13.837969] (-) TimerEvent: {}
+[13.938194] (-) TimerEvent: {}
+[14.038439] (-) TimerEvent: {}
+[14.138642] (-) TimerEvent: {}
+[14.238892] (-) TimerEvent: {}
+[14.342570] (-) TimerEvent: {}
+[14.442879] (-) TimerEvent: {}
+[14.543179] (-) TimerEvent: {}
+[14.643438] (-) TimerEvent: {}
+[14.743865] (-) TimerEvent: {}
+[14.844144] (-) TimerEvent: {}
+[14.944490] (-) TimerEvent: {}
+[15.044757] (-) TimerEvent: {}
+[15.145007] (-) TimerEvent: {}
+[15.245284] (-) TimerEvent: {}
+[15.345558] (-) TimerEvent: {}
+[15.445831] (-) TimerEvent: {}
+[15.546101] (-) TimerEvent: {}
+[15.646329] (-) TimerEvent: {}
+[15.746578] (-) TimerEvent: {}
+[15.846868] (-) TimerEvent: {}
+[15.947143] (-) TimerEvent: {}
+[16.047405] (-) TimerEvent: {}
+[16.147925] (-) TimerEvent: {}
+[16.248174] (-) TimerEvent: {}
+[16.348426] (-) TimerEvent: {}
+[16.448652] (-) TimerEvent: {}
+[16.548918] (-) TimerEvent: {}
+[16.649218] (-) TimerEvent: {}
+[16.749492] (-) TimerEvent: {}
+[16.849709] (-) TimerEvent: {}
+[16.949996] (-) TimerEvent: {}
+[17.050278] (-) TimerEvent: {}
+[17.150525] (-) TimerEvent: {}
+[17.250781] (-) TimerEvent: {}
+[17.351453] (-) TimerEvent: {}
+[17.451849] (-) TimerEvent: {}
+[17.552085] (-) TimerEvent: {}
+[17.652312] (-) TimerEvent: {}
+[17.752575] (-) TimerEvent: {}
+[17.852816] (-) TimerEvent: {}
+[17.953064] (-) TimerEvent: {}
+[18.053381] (-) TimerEvent: {}
+[18.153690] (-) TimerEvent: {}
+[18.253958] (-) TimerEvent: {}
+[18.354203] (-) TimerEvent: {}
+[18.454478] (-) TimerEvent: {}
+[18.554681] (-) TimerEvent: {}
+[18.654908] (-) TimerEvent: {}
+[18.755142] (-) TimerEvent: {}
+[18.855426] (-) TimerEvent: {}
+[18.955662] (-) TimerEvent: {}
+[19.055903] (-) TimerEvent: {}
+[19.156170] (-) TimerEvent: {}
+[19.256389] (-) TimerEvent: {}
+[19.356614] (-) TimerEvent: {}
+[19.456854] (-) TimerEvent: {}
+[19.557101] (-) TimerEvent: {}
+[19.657338] (-) TimerEvent: {}
+[19.757568] (-) TimerEvent: {}
+[19.857867] (-) TimerEvent: {}
+[19.958097] (-) TimerEvent: {}
+[20.060727] (-) TimerEvent: {}
+[20.160986] (-) TimerEvent: {}
+[20.261237] (-) TimerEvent: {}
+[20.361498] (-) TimerEvent: {}
+[20.461732] (-) TimerEvent: {}
+[20.561967] (-) TimerEvent: {}
+[20.662184] (-) TimerEvent: {}
+[20.762544] (-) TimerEvent: {}
+[20.863059] (-) TimerEvent: {}
+[20.963317] (-) TimerEvent: {}
+[21.063596] (-) TimerEvent: {}
+[21.163845] (-) TimerEvent: {}
+[21.264138] (-) TimerEvent: {}
+[21.364443] (-) TimerEvent: {}
+[21.464684] (-) TimerEvent: {}
+[21.564953] (-) TimerEvent: {}
+[21.665260] (-) TimerEvent: {}
+[21.765485] (-) TimerEvent: {}
+[21.865721] (-) TimerEvent: {}
+[21.965983] (-) TimerEvent: {}
+[22.066215] (-) TimerEvent: {}
+[22.166453] (-) TimerEvent: {}
+[22.266723] (-) TimerEvent: {}
+[22.366978] (-) TimerEvent: {}
+[22.467310] (-) TimerEvent: {}
+[22.567511] (-) TimerEvent: {}
+[22.667769] (-) TimerEvent: {}
+[22.768055] (-) TimerEvent: {}
+[22.868350] (-) TimerEvent: {}
+[22.968664] (-) TimerEvent: {}
+[23.068888] (-) TimerEvent: {}
+[23.169118] (-) TimerEvent: {}
+[23.269317] (-) TimerEvent: {}
+[23.369558] (-) TimerEvent: {}
+[23.470092] (-) TimerEvent: {}
+[23.570322] (-) TimerEvent: {}
+[23.670807] (-) TimerEvent: {}
+[23.771075] (-) TimerEvent: {}
+[23.871350] (-) TimerEvent: {}
+[23.971596] (-) TimerEvent: {}
+[24.071870] (-) TimerEvent: {}
+[24.172097] (-) TimerEvent: {}
+[24.272337] (-) TimerEvent: {}
+[24.372581] (-) TimerEvent: {}
+[24.472817] (-) TimerEvent: {}
+[24.573061] (-) TimerEvent: {}
+[24.673344] (-) TimerEvent: {}
+[24.773641] (-) TimerEvent: {}
+[24.873931] (-) TimerEvent: {}
+[24.974205] (-) TimerEvent: {}
+[25.074463] (-) TimerEvent: {}
+[25.174750] (-) TimerEvent: {}
+[25.275005] (-) TimerEvent: {}
+[25.375246] (-) TimerEvent: {}
+[25.475526] (-) TimerEvent: {}
+[25.575762] (-) TimerEvent: {}
+[25.676015] (-) TimerEvent: {}
+[25.776515] (-) TimerEvent: {}
+[25.876791] (-) TimerEvent: {}
+[25.978698] (-) TimerEvent: {}
+[26.079031] (-) TimerEvent: {}
+[26.179297] (-) TimerEvent: {}
+[26.279565] (-) TimerEvent: {}
+[26.379970] (-) TimerEvent: {}
+[26.480227] (-) TimerEvent: {}
+[26.580498] (-) TimerEvent: {}
+[26.680787] (-) TimerEvent: {}
+[26.781023] (-) TimerEvent: {}
+[26.881729] (-) TimerEvent: {}
+[26.982028] (-) TimerEvent: {}
+[27.082279] (-) TimerEvent: {}
+[27.182524] (-) TimerEvent: {}
+[27.282772] (-) TimerEvent: {}
+[27.383045] (-) TimerEvent: {}
+[27.483274] (-) TimerEvent: {}
+[27.583462] (-) TimerEvent: {}
+[27.684153] (-) TimerEvent: {}
+[27.784390] (-) TimerEvent: {}
+[27.884663] (-) TimerEvent: {}
+[27.984904] (-) TimerEvent: {}
+[28.085182] (-) TimerEvent: {}
+[28.185430] (-) TimerEvent: {}
+[28.285695] (-) TimerEvent: {}
+[28.386022] (-) TimerEvent: {}
+[28.486583] (-) TimerEvent: {}
+[28.586841] (-) TimerEvent: {}
+[28.687119] (-) TimerEvent: {}
+[28.787468] (-) TimerEvent: {}
+[28.887754] (-) TimerEvent: {}
+[28.990737] (-) TimerEvent: {}
+[29.091094] (-) TimerEvent: {}
+[29.191393] (-) TimerEvent: {}
+[29.291709] (-) TimerEvent: {}
+[29.392057] (-) TimerEvent: {}
+[29.492343] (-) TimerEvent: {}
+[29.579165] (lio_sam) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lio_sam_imageProjection\x1b[0m\n'}
+[29.592425] (-) TimerEvent: {}
+[29.692667] (-) TimerEvent: {}
+[29.793340] (-) TimerEvent: {}
+[29.893610] (-) TimerEvent: {}
+[29.993905] (-) TimerEvent: {}
+[30.022738] (lio_sam) StdoutLine: {'line': b'[100%] Built target lio_sam_imageProjection\n'}
+[30.032930] (lio_sam) CommandEnded: {'returncode': 0}
+[30.033674] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'install'}
+[30.041338] (lio_sam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam'], 'cwd': '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '4049'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install:/home/rajpurkar/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/4026,unix/cni-mothership:/tmp/.ICE-unix/4026'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/709cbba3_5f00_44ba_b5f6_bf771ce5dd91'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.188'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam:/home/rajpurkar/ros2_ws/install/robot_slam:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_tool:/home/rajpurkar/ros2_ws/install/isaac-sim-mobile-robot-rtab-map:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam:/home/rajpurkar/ros2_ws/install/robot_slam:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_tool:/home/rajpurkar/ros2_ws/install/isaac-sim-mobile-robot-rtab-map:/opt/ros/humble')]), 'shell': False}
+[30.050014] (lio_sam) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[30.050585] (lio_sam) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[30.050847] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/ament_index/resource_index/rosidl_interfaces/lio_sam\n'}
+[30.051152] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/cloud_info.h\n'}
+[30.051254] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__functions.h\n'}
+[30.051387] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__struct.h\n'}
+[30.051477] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__type_support.h\n'}
+[30.051553] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_generator_c__visibility_control.h\n'}
+[30.051627] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__functions.h\n'}
+[30.051707] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__struct.h\n'}
+[30.051779] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__type_support.h\n'}
+[30.051858] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/save_map.h\n'}
+[30.051968] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/library_path.sh\n'}
+[30.052087] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/library_path.dsv\n'}
+[30.052443] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_fastrtps_c.h\n'}
+[30.052530] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[30.052620] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h\n'}
+[30.052956] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_introspection_c.h\n'}
+[30.053050] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[30.053140] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_introspection_c.h\n'}
+[30.053457] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/cloud_info.hpp\n'}
+[30.053540] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__builder.hpp\n'}
+[30.053620] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__struct.hpp\n'}
+[30.053733] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__traits.hpp\n'}
+[30.053810] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__type_support.hpp\n'}
+[30.053899] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[30.053984] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__builder.hpp\n'}
+[30.054077] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__struct.hpp\n'}
+[30.054169] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__traits.hpp\n'}
+[30.054246] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__type_support.hpp\n'}
+[30.054324] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/save_map.hpp\n'}
+[30.054815] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[30.054906] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[30.054995] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[30.055258] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[30.055350] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp\n'}
+[30.055479] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/pythonpath.sh\n'}
+[30.055599] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/pythonpath.dsv\n'}
+[30.055839] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[30.055939] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[30.056039] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[30.056123] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[30.056581] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/__init__.py\n'}
+[30.056683] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_c.c\n'}
+[30.056803] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[30.056919] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[30.056998] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/liblio_sam__rosidl_generator_py.so\n'}
+[30.057075] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.057154] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.057239] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.057325] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg/__init__.py\n'}
+[30.057405] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg/_cloud_info.py\n'}
+[30.057487] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg/_cloud_info_s.c\n'}
+[30.057567] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv/__init__.py\n'}
+[30.057653] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv/_save_map.py\n'}
+[30.057758] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv/_save_map_s.c\n'}
+[30.058053] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.058343] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.058623] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[30.058836] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/msg/CloudInfo.idl\n'}
+[30.059023] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/srv/SaveMap.idl\n'}
+[30.059195] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/msg/CloudInfo.msg\n'}
+[30.059370] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/srv/SaveMap.srv\n'}
+[30.059557] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/srv/SaveMap_Request.msg\n'}
+[30.059749] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/srv/SaveMap_Response.msg\n'}
+[30.059965] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//launch/run.launch.py\n'}
+[30.060327] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/demo.gif\n'}
+[30.060402] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/demo.png\n'}
+[30.060480] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/device-boat.png\n'}
+[30.060557] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/device-hand-2.png\n'}
+[30.060634] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/device-hand.png\n'}
+[30.060740] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/device-jackal.png\n'}
+[30.060839] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/gps-demo.gif\n'}
+[30.060910] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/imu-debug.gif\n'}
+[30.060986] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/imu-transform.png\n'}
+[30.061060] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/kitti-demo.gif\n'}
+[30.061132] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/kitti-map.png\n'}
+[30.061216] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/kitti2bag/README.md\n'}
+[30.061295] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/kitti2bag/kitti2bag.py\n'}
+[30.061369] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/loop-closure-2.gif\n'}
+[30.061442] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/loop-closure.gif\n'}
+[30.061515] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/ouster-demo.gif\n'}
+[30.061587] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/ouster-device.jpg\n'}
+[30.061664] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/paper.pdf\n'}
+[30.061752] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/doc/system1.png\n'}
+[30.061822] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/params.yaml\n'}
+[30.061893] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/robot.urdf.xacro\n'}
+[30.061965] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam//config/rviz2.rviz\n'}
+[30.062173] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/lio_sam/lio_sam_imageProjection\n'}
+[30.062287] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/lio_sam/lio_sam_imuPreintegration\n'}
+[30.062400] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/lio_sam/lio_sam_featureExtraction\n'}
+[30.062510] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/lio_sam/lio_sam_mapOptimization\n'}
+[30.062771] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/color_cloud/Camera.hpp\n'}
+[30.062849] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/color_cloud/PointCloudType.hpp\n'}
+[30.062928] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/color_cloud/TransformeProvider.hpp\n'}
+[30.063000] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/include/lio_sam/utility.hpp\n'}
+[30.063136] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/ament_index/resource_index/package_run_dependencies/lio_sam\n'}
+[30.063263] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/ament_index/resource_index/parent_prefix_path/lio_sam\n'}
+[30.063393] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/ament_prefix_path.sh\n'}
+[30.063510] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/ament_prefix_path.dsv\n'}
+[30.063631] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/path.sh\n'}
+[30.063757] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/environment/path.dsv\n'}
+[30.063899] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/local_setup.bash\n'}
+[30.064012] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/local_setup.sh\n'}
+[30.064127] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/local_setup.zsh\n'}
+[30.064239] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/local_setup.dsv\n'}
+[30.064326] (lio_sam) StdoutLine: {'line': b'-- Symlinking: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/package.dsv\n'}
+[30.071640] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/ament_index/resource_index/packages/lio_sam\n'}
+[30.071802] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/rosidl_cmake-extras.cmake\n'}
+[30.071888] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[30.071971] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[30.072096] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[30.072213] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[30.072334] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[30.072448] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[30.072569] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_samConfig.cmake\n'}
+[30.072655] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_samConfig-version.cmake\n'}
+[30.072772] (lio_sam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/package.xml\n'}
+[30.072953] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_generator_c.so\n'}
+[30.073163] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_c.so\n'}
+[30.073363] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_c.so\n'}
+[30.073545] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_c.so\n'}
+[30.073734] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_cpp.so\n'}
+[30.073936] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_cpp.so\n'}
+[30.074123] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_typesupport_cpp.so\n'}
+[30.093996] (-) TimerEvent: {}
+[30.103771] (lio_sam) StdoutLine: {'line': b"Listing '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam'...\n"}
+[30.103985] (lio_sam) StdoutLine: {'line': b"Listing '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg'...\n"}
+[30.104076] (lio_sam) StdoutLine: {'line': b"Listing '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv'...\n"}
+[30.109466] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib/liblio_sam__rosidl_generator_py.so\n'}
+[30.109805] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cExport.cmake\n'}
+[30.109928] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cExport-release.cmake\n'}
+[30.110036] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[30.110124] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[30.110186] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cExport.cmake\n'}
+[30.110260] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[30.110332] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cExport.cmake\n'}
+[30.110398] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cExport-release.cmake\n'}
+[30.110472] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cppExport.cmake\n'}
+[30.110551] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[30.110625] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[30.110727] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[30.110805] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[30.110894] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cppExport.cmake\n'}
+[30.110967] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cppExport-release.cmake\n'}
+[30.111056] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_pyExport.cmake\n'}
+[30.111127] (lio_sam) StdoutLine: {'line': b'-- Up-to-date: /home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_pyExport-release.cmake\n'}
+[30.113379] (lio_sam) CommandEnded: {'returncode': 0}
+[30.136727] (lio_sam) JobEnded: {'identifier': 'lio_sam', 'rc': 0}
+[30.137830] (-) EventReactorShutdown: {}

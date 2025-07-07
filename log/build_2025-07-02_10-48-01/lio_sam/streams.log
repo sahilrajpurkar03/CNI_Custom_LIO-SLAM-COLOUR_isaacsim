@@ -1,0 +1,32 @@
+[0.010s] Invoking command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam -- -j16 -l16
+[0.049s] [  8%] Built target lio_sam__rosidl_generator_c
+[0.049s] [ 10%] Built target lio_sam__cpp
+[0.055s] [ 10%] Built target ament_cmake_python_symlink_lio_sam
+[0.065s] [ 19%] Built target lio_sam__rosidl_typesupport_c
+[0.066s] [ 38%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[0.066s] [ 44%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[0.067s] [ 44%] Built target lio_sam__rosidl_typesupport_introspection_c
+[0.068s] [ 53%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[0.072s] [ 61%] Built target lio_sam__rosidl_typesupport_cpp
+[0.087s] [ 61%] Built target lio_sam
+[0.102s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_featureExtraction[0m
+[0.103s] [ 63%] Built target lio_sam__py
+[0.121s] [ 68%] Built target lio_sam_imageProjection
+[0.121s] [ 74%] Built target lio_sam__rosidl_generator_py
+[0.124s] [ 78%] Built target lio_sam_imuPreintegration
+[0.127s] [ 82%] Built target lio_sam_mapOptimization
+[0.136s] [ 85%] [32mBuilding CXX object CMakeFiles/lio_sam_featureExtraction.dir/src/featureExtraction.cpp.o[0m
+[0.139s] [ 93%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[0.139s] [ 93%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[0.140s] [ 97%] Built target lio_sam__rosidl_typesupport_c__pyext
+[0.336s] running egg_info
+[0.337s] writing lio_sam.egg-info/PKG-INFO
+[0.337s] writing dependency_links to lio_sam.egg-info/dependency_links.txt
+[0.337s] writing top-level names to lio_sam.egg-info/top_level.txt
+[0.339s] reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.340s] writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.362s] [ 97%] Built target ament_cmake_python_build_lio_sam_egg
+[0.620s] gmake[2]: *** [CMakeFiles/lio_sam_featureExtraction.dir/build.make:76: CMakeFiles/lio_sam_featureExtraction.dir/src/featureExtraction.cpp.o] Interrupt
+[0.621s] gmake[1]: *** [CMakeFiles/Makefile2:600: CMakeFiles/lio_sam_featureExtraction.dir/all] Interrupt
+[0.621s] gmake: *** [Makefile:146: all] Interrupt
+[0.625s] Invoked command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam -- -j16 -l16

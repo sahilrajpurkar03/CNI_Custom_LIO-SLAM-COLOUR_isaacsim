@@ -1,0 +1,7 @@
+{
+  "package_name": "lio_sam",
+  "non_idl_tuples": [
+    "/home/rajpurkar/LIO-SAM-COLOR:msg/CloudInfo.msg",
+    "/home/rajpurkar/LIO-SAM-COLOR:srv/SaveMap.srv"
+  ]
+}

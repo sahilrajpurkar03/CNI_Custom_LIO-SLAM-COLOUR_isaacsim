@@ -1,0 +1,151 @@
+[  2%] Built target lio_sam__cpp
+[ 10%] Built target lio_sam__rosidl_generator_c
+[ 10%] Built target ament_cmake_python_symlink_lio_sam
+[ 19%] Built target lio_sam__rosidl_typesupport_c
+[ 27%] Built target lio_sam__rosidl_typesupport_cpp
+[ 36%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[ 53%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[ 53%] Built target lio_sam__rosidl_typesupport_introspection_c
+[ 61%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[ 61%] Built target lio_sam
+[ 63%] Built target lio_sam__py
+[35m[1mConsolidate compiler generated dependencies of target lio_sam_mapOptimization[0m
+[ 72%] Built target lio_sam_featureExtraction
+[ 72%] Built target lio_sam_imageProjection
+[ 78%] Built target lio_sam__rosidl_generator_py
+[ 82%] Built target lio_sam_imuPreintegration
+[ 95%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[ 95%] [32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o[0m
+[ 95%] Built target lio_sam__rosidl_typesupport_c__pyext
+[ 97%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing lio_sam.egg-info/PKG-INFO
+writing dependency_links to lio_sam.egg-info/dependency_links.txt
+writing top-level names to lio_sam.egg-info/top_level.txt
+reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_lio_sam_egg
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:[m[K In member function ‘[01m[Kvoid mapOptimization::saveKeyFramesAndFactor()[m[K’:
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1771:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::fields::x[m[K’?
+ 1771 |         float dist = sqrt([01;31m[Kx[m[K*x + y*y + z*z);
+      |                           [01;31m[K^[m[K
+      |                           [32m[Kpcl::fields::x[m[K
+In file included from [01m[K/usr/include/boost/preprocessor/tuple/elem.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:28[m[K,
+                 from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+                 from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/type_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1941:1:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::fields::x[m[K’ declared here
+ 1941 | [01;36m[KPOINT_CLOUD_REGISTER_POINT_STRUCT[m[K (pcl::_PointXYZ,
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1771:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::fields::y[m[K’?
+ 1771 |         float dist = sqrt(x*x + [01;31m[Ky[m[K*y + z*z);
+      |                                 [01;31m[K^[m[K
+      |                                 [32m[Kpcl::fields::y[m[K
+In file included from [01m[K/usr/include/boost/preprocessor/tuple/elem.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:28[m[K,
+                 from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+                 from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/type_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1941:1:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::fields::y[m[K’ declared here
+ 1941 | [01;36m[KPOINT_CLOUD_REGISTER_POINT_STRUCT[m[K (pcl::_PointXYZ,
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1771:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::fields::z[m[K’?
+ 1771 |         float dist = sqrt(x*x + y*y + [01;31m[Kz[m[K*z);
+      |                                       [01;31m[K^[m[K
+      |                                       [32m[Kpcl::fields::z[m[K
+In file included from [01m[K/usr/include/boost/preprocessor/tuple/elem.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:28[m[K,
+                 from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+                 from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/type_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:1941:1:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::fields::z[m[K’ declared here
+ 1941 | [01;36m[KPOINT_CLOUD_REGISTER_POINT_STRUCT[m[K (pcl::_PointXYZ,
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1772:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kroll[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::fields::roll[m[K’?
+ 1772 |         float angle = sqrt([01;31m[Kroll[m[K*roll + pitch*pitch + yaw*yaw);
+      |                            [01;31m[K^~~~[m[K
+      |                            [32m[Kpcl::fields::roll[m[K
+In file included from [01m[K/usr/include/boost/preprocessor/tuple/elem.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:28[m[K,
+                 from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+                 from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/type_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1[m[K:
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:50:50:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::fields::roll[m[K’ declared here
+   50 |                                    (float, roll, [01;36m[Kroll[m[K) (float, pitch, pitch) (float, yaw, yaw)
+      |                                                  [01;36m[K^~~~[m[K
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1772:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kpitch[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::fields::pitch[m[K’?
+ 1772 |         float angle = sqrt(roll*roll + [01;31m[Kpitch[m[K*pitch + yaw*yaw);
+      |                                        [01;31m[K^~~~~[m[K
+      |                                        [32m[Kpcl::fields::pitch[m[K
+In file included from [01m[K/usr/include/boost/preprocessor/tuple/elem.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:28[m[K,
+                 from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+                 from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/type_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1[m[K:
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:50:71:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::fields::pitch[m[K’ declared here
+   50 |                                    (float, roll, roll) (float, pitch, [01;36m[Kpitch[m[K) (float, yaw, yaw)
+      |                                                                       [01;36m[K^~~~~[m[K
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1772:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::fields::yaw[m[K’?
+ 1772 |         float angle = sqrt(roll*roll + pitch*pitch + [01;31m[Kyaw[m[K*yaw);
+      |                                                      [01;31m[K^~~[m[K
+      |                                                      [32m[Kpcl::fields::yaw[m[K
+In file included from [01m[K/usr/include/boost/preprocessor/tuple/elem.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/arithmetic/add.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:66[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:28[m[K,
+                 from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+                 from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_struct_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/type_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree.h:41[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/kdtree/kdtree_flann.h:43[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/include/lio_sam/utility.hpp:21[m[K,
+                 from [01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:1[m[K:
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/mapOptmization.cpp:50:91:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::fields::yaw[m[K’ declared here
+   50 |                                    (float, roll, roll) (float, pitch, pitch) (float, yaw, [01;36m[Kyaw[m[K)
+      |                                                                                           [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/lio_sam_mapOptimization.dir/build.make:76: CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:684: CMakeFiles/lio_sam_mapOptimization.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

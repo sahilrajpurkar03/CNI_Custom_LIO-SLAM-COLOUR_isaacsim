@@ -1,0 +1,42 @@
+[0.010s] Invoking command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam -- -j16 -l16
+[0.054s] [  2%] Built target lio_sam__cpp
+[0.057s] [ 10%] Built target lio_sam__rosidl_generator_c
+[0.076s] [ 10%] Built target ament_cmake_python_symlink_lio_sam
+[0.087s] [ 19%] Built target lio_sam__rosidl_typesupport_cpp
+[0.094s] [ 27%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[0.098s] [ 36%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[0.103s] [ 44%] Built target lio_sam__rosidl_typesupport_c
+[0.105s] [ 53%] Built target lio_sam__rosidl_typesupport_introspection_c
+[0.107s] [ 61%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[0.122s] [ 61%] Built target lio_sam
+[0.138s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_imageProjection[0m
+[0.138s] [ 63%] Built target lio_sam__py
+[0.142s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_imuPreintegration[0m
+[0.157s] [ 68%] Built target lio_sam_featureExtraction
+[0.159s] [ 74%] Built target lio_sam__rosidl_generator_py
+[0.162s] [ 78%] Built target lio_sam_mapOptimization
+[0.169s] [ 80%] [32mBuilding CXX object CMakeFiles/lio_sam_imageProjection.dir/src/imageProjection.cpp.o[0m
+[0.178s] [ 89%] Built target lio_sam__rosidl_typesupport_c__pyext
+[0.179s] [ 89%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[0.180s] [ 93%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[0.188s] [ 95%] [32mBuilding CXX object CMakeFiles/lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o[0m
+[0.356s] running egg_info
+[0.357s] writing lio_sam.egg-info/PKG-INFO
+[0.357s] writing dependency_links to lio_sam.egg-info/dependency_links.txt
+[0.358s] writing top-level names to lio_sam.egg-info/top_level.txt
+[0.361s] reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.361s] writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.390s] [ 95%] Built target ament_cmake_python_build_lio_sam_egg
+[8.163s] [01m[K/home/rajpurkar/LIO-SAM-COLOR/src/imageProjection.cpp:[m[K In member function ‘[01m[Kvoid ImageProjection::publishClouds()[m[K’:
+[8.163s] [01m[K/home/rajpurkar/LIO-SAM-COLOR/src/imageProjection.cpp:646:12:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kpublished_cloud[m[K’ from ‘[01m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K’ to ‘[01m[Kbool[m[K’
+[8.163s]   646 |         if([01;31m[Kpublished_cloud[m[K){
+[8.164s]       |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[8.164s]       |            [01;31m[K|[m[K
+[8.164s]       |            [01;31m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K
+[17.295s] gmake[2]: *** [CMakeFiles/lio_sam_imageProjection.dir/build.make:76: CMakeFiles/lio_sam_imageProjection.dir/src/imageProjection.cpp.o] Error 1
+[17.295s] gmake[1]: *** [CMakeFiles/Makefile2:628: CMakeFiles/lio_sam_imageProjection.dir/all] Error 2
+[17.295s] gmake[1]: *** Waiting for unfinished jobs....
+[36.124s] [ 97%] [32m[1mLinking CXX executable lio_sam_imuPreintegration[0m
+[36.596s] [ 97%] Built target lio_sam_imuPreintegration
+[36.597s] gmake: *** [Makefile:146: all] Error 2
+[36.599s] Invoked command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam -- -j16 -l16

@@ -1,0 +1,108 @@
+/**:
+  ros__parameters:
+
+    # Topics
+    pointCloudTopic: "/velodyne_points"          # Point cloud data
+    imuTopic: "/imu/data"                        # IMU data
+    odomTopic: "/odom"                                    # IMU pre-preintegration odometry, same frequency as IMU
+    #gpsTopic: "/sensing/gnss/clap/ros/odometry"                   # GPS odometry topic from navsat, see module_navsat.launch file
+
+    # Frames
+    lidarFrame: "lidar_link"
+    baselinkFrame: "base_link"
+    odometryFrame: "odom"
+    mapFrame: "map"
+
+    # GPS Settings
+    useImuHeadingInitialization: false
+    useGpsElevation: false
+    gpsCovThreshold: 0.09
+    poseCovThreshold: 0.01
+
+    # Export settings 
+    savePCD: false
+    savePCDDirectory: "/Downloads/LOAM/"
+
+    # Sensor Settings
+    sensor: velodyne           
+    N_SCAN: 32
+    Horizon_SCAN: 1800         # Typical for Hesai XT-32
+    downsampleRate: 1
+    lidarMinRange: 1.0
+    lidarMaxRange: 10.0
+
+    # IMU Settings
+    imuAccNoise: 3.9939570888238808e-03
+    imuGyrNoise: 1.5636343949698187e-03
+    imuAccBiasN: 6.4356659353532566e-05
+    imuGyrBiasN: 3.5640318696367613e-05
+
+    imuGravity: 9.81
+    imuRPYWeight: 0.01
+
+    extrinsicTrans:  [ 0.0,  0.0,  0.08 ]
+    extrinsicRot: [ 1.0000000, 0.0000000,  0.0000000,
+                    0.0000000, 1.0000000,  0.0000000,
+                    0.0000000, 0.0000000,  1.0000000 ]
+    extrinsicRPY: [ 1.0000000, 0.0000000,  0.0000000,
+                        0.0000000, 1.0000000,  0.0000000,
+                        0.0000000, 0.0000000,  1.0000000 ]
+
+    # LOAM feature threshold
+    edgeThreshold: 1.0
+    surfThreshold: 0.1
+    edgeFeatureMinValidNum: 10
+    surfFeatureMinValidNum: 100
+
+    # voxel filter parameters
+    odometrySurfLeafSize: 0.01  
+    mappingCornerLeafSize: 0.01
+    mappingSurfLeafSize: 0.01
+
+    # robot motion constraint
+    z_tollerance: 1.0
+    rotation_tollerance: 5.0
+
+    # CPU Params
+    numberOfCores: 8
+    mappingProcessInterval: 0.01
+
+    # Surrounding map
+    surroundingkeyframeAddingDistThreshold: 0.2
+    surroundingkeyframeAddingAngleThreshold: 0.1
+    surroundingKeyframeDensity: 1.0
+    surroundingKeyframeSearchRadius: 5.0
+
+    # Loop closure
+    loopClosureEnableFlag: true
+    loopClosureFrequency: 0.5
+    surroundingKeyframeSize: 50
+    historyKeyframeSearchRadius: 5.0
+    historyKeyframeSearchTimeDiff: 30.0
+    historyKeyframeSearchNum: 50
+    historyKeyframeFitnessScore: 0.1
+
+    # Visualization
+    globalMapVisualizationSearchRadius: 1.0
+    globalMapVisualizationPoseDensity: 1.0
+    globalMapVisualizationLeafSize: 0.1
+
+    # Color Cloud
+    cameraTopics: ["/rgb_front_link", "/rgb_right_link", "/rgb_back_link", "/rgb_left_link"]
+    imageTopicLastName: "/Image"                      # Full image topics used
+    cameraInfoTopicLastName: "/camera_info"     # Global camera info topic
+
+    # Extrinsic parameters
+    extrinsicLidarToCamera:
+      rgb_front_link:
+        rot: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]  # All numbers as floats
+        trans: [0.33604, 0.0, -0.15161]
+      rgb_left_link:
+        rot: [0.0, 1.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+        trans: [0.0, -0.1541, -0.18161]
+      rgb_right_link:
+        rot: [0.0, -1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+        trans: [0.0, 0.1541, -0.126]
+      rgb_back_link:
+        rot: [-1.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 1.0]
+        trans: [-0.33604, 0.0, -0.15161]

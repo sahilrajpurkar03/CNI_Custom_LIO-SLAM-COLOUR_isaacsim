@@ -1,0 +1,260 @@
+[0.000000] (-) TimerEvent: {}
+[0.000211] (lio_sam) JobQueued: {'identifier': 'lio_sam', 'dependencies': OrderedDict()}
+[0.000382] (lio_sam) JobStarted: {'identifier': 'lio_sam'}
+[0.006498] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'cmake'}
+[0.007261] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'build'}
+[0.007889] (lio_sam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam', '--', '-j16', '-l16'], 'cwd': '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rajpurkar'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rajpurkar'), ('OLDPWD', '/home/rajpurkar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('SYSTEMD_EXEC_PID', '3994'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install:/home/rajpurkar/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rajpurkar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rajpurkar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rajpurkar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cni-mothership:@/tmp/.ICE-unix/3970,unix/cni-mothership:/tmp/.ICE-unix/3970'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/57655044_207f_4caa_a099_a2f662dbc58a'), ('KUBECONFIG', '/root/.kube/config'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam:/home/rajpurkar/ros2_ws/install/robot_slam:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_tool:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_full_publisher:/home/rajpurkar/ros2_ws/install/isaac-sim-mobile-robot-rtab-map:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rajpurkar/LIO-SAM-COLOR/install/lio_sam:/home/rajpurkar/ros2_ws/install/robot_slam:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_tool:/home/rajpurkar/ros2_ws/install/isaac_sim_pointcloud_full_publisher:/home/rajpurkar/ros2_ws/install/isaac-sim-mobile-robot-rtab-map:/opt/ros/humble')]), 'shell': False}
+[0.048216] (lio_sam) StdoutLine: {'line': b'[ 10%] Built target lio_sam__rosidl_generator_c\n'}
+[0.048388] (lio_sam) StdoutLine: {'line': b'[ 10%] Built target lio_sam__cpp\n'}
+[0.053148] (lio_sam) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_symlink_lio_sam\n'}
+[0.065504] (lio_sam) StdoutLine: {'line': b'[ 19%] Built target lio_sam__rosidl_typesupport_c\n'}
+[0.065741] (lio_sam) StdoutLine: {'line': b'[ 27%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp\n'}
+[0.065902] (lio_sam) StdoutLine: {'line': b'[ 44%] Built target lio_sam__rosidl_typesupport_introspection_cpp\n'}
+[0.065994] (lio_sam) StdoutLine: {'line': b'[ 44%] Built target lio_sam__rosidl_typesupport_introspection_c\n'}
+[0.066228] (lio_sam) StdoutLine: {'line': b'[ 53%] Built target lio_sam__rosidl_typesupport_fastrtps_c\n'}
+[0.069933] (lio_sam) StdoutLine: {'line': b'[ 61%] Built target lio_sam__rosidl_typesupport_cpp\n'}
+[0.083984] (lio_sam) StdoutLine: {'line': b'[ 61%] Built target lio_sam\n'}
+[0.098380] (lio_sam) StdoutLine: {'line': b'[ 63%] Built target lio_sam__py\n'}
+[0.099825] (-) TimerEvent: {}
+[0.100876] (lio_sam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lio_sam_imuPreintegration\x1b[0m\n'}
+[0.114284] (lio_sam) StdoutLine: {'line': b'[ 68%] Built target lio_sam_featureExtraction\n'}
+[0.114544] (lio_sam) StdoutLine: {'line': b'[ 72%] Built target lio_sam_imageProjection\n'}
+[0.114697] (lio_sam) StdoutLine: {'line': b'[ 78%] Built target lio_sam__rosidl_generator_py\n'}
+[0.119755] (lio_sam) StdoutLine: {'line': b'[ 82%] Built target lio_sam_mapOptimization\n'}
+[0.134626] (lio_sam) StdoutLine: {'line': b'[ 95%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.134828] (lio_sam) StdoutLine: {'line': b'[ 95%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext\n'}
+[0.135028] (lio_sam) StdoutLine: {'line': b'[ 95%] Built target lio_sam__rosidl_typesupport_c__pyext\n'}
+[0.140049] (lio_sam) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object CMakeFiles/lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o\x1b[0m\n'}
+[0.199929] (-) TimerEvent: {}
+[0.300228] (-) TimerEvent: {}
+[0.308363] (lio_sam) StdoutLine: {'line': b'running egg_info\n'}
+[0.308958] (lio_sam) StdoutLine: {'line': b'writing lio_sam.egg-info/PKG-INFO\n'}
+[0.309121] (lio_sam) StdoutLine: {'line': b'writing dependency_links to lio_sam.egg-info/dependency_links.txt\n'}
+[0.309283] (lio_sam) StdoutLine: {'line': b'writing top-level names to lio_sam.egg-info/top_level.txt\n'}
+[0.311961] (lio_sam) StdoutLine: {'line': b"reading manifest file 'lio_sam.egg-info/SOURCES.txt'\n"}
+[0.312463] (lio_sam) StdoutLine: {'line': b"writing manifest file 'lio_sam.egg-info/SOURCES.txt'\n"}
+[0.333228] (lio_sam) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_lio_sam_egg\n'}
+[0.400354] (-) TimerEvent: {}
+[0.500596] (-) TimerEvent: {}
+[0.600868] (-) TimerEvent: {}
+[0.701104] (-) TimerEvent: {}
+[0.801328] (-) TimerEvent: {}
+[0.901610] (-) TimerEvent: {}
+[1.001846] (-) TimerEvent: {}
+[1.102160] (-) TimerEvent: {}
+[1.202544] (-) TimerEvent: {}
+[1.302786] (-) TimerEvent: {}
+[1.403028] (-) TimerEvent: {}
+[1.503273] (-) TimerEvent: {}
+[1.603573] (-) TimerEvent: {}
+[1.703850] (-) TimerEvent: {}
+[1.804134] (-) TimerEvent: {}
+[1.904452] (-) TimerEvent: {}
+[2.004704] (-) TimerEvent: {}
+[2.104940] (-) TimerEvent: {}
+[2.205210] (-) TimerEvent: {}
+[2.305591] (-) TimerEvent: {}
+[2.405818] (-) TimerEvent: {}
+[2.506047] (-) TimerEvent: {}
+[2.606283] (-) TimerEvent: {}
+[2.706558] (-) TimerEvent: {}
+[2.806779] (-) TimerEvent: {}
+[2.907041] (-) TimerEvent: {}
+[3.007309] (-) TimerEvent: {}
+[3.107672] (-) TimerEvent: {}
+[3.208114] (-) TimerEvent: {}
+[3.308319] (-) TimerEvent: {}
+[3.408554] (-) TimerEvent: {}
+[3.508787] (-) TimerEvent: {}
+[3.609039] (-) TimerEvent: {}
+[3.709311] (-) TimerEvent: {}
+[3.809537] (-) TimerEvent: {}
+[3.909766] (-) TimerEvent: {}
+[4.009989] (-) TimerEvent: {}
+[4.110227] (-) TimerEvent: {}
+[4.210495] (-) TimerEvent: {}
+[4.310719] (-) TimerEvent: {}
+[4.410955] (-) TimerEvent: {}
+[4.511233] (-) TimerEvent: {}
+[4.611474] (-) TimerEvent: {}
+[4.711719] (-) TimerEvent: {}
+[4.812319] (-) TimerEvent: {}
+[4.912574] (-) TimerEvent: {}
+[5.012820] (-) TimerEvent: {}
+[5.113122] (-) TimerEvent: {}
+[5.213421] (-) TimerEvent: {}
+[5.313687] (-) TimerEvent: {}
+[5.413915] (-) TimerEvent: {}
+[5.514192] (-) TimerEvent: {}
+[5.614475] (-) TimerEvent: {}
+[5.714717] (-) TimerEvent: {}
+[5.814994] (-) TimerEvent: {}
+[5.915303] (-) TimerEvent: {}
+[6.015617] (-) TimerEvent: {}
+[6.115914] (-) TimerEvent: {}
+[6.216168] (-) TimerEvent: {}
+[6.316408] (-) TimerEvent: {}
+[6.416631] (-) TimerEvent: {}
+[6.516852] (-) TimerEvent: {}
+[6.617135] (-) TimerEvent: {}
+[6.717369] (-) TimerEvent: {}
+[6.817632] (-) TimerEvent: {}
+[6.917868] (-) TimerEvent: {}
+[7.018137] (-) TimerEvent: {}
+[7.118393] (-) TimerEvent: {}
+[7.218661] (-) TimerEvent: {}
+[7.318909] (-) TimerEvent: {}
+[7.419151] (-) TimerEvent: {}
+[7.519429] (-) TimerEvent: {}
+[7.619668] (-) TimerEvent: {}
+[7.719913] (-) TimerEvent: {}
+[7.820156] (-) TimerEvent: {}
+[7.920436] (-) TimerEvent: {}
+[8.020697] (-) TimerEvent: {}
+[8.120967] (-) TimerEvent: {}
+[8.221199] (-) TimerEvent: {}
+[8.321451] (-) TimerEvent: {}
+[8.421745] (-) TimerEvent: {}
+[8.521993] (-) TimerEvent: {}
+[8.622279] (-) TimerEvent: {}
+[8.722546] (-) TimerEvent: {}
+[8.822799] (-) TimerEvent: {}
+[8.923090] (-) TimerEvent: {}
+[9.024028] (-) TimerEvent: {}
+[9.124461] (-) TimerEvent: {}
+[9.224775] (-) TimerEvent: {}
+[9.325031] (-) TimerEvent: {}
+[9.425311] (-) TimerEvent: {}
+[9.525586] (-) TimerEvent: {}
+[9.625859] (-) TimerEvent: {}
+[9.726088] (-) TimerEvent: {}
+[9.826326] (-) TimerEvent: {}
+[9.926582] (-) TimerEvent: {}
+[10.026813] (-) TimerEvent: {}
+[10.127084] (-) TimerEvent: {}
+[10.227319] (-) TimerEvent: {}
+[10.327555] (-) TimerEvent: {}
+[10.427828] (-) TimerEvent: {}
+[10.528074] (-) TimerEvent: {}
+[10.628304] (-) TimerEvent: {}
+[10.728529] (-) TimerEvent: {}
+[10.828822] (-) TimerEvent: {}
+[10.929052] (-) TimerEvent: {}
+[10.963630] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/imuPreintegration.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TransformFusion::imuOdometryHandler(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.963807] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rajpurkar/LIO-SAM-COLOR/src/imuPreintegration.cpp:136:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.963872] (lio_sam) StderrLine: {'line': b'  136 |         \x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K tf\n'}
+[10.963931] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[11.029174] (-) TimerEvent: {}
+[11.129410] (-) TimerEvent: {}
+[11.229637] (-) TimerEvent: {}
+[11.329876] (-) TimerEvent: {}
+[11.430163] (-) TimerEvent: {}
+[11.530457] (-) TimerEvent: {}
+[11.630737] (-) TimerEvent: {}
+[11.731013] (-) TimerEvent: {}
+[11.831275] (-) TimerEvent: {}
+[11.931499] (-) TimerEvent: {}
+[12.031726] (-) TimerEvent: {}
+[12.131966] (-) TimerEvent: {}
+[12.232187] (-) TimerEvent: {}
+[12.334315] (-) TimerEvent: {}
+[12.434598] (-) TimerEvent: {}
+[12.534900] (-) TimerEvent: {}
+[12.635135] (-) TimerEvent: {}
+[12.735375] (-) TimerEvent: {}
+[12.835609] (-) TimerEvent: {}
+[12.935832] (-) TimerEvent: {}
+[13.036053] (-) TimerEvent: {}
+[13.136276] (-) TimerEvent: {}
+[13.236505] (-) TimerEvent: {}
+[13.337084] (-) TimerEvent: {}
+[13.437313] (-) TimerEvent: {}
+[13.537552] (-) TimerEvent: {}
+[13.637827] (-) TimerEvent: {}
+[13.738094] (-) TimerEvent: {}
+[13.838307] (-) TimerEvent: {}
+[13.938533] (-) TimerEvent: {}
+[14.038782] (-) TimerEvent: {}
+[14.139049] (-) TimerEvent: {}
+[14.239291] (-) TimerEvent: {}
+[14.339517] (-) TimerEvent: {}
+[14.439745] (-) TimerEvent: {}
+[14.540010] (-) TimerEvent: {}
+[14.640345] (-) TimerEvent: {}
+[14.740706] (-) TimerEvent: {}
+[14.841024] (-) TimerEvent: {}
+[14.941301] (-) TimerEvent: {}
+[15.041554] (-) TimerEvent: {}
+[15.141793] (-) TimerEvent: {}
+[15.242064] (-) TimerEvent: {}
+[15.342310] (-) TimerEvent: {}
+[15.442587] (-) TimerEvent: {}
+[15.542817] (-) TimerEvent: {}
+[15.643095] (-) TimerEvent: {}
+[15.743322] (-) TimerEvent: {}
+[15.843634] (-) TimerEvent: {}
+[15.943885] (-) TimerEvent: {}
+[16.044410] (-) TimerEvent: {}
+[16.144651] (-) TimerEvent: {}
+[16.244942] (-) TimerEvent: {}
+[16.345210] (-) TimerEvent: {}
+[16.445533] (-) TimerEvent: {}
+[16.545833] (-) TimerEvent: {}
+[16.646111] (-) TimerEvent: {}
+[16.746320] (-) TimerEvent: {}
+[16.846752] (-) TimerEvent: {}
+[16.947097] (-) TimerEvent: {}
+[17.047346] (-) TimerEvent: {}
+[17.147583] (-) TimerEvent: {}
+[17.247815] (-) TimerEvent: {}
+[17.348098] (-) TimerEvent: {}
+[17.448403] (-) TimerEvent: {}
+[17.548645] (-) TimerEvent: {}
+[17.648891] (-) TimerEvent: {}
+[17.749129] (-) TimerEvent: {}
+[17.849380] (-) TimerEvent: {}
+[17.949645] (-) TimerEvent: {}
+[18.049959] (-) TimerEvent: {}
+[18.150204] (-) TimerEvent: {}
+[18.250488] (-) TimerEvent: {}
+[18.350725] (-) TimerEvent: {}
+[18.450973] (-) TimerEvent: {}
+[18.551276] (-) TimerEvent: {}
+[18.651571] (-) TimerEvent: {}
+[18.751849] (-) TimerEvent: {}
+[18.852119] (-) TimerEvent: {}
+[18.952372] (-) TimerEvent: {}
+[19.052625] (-) TimerEvent: {}
+[19.152897] (-) TimerEvent: {}
+[19.253159] (-) TimerEvent: {}
+[19.353403] (-) TimerEvent: {}
+[19.453637] (-) TimerEvent: {}
+[19.553877] (-) TimerEvent: {}
+[19.654122] (-) TimerEvent: {}
+[19.754418] (-) TimerEvent: {}
+[19.854679] (-) TimerEvent: {}
+[19.954952] (-) TimerEvent: {}
+[20.055246] (-) TimerEvent: {}
+[20.155519] (-) TimerEvent: {}
+[20.255783] (-) TimerEvent: {}
+[20.356072] (-) TimerEvent: {}
+[20.456374] (-) TimerEvent: {}
+[20.556634] (-) TimerEvent: {}
+[20.656894] (-) TimerEvent: {}
+[20.757147] (-) TimerEvent: {}
+[20.857398] (-) TimerEvent: {}
+[20.957744] (-) TimerEvent: {}
+[21.058061] (-) TimerEvent: {}
+[21.158372] (-) TimerEvent: {}
+[21.258738] (-) TimerEvent: {}
+[21.359060] (-) TimerEvent: {}
+[21.459324] (-) TimerEvent: {}
+[21.559553] (-) TimerEvent: {}
+[21.659797] (-) TimerEvent: {}
+[21.760039] (-) TimerEvent: {}
+[21.812941] (lio_sam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lio_sam_imuPreintegration.dir/build.make:76: CMakeFiles/lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o] Error 1\n'}
+[21.813302] (lio_sam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:656: CMakeFiles/lio_sam_imuPreintegration.dir/all] Error 2\n'}
+[21.813473] (lio_sam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[21.815646] (lio_sam) CommandEnded: {'returncode': 2}
+[21.829029] (lio_sam) JobEnded: {'identifier': 'lio_sam', 'rc': 2}
+[21.839449] (-) EventReactorShutdown: {}

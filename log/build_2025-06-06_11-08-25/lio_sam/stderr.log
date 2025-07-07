@@ -1,0 +1,7 @@
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/imuPreintegration.cpp:[m[K In member function ‘[01m[Kvoid TransformFusion::imuOdometryHandler(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/imuPreintegration.cpp:136:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish[m[K’ was not declared in this scope
+  136 |         [01;31m[Kpublish[m[K tf
+      |         [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/lio_sam_imuPreintegration.dir/build.make:76: CMakeFiles/lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:656: CMakeFiles/lio_sam_imuPreintegration.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

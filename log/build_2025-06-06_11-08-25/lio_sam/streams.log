@@ -1,0 +1,36 @@
+[0.009s] Invoking command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam -- -j16 -l16
+[0.048s] [ 10%] Built target lio_sam__rosidl_generator_c
+[0.048s] [ 10%] Built target lio_sam__cpp
+[0.053s] [ 10%] Built target ament_cmake_python_symlink_lio_sam
+[0.065s] [ 19%] Built target lio_sam__rosidl_typesupport_c
+[0.065s] [ 27%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[0.065s] [ 44%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[0.066s] [ 44%] Built target lio_sam__rosidl_typesupport_introspection_c
+[0.066s] [ 53%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[0.070s] [ 61%] Built target lio_sam__rosidl_typesupport_cpp
+[0.084s] [ 61%] Built target lio_sam
+[0.098s] [ 63%] Built target lio_sam__py
+[0.101s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_imuPreintegration[0m
+[0.114s] [ 68%] Built target lio_sam_featureExtraction
+[0.114s] [ 72%] Built target lio_sam_imageProjection
+[0.114s] [ 78%] Built target lio_sam__rosidl_generator_py
+[0.119s] [ 82%] Built target lio_sam_mapOptimization
+[0.134s] [ 95%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[0.134s] [ 95%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[0.135s] [ 95%] Built target lio_sam__rosidl_typesupport_c__pyext
+[0.140s] [ 97%] [32mBuilding CXX object CMakeFiles/lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o[0m
+[0.308s] running egg_info
+[0.309s] writing lio_sam.egg-info/PKG-INFO
+[0.309s] writing dependency_links to lio_sam.egg-info/dependency_links.txt
+[0.309s] writing top-level names to lio_sam.egg-info/top_level.txt
+[0.312s] reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.312s] writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.333s] [ 97%] Built target ament_cmake_python_build_lio_sam_egg
+[10.963s] [01m[K/home/rajpurkar/LIO-SAM-COLOR/src/imuPreintegration.cpp:[m[K In member function ‘[01m[Kvoid TransformFusion::imuOdometryHandler(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[10.963s] [01m[K/home/rajpurkar/LIO-SAM-COLOR/src/imuPreintegration.cpp:136:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish[m[K’ was not declared in this scope
+[10.963s]   136 |         [01;31m[Kpublish[m[K tf
+[10.963s]       |         [01;31m[K^~~~~~~[m[K
+[21.813s] gmake[2]: *** [CMakeFiles/lio_sam_imuPreintegration.dir/build.make:76: CMakeFiles/lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o] Error 1
+[21.813s] gmake[1]: *** [CMakeFiles/Makefile2:656: CMakeFiles/lio_sam_imuPreintegration.dir/all] Error 2
+[21.813s] gmake: *** [Makefile:146: all] Error 2
+[21.815s] Invoked command in '/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rajpurkar/LIO-SAM-COLOR/build/lio_sam -- -j16 -l16
