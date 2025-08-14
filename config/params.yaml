@@ -3,13 +3,13 @@
 
     # Topics
     pointCloudTopic: "/velodyne_points"          # Point cloud data
-    imuTopic: "/imu/data"                        # IMU data
+    imuTopic: "/chassis_imu/data"                        # IMU data
     odomTopic: "/odom"                                    # IMU pre-preintegration odometry, same frequency as IMU
     #gpsTopic: "/sensing/gnss/clap/ros/odometry"                   # GPS odometry topic from navsat, see module_navsat.launch file
 
     # Frames
-    lidarFrame: "lidar_link"
-    baselinkFrame: "base_link"
+    lidarFrame: "XT_32"
+    baselinkFrame: "chassis_link"
     odometryFrame: "odom"
     mapFrame: "map"
 
@@ -26,7 +26,7 @@
     # Sensor Settings
     sensor: velodyne           
     N_SCAN: 32
-    Horizon_SCAN: 1800         # Typical for Hesai XT-32
+    Horizon_SCAN: 2000         # Typical for Hesai XT-32
     downsampleRate: 1
     lidarMinRange: 1.0
     lidarMaxRange: 10.0
@@ -51,58 +51,44 @@
     # LOAM feature threshold
     edgeThreshold: 1.0
     surfThreshold: 0.1
-    edgeFeatureMinValidNum: 10
-    surfFeatureMinValidNum: 100
+    edgeFeatureMinValidNum: 1
+    surfFeatureMinValidNum: 10
 
     # voxel filter parameters
-    odometrySurfLeafSize: 0.01  
-    mappingCornerLeafSize: 0.01
-    mappingSurfLeafSize: 0.01
+    odometrySurfLeafSize: 0.2  
+    mappingCornerLeafSize: 0.1
+    mappingSurfLeafSize: 0.2
 
     # robot motion constraint
-    z_tollerance: 1.0
-    rotation_tollerance: 5.0
+    z_tollerance: 1000.0
+    rotation_tollerance: 1000.0
 
     # CPU Params
-    numberOfCores: 8
-    mappingProcessInterval: 0.01
+    numberOfCores: 4
+    mappingProcessInterval: 0.15
 
     # Surrounding map
-    surroundingkeyframeAddingDistThreshold: 0.2
-    surroundingkeyframeAddingAngleThreshold: 0.1
-    surroundingKeyframeDensity: 1.0
-    surroundingKeyframeSearchRadius: 5.0
+    surroundingkeyframeAddingDistThreshold: 1.0
+    surroundingkeyframeAddingAngleThreshold: 0.2
+    surroundingKeyframeDensity: 2.0
+    surroundingKeyframeSearchRadius: 50.0
 
     # Loop closure
     loopClosureEnableFlag: true
-    loopClosureFrequency: 0.5
-    surroundingKeyframeSize: 50
-    historyKeyframeSearchRadius: 5.0
-    historyKeyframeSearchTimeDiff: 30.0
-    historyKeyframeSearchNum: 50
-    historyKeyframeFitnessScore: 0.1
+    loopClosureFrequency: 1.0                     # Hz, regulate loop closure constraint add frequency
+    surroundingKeyframeSize: 50                   # submap size (when loop closure enabled)
+    historyKeyframeSearchRadius: 15.0             # meters, key frame that is within n meters from current pose will be considerd for loop closure
+    historyKeyframeSearchTimeDiff: 30.0           # seconds, key frame that is n seconds older will be considered for loop closure
+    historyKeyframeSearchNum: 25                  # number of hostory key frames will be fused into a submap for loop closure
+    historyKeyframeFitnessScore: 0.3              # icp threshold, the smaller the better alignment
+
 
     # Visualization
-    globalMapVisualizationSearchRadius: 1.0
-    globalMapVisualizationPoseDensity: 1.0
-    globalMapVisualizationLeafSize: 0.1
+    globalMapVisualizationSearchRadius: 1000.0    # meters, global map visualization radius
+    globalMapVisualizationPoseDensity: 10.0       # meters, global map visualization keyframe density
+    globalMapVisualizationLeafSize: 1.0           # meters, global map visualization cloud density
 
     # Color Cloud
-    cameraTopics: ["/rgb_front_link", "/rgb_right_link", "/rgb_back_link", "/rgb_left_link"]
+    cameraTopics: ["/front_owl", "/left_owl", "/right_owl", "/back_owl"]
     imageTopicLastName: "/Image"                      # Full image topics used
     cameraInfoTopicLastName: "/camera_info"     # Global camera info topic
-
-    # Extrinsic parameters
-    extrinsicLidarToCamera:
-      rgb_front_link:
-        rot: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]  # All numbers as floats
-        trans: [0.33604, 0.0, -0.15161]
-      rgb_left_link:
-        rot: [0.0, 1.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0]
-        trans: [0.0, -0.1541, -0.18161]
-      rgb_right_link:
-        rot: [0.0, -1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0]
-        trans: [0.0, 0.1541, -0.126]
-      rgb_back_link:
-        rot: [-1.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 1.0]
-        trans: [-0.33604, 0.0, -0.15161]
