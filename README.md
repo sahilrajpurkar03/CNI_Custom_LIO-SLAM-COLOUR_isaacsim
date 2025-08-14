@@ -44,6 +44,7 @@ ros2 run isaac_sim_pointcloud_tool converter
 ```bash
 cd ~/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/
 source /opt/ros/humble/setup.bash
+colcon build
 source install/setup.bash
 
 ros2 launch lio_sam run.launch.py
