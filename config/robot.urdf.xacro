@@ -4,60 +4,45 @@
 
   <link name="chassis_link"></link>
 
-  <link name="base_link"></link>
-  <joint name="base_link_joint" type="fixed">
-    <parent link="base_link"/>
-    <child link="chassis_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
-
-  <link name="lidar_link"> </link>
-  <joint name="lidar_joint" type="fixed">
-    <parent link="base_link" />
-    <child link="lidar_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
-
-  <link name="imu_link"> </link>
-  <joint name="imu_joint" type="fixed">
-    <parent link="base_link" />
-    <child link="imu_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
-
-  <link name="rgb_front_link"> </link>
-  <joint name="rgb_front_joint" type="fixed">
-    <parent link="lidar_link" />
-    <child link="rgb_front_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
-
-  <link name="rgb_left_link"> </link>
-  <joint name="rgb_left_joint" type="fixed">
-    <parent link="lidar_link" />
-    <child link="rgb_left_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
-
-  <link name="rgb_right_link"> </link>
-  <joint name="rgb_right_joint" type="fixed">
-    <parent link="lidar_link" />
-    <child link="rgb_right_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
-
-  <link name="rgb_back_link"> </link>
-  <joint name="rgb_back_joint" type="fixed">
-    <parent link="lidar_link" />
-    <child link="rgb_back_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
-  </joint>
-
-
-  <link name="navsat_link"> </link>
-  <joint name="navsat_joint" type="fixed">
+  <link name="XT_32"> </link>
+  <joint name="XT_32_joint" type="fixed">
     <parent link="chassis_link" />
-    <child link="navsat_link" />
+    <child link="XT_32" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <link name="chassis_imu"> </link>
+  <joint name="chassis_imu_joint" type="fixed">
+    <parent link="chassis_link" />
+    <child link="chassis_imu" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <link name="front_owl"> </link>
+  <joint name="front_owl_joint" type="fixed">
+    <parent link="XT_32" />
+    <child link="front_owl" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <link name="left_owl"> </link>
+  <joint name="left_owl_joint" type="fixed">
+    <parent link="XT_32" />
+    <child link="left_owl" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <link name="right_owl"> </link>
+  <joint name="right_owl_joint" type="fixed">
+    <parent link="XT_32" />
+    <child link="right_owl" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <link name="back_owl"> </link>
+  <joint name="back_owl_joint" type="fixed">
+    <parent link="XT_32" />
+    <child link="back_owl" />
     <origin xyz="0 0 0" rpy="0 0 0" />
   </joint>
 
