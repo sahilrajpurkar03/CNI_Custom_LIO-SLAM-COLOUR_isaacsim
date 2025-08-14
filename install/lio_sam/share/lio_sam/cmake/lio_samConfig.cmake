@@ -1,1 +1,0 @@
-/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam/ament_cmake_core/lio_samConfig.cmake

@@ -1,8 +1,0 @@
-build/
-install/
-log/
-
-.vscode/
-__pycache__/
-*.py[cod]
-

@@ -1,1 +1,0 @@
-/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam/rosidl_generator_c/lio_sam/msg/rosidl_generator_c__visibility_control.h

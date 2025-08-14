@@ -1,1 +1,0 @@
-/home/rajpurkar/LIO-SAM-COLOR/build/lio_sam/rosidl_generator_py/lio_sam/srv/_save_map.py

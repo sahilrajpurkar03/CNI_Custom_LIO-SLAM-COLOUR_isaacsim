@@ -1,3 +1,0 @@
-gmake[2]: *** [CMakeFiles/lio_sam_featureExtraction.dir/build.make:76: CMakeFiles/lio_sam_featureExtraction.dir/src/featureExtraction.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:600: CMakeFiles/lio_sam_featureExtraction.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

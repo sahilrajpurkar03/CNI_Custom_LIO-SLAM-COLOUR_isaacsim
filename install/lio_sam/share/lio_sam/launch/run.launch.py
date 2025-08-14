@@ -1,1 +1,0 @@
-/home/rajpurkar/LIO-SAM-COLOR/launch/run.launch.py

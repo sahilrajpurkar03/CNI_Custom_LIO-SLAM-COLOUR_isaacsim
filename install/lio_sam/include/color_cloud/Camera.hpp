@@ -1,1 +1,0 @@
-/home/rajpurkar/LIO-SAM-COLOR/include/color_cloud/Camera.hpp

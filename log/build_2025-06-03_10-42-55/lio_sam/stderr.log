@@ -1,9 +1,0 @@
-[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/imageProjection.cpp:[m[K In member function ‘[01m[Kvoid ImageProjection::publishClouds()[m[K’:
-[01m[K/home/rajpurkar/LIO-SAM-COLOR/src/imageProjection.cpp:648:12:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kpublished_cloud[m[K’ from ‘[01m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K’ to ‘[01m[Kbool[m[K’
-  648 |         if([01;31m[Kpublished_cloud[m[K){
-      |            [01;31m[K^~~~~~~~~~~~~~~[m[K
-      |            [01;31m[K|[m[K
-      |            [01;31m[Ksensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K
-gmake[2]: *** [CMakeFiles/lio_sam_imageProjection.dir/build.make:76: CMakeFiles/lio_sam_imageProjection.dir/src/imageProjection.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:628: CMakeFiles/lio_sam_imageProjection.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
