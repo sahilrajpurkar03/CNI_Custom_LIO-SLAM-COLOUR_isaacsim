@@ -84,10 +84,6 @@ public:
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subGPS;
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subLoop;
 
-    //DEBUG FRUSTRUM CAMERA 
-    rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr camera_frustum_pub_;
-    //DEBUG FRUSTRUM CAMERA END
-
     std::deque<nav_msgs::msg::Odometry> gpsQueue;
     lio_sam::msg::CloudInfo cloudInfo;
 
@@ -179,89 +175,25 @@ public:
 
     void camera_callback() {
         std::for_each(camera_type_stdmap_.begin(), camera_type_stdmap_.end(),
-                    [this](const std::pair<std::string, color_point_cloud::CameraTypePtr> &pair) {
-            // Skip if no image or camera info yet
-            if (pair.second->get_image_msg() == nullptr || pair.second->get_camera_info() == nullptr) {
-                return;
-            }
-
-            // Initialize camera utils if not done
-            if (!pair.second->is_info_initialized()) {
-                RCLCPP_INFO(this->get_logger(), "Camera info is setting: %s", pair.first.c_str());
-                pair.second->set_camera_utils(pair.second->get_camera_info());
-            }
-
-            // Fetch and set lidar->camera transform if not initialized
-            if (!pair.second->is_transform_initialized() && pair.second->is_info_initialized()) {
-                std::optional<geometry_msgs::msg::TransformStamped> transform = 
-                    (*transform_provider_ptr_)(pair.second->get_camera_frame_id(), lidarFrame);
-
-                if (!transform.has_value()) {
-                    RCLCPP_WARN(this->get_logger(), "[%s] No transform available yet!", pair.first.c_str());
-                    return;
-                }
-
-                pair.second->set_lidar_to_camera_matrix(transform.value());
-                pair.second->set_lidar_to_camera_projection_matrix();
-            }
-
-            // === DEBUG: Log transform and projection matrices, intrinsics, test point ===
-            if (pair.second->is_transform_initialized() && pair.second->is_info_initialized()) {
-                // Extrinsic matrix
-                Eigen::Matrix4d T = pair.second->get_lidar_to_camera_matrix();
-                RCLCPP_INFO(this->get_logger(),
-                            "[%s] lidar->camera matrix at time %.3f:\n"
-                            "%f %f %f %f\n"
-                            "%f %f %f %f\n"
-                            "%f %f %f %f\n"
-                            "%f %f %f %f",
-                            pair.first.c_str(),
-                            this->now().seconds(),
-                            T(0,0),T(0,1),T(0,2),T(0,3),
-                            T(1,0),T(1,1),T(1,2),T(1,3),
-                            T(2,0),T(2,1),T(2,2),T(2,3),
-                            T(3,0),T(3,1),T(3,2),T(3,3));
-
-                // Projection matrix
-                Eigen::Matrix<double,3,4> P = pair.second->get_lidar_to_camera_projection_matrix();
-                RCLCPP_INFO(this->get_logger(),
-                            "[%s] Projection matrix:\n"
-                            "%f %f %f %f\n"
-                            "%f %f %f %f\n"
-                            "%f %f %f %f",
-                            pair.first.c_str(),
-                            P(0,0),P(0,1),P(0,2),P(0,3),
-                            P(1,0),P(1,1),P(1,2),P(1,3),
-                            P(2,0),P(2,1),P(2,2),P(2,3));
-
-                // Camera intrinsics
-                auto cam_info = pair.second->get_camera_info();
-                RCLCPP_INFO(this->get_logger(),
-                            "[%s] Camera intrinsics: fx=%.2f fy=%.2f cx=%.2f cy=%.2f",
-                            pair.first.c_str(),
-                            cam_info->k[0], cam_info->k[4], cam_info->k[2], cam_info->k[5]);
-
-                // Test point in front of lidar
-                Eigen::Vector4d p_lidar(0.0, 0.0, 1.0, 1.0);
-                Eigen::Vector4d p_cam = T * p_lidar;
-                RCLCPP_INFO(this->get_logger(),
-                            "[%s] Test point lidar(0,0,1) -> camera = (%.3f, %.3f, %.3f)",
-                            pair.first.c_str(),
-                            p_cam.x(), p_cam.y(), p_cam.z());
-
-                // Project to image
-                Eigen::Vector3d p_img = P * p_lidar;
-                double u = p_img[0] / p_img[2];
-                double v = p_img[1] / p_img[2];
-                RCLCPP_INFO(this->get_logger(),
-                            "[%s] Projected pixel (u,v) = (%.1f, %.1f)",
-                            pair.first.c_str(), u, v);
-            }
-            // === DEBUG END ===
-        });
+                      [this](const std::pair<std::string, color_point_cloud::CameraTypePtr> &pair) {
+                          if (pair.second->get_image_msg() == nullptr || pair.second->get_camera_info() == nullptr) {
+                              return;
+                          }
+                          if (!pair.second->is_info_initialized()) {
+                              RCLCPP_INFO(this->get_logger(), "Camera info is setting: %s", pair.first.c_str());
+                              pair.second->set_camera_utils(pair.second->get_camera_info());
+                          }
+                          if (!pair.second->is_transform_initialized() && pair.second->is_info_initialized()) {
+                              std::optional<geometry_msgs::msg::TransformStamped> transform = (*transform_provider_ptr_)(
+                                      pair.second->get_camera_frame_id(), lidarFrame);
+                              if (!transform.has_value()) {
+                                  return;
+                              }
+                              pair.second->set_lidar_to_camera_matrix(transform.value());
+                              pair.second->set_lidar_to_camera_projection_matrix();
+                          }
+                      });
     }
-
-
 
     mapOptimization(const rclcpp::NodeOptions & options) : ParamServer("lio_sam_mapOptimization", options)
     {
@@ -276,11 +208,6 @@ public:
         pubLaserOdometryIncremental = create_publisher<nav_msgs::msg::Odometry>(
             "lio_sam/mapping/odometry_incremental", qos);
         pubPath = create_publisher<nav_msgs::msg::Path>("lio_sam/mapping/path", 1);
-
-        //DEBUG FRUSTRUM CAMERA
-        camera_frustum_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("/lio_sam/mapping/camera_frustum", 1);
-        //DEBUG FRUSTRUM CAMERA END
-
         br = std::make_unique<tf2_ros::TransformBroadcaster>(this);
 
         subCloud = create_subscription<lio_sam::msg::CloudInfo>(
@@ -446,292 +373,162 @@ public:
         matP.setZero();
     }
 
-    void laserCloudInfoHandler(const lio_sam::msg::CloudInfo::SharedPtr msgIn) 
+    void laserCloudInfoHandler(const lio_sam::msg::CloudInfo::SharedPtr msgIn)
     {
-        // Extract timestamp
+        // extract time stamp
         timeLaserInfoStamp = msgIn->header.stamp;
         timeLaserInfoCur = stamp2Sec(msgIn->header.stamp);
 
-        // Extract info and feature cloud
+        // extract info and feature cloud
         cloudInfo = *msgIn;
+
         laserCloudCornerLast->clear();
         laserCloudSurfLast->clear();
 
-        // Process each camera
         std::for_each(camera_type_stdmap_.begin(), camera_type_stdmap_.end(),
-                    [this, msgIn](const std::pair<std::string, color_point_cloud::CameraTypePtr> &pair) 
-        {
-            // Check camera readiness
-            if (pair.second->get_image_msg() == nullptr || 
-                pair.second->get_camera_info() == nullptr || 
-                !pair.second->is_info_initialized() || 
-                !pair.second->is_transform_initialized()) 
-            {
-                RCLCPP_INFO(this->get_logger(), 
-                            "Can't project camera: %s\n"
-                            "Is image received: %s\n"
-                            "Is camera info received: %s\n"
-                            "Is lidar-camera transform received: %s\n"
-                            "Is camera utils initialized: %s",
-                            pair.first.c_str(),
-                            pair.second->get_image_msg() != nullptr ? "true" : "false",
-                            pair.second->get_camera_info() != nullptr ? "true" : "false",
-                            pair.second->is_transform_initialized() ? "true" : "false",
-                            pair.second->is_info_initialized() ? "true" : "false");
-                return;
-            }
+                      [this, msgIn](const std::pair<std::string, color_point_cloud::CameraTypePtr> &pair) {
+                          if (pair.second->get_image_msg() == nullptr || pair.second->get_camera_info() == nullptr ||
+                              !pair.second->is_info_initialized() || !pair.second->is_transform_initialized()) {
+                              RCLCPP_INFO(this->get_logger(),
+                                          "Can't project camera: %s\n"
+                                          "Is image received: %s\n"
+                                          "Is camera info received: %s\n"
+                                          "Is lidar-camera transform received: %s\n"
+                                          "Is camera utils initialized: %s",
+                                          pair.first.c_str(),
+                                          pair.second->get_image_msg() != nullptr ? "true" : "false",
+                                          pair.second->get_camera_info() != nullptr ? "true" : "false",
+                                          pair.second->is_transform_initialized() ? "true" : "false",
+                                          pair.second->is_info_initialized() ? "true" : "false");
+                              return;
+                          }
 
-            // Set cv image
-            pair.second->set_cv_image(pair.second->get_image_msg());
+                          pair.second->set_cv_image(pair.second->get_image_msg());
 
-            // Publish camera frustum
-            publishCameraFrustum(pair.second, pair.first);
+                        // CORNER POINTS
+                        color_point_cloud::PointCloudConst cloud_corner{msgIn->cloud_corner};
 
-            // --- DEBUG CAMERA FEED ---
-            static auto last_time = std::chrono::steady_clock::now();
-            auto now = std::chrono::steady_clock::now();
-            if (std::chrono::duration_cast<std::chrono::milliseconds>(now - last_time).count() > 100) 
-            {
-                std::vector<cv::Mat> valid_images;
+                        #pragma omp parallel for num_threads(numberOfCores)
+                        for (size_t i = 0; i < cloud_corner.getPointCount(); ++i) {
+                            color_point_cloud::Point point{cloud_corner.getCurrentPoint()};
+                            pcl::PointXYZRGB pointRGB;
 
-                // Collect and resize valid images
-                for (const auto &pair : camera_type_stdmap_) 
-                {
-                    const auto &cv_image = pair.second->get_cv_image();
-                    if (!cv_image.empty()) 
-                    {
-                        cv::Mat resized;
-                        cv::resize(cv_image, resized, cv::Size(640, 480));
-                        valid_images.push_back(resized);
-                    }
-                }
+                            Eigen::Vector4d point4d(point.x, point.y, point.z, 1.0);
+                            Eigen::Vector3d point3d_transformed_camera =
+                                pair.second->get_lidar_to_camera_projection_matrix() * point4d;
 
-                // Make a 2x2 grid
-                if (!valid_images.empty()) 
-                {
-                    while (valid_images.size() < 4) 
-                        valid_images.push_back(cv::Mat::zeros(480, 640, CV_8UC3));
+                            Eigen::Vector2d point2d_transformed_camera(
+                                point3d_transformed_camera[0] / point3d_transformed_camera[2],
+                                point3d_transformed_camera[1] / point3d_transformed_camera[2]);
 
-                    cv::Mat top, bottom, full;
-                    cv::hconcat(valid_images[0], valid_images[1], top);
-                    cv::hconcat(valid_images[2], valid_images[3], bottom);
-                    cv::vconcat(top, bottom, full);
+                            double x = point2d_transformed_camera[0];
+                            double y = point2d_transformed_camera[1];
 
-                    cv::imshow("All Camera Feeds", full);
-                    cv::waitKey(1);
-                }
-                last_time = now;
-            }
-            // --- DEBUG CAMERA FEED END ---
+                            pointRGB.x = point.x;
+                            pointRGB.y = point.y;
+                            pointRGB.z = point.z;
 
-            // Process corner points
-            color_point_cloud::PointCloudConst cloud_corner{msgIn->cloud_corner};
-            #pragma omp parallel for num_threads(numberOfCores)
-            for (size_t i = 0; i < cloud_corner.getPointCount(); ++i) 
-            {
-                color_point_cloud::Point point{cloud_corner.getCurrentPoint()};
-                pcl::PointXYZRGB pointRGB;
-                Eigen::Vector4d point4d(point.x, point.y, point.z, 1.0);
-                Eigen::Vector3d point3d_transformed_camera = pair.second->get_lidar_to_camera_projection_matrix() * point4d;
-                Eigen::Vector2d point2d_transformed_camera(
-                    point3d_transformed_camera[0] / point3d_transformed_camera[2],
-                    point3d_transformed_camera[1] / point3d_transformed_camera[2]
-                );
+                            // Default gray color
+                            pointRGB.r = 128;
+                            pointRGB.g = 128;
+                            pointRGB.b = 128;
 
-                double x = point2d_transformed_camera[0];
-                double y = point2d_transformed_camera[1];
+                            if (x >= 0 && x < pair.second->get_image_width() &&
+                                y >= 0 && y < pair.second->get_image_height() &&
+                                point3d_transformed_camera[2] > 0) {
+                                cv::Vec3b color = pair.second->get_cv_image().at<cv::Vec3b>(cv::Point(x, y));
 
-                if (x < 0 || x > pair.second->get_image_width() || 
-                    y < 0 || y > pair.second->get_image_height() || 
-                    point3d_transformed_camera[2] < 0) 
-                {
-                    // Point is outside camera FOV, optionally set to black
-                } 
-                else 
-                {
-                    cv::Vec3d color = pair.second->get_cv_image().at<cv::Vec3b>(cv::Point(x, y));
-                    pointRGB.x = point.x;
-                    pointRGB.y = point.y;
-                    pointRGB.z = point.z;
+                                if (pair.second->get_image_msg()->encoding == "rgb8") {
+                                    pointRGB.r = color[0];
+                                    pointRGB.g = color[1];
+                                    pointRGB.b = color[2];
+                                } else if (pair.second->get_image_msg()->encoding == "bgr8") {
+                                    pointRGB.r = color[2];
+                                    pointRGB.g = color[1];
+                                    pointRGB.b = color[0];
+                                }
+                            }
 
-                    if (pair.second->get_image_msg()->encoding == "rgb8") 
-                    {
-                        pointRGB.r = color[0];
-                        pointRGB.g = color[1];
-                        pointRGB.b = color[2];
-                    } 
-                    else if (pair.second->get_image_msg()->encoding == "bgr8") 
-                    {
-                        pointRGB.r = color[2];
-                        pointRGB.g = color[1];
-                        pointRGB.b = color[0];
-                    } 
-                    else 
-                    {
-                        pointRGB.r = color[0];
-                        pointRGB.g = color[1];
-                        pointRGB.b = color[2];
-                    }
-                }
-                laserCloudCornerLast->push_back(pointRGB);
-                cloud_corner.nextPoint();
-            }
+                            laserCloudCornerLast->push_back(pointRGB);
+                            cloud_corner.nextPoint();
+                        }
 
-            // Process surface points (same as corners)
-            color_point_cloud::PointCloudConst cloud_surface{msgIn->cloud_surface};
-            #pragma omp parallel for num_threads(numberOfCores)
-            for (size_t i = 0; i < cloud_surface.getPointCount(); ++i) 
-            {
-                color_point_cloud::Point point{cloud_surface.getCurrentPoint()};
-                pcl::PointXYZRGB pointRGB;
-                Eigen::Vector4d point4d(point.x, point.y, point.z, 1.0);
-                Eigen::Vector3d point3d_transformed_camera = pair.second->get_lidar_to_camera_projection_matrix() * point4d;
-                Eigen::Vector2d point2d_transformed_camera(
-                    point3d_transformed_camera[0] / point3d_transformed_camera[2],
-                    point3d_transformed_camera[1] / point3d_transformed_camera[2]
-                );
+                        // SURFACE POINTS
+                        color_point_cloud::PointCloudConst cloud_surface{msgIn->cloud_surface};
 
-                double x = point2d_transformed_camera[0];
-                double y = point2d_transformed_camera[1];
+                        #pragma omp parallel for num_threads(numberOfCores)
+                        for (size_t i = 0; i < cloud_surface.getPointCount(); ++i) {
+                            color_point_cloud::Point point{cloud_surface.getCurrentPoint()};
+                            pcl::PointXYZRGB pointRGB;
 
-                if (x < 0 || x > pair.second->get_image_width() || 
-                    y < 0 || y > pair.second->get_image_height() || 
-                    point3d_transformed_camera[2] < 0) 
-                {
-                    // Point is outside camera FOV
-                } 
-                else 
-                {
-                    cv::Vec3d color = pair.second->get_cv_image().at<cv::Vec3b>(cv::Point(x, y));
-                    pointRGB.x = point.x;
-                    pointRGB.y = point.y;
-                    pointRGB.z = point.z;
+                            Eigen::Vector4d point4d(point.x, point.y, point.z, 1.0);
+                            Eigen::Vector3d point3d_transformed_camera =
+                                pair.second->get_lidar_to_camera_projection_matrix() * point4d;
 
-                    if (pair.second->get_image_msg()->encoding == "rgb8") 
-                    {
-                        pointRGB.r = color[0];
-                        pointRGB.g = color[1];
-                        pointRGB.b = color[2];
-                    } 
-                    else if (pair.second->get_image_msg()->encoding == "bgr8") 
-                    {
-                        pointRGB.r = color[2];
-                        pointRGB.g = color[1];
-                        pointRGB.b = color[0];
-                    } 
-                    else 
-                    {
-                        pointRGB.r = color[0];
-                        pointRGB.g = color[1];
-                        pointRGB.b = color[2];
-                    }
-                }
-                laserCloudSurfLast->push_back(pointRGB);
-                cloud_surface.nextPoint();
-            }
+                            Eigen::Vector2d point2d_transformed_camera(
+                                point3d_transformed_camera[0] / point3d_transformed_camera[2],
+                                point3d_transformed_camera[1] / point3d_transformed_camera[2]);
 
-        }); // End of camera processing
+                            double x = point2d_transformed_camera[0];
+                            double y = point2d_transformed_camera[1];
 
-        // Return if no points
+                            pointRGB.x = point.x;
+                            pointRGB.y = point.y;
+                            pointRGB.z = point.z;
+
+                            // Default gray color
+                            pointRGB.r = 128;
+                            pointRGB.g = 128;
+                            pointRGB.b = 128;
+
+                            if (x >= 0 && x < pair.second->get_image_width() &&
+                                y >= 0 && y < pair.second->get_image_height() &&
+                                point3d_transformed_camera[2] > 0) {
+                                cv::Vec3b color = pair.second->get_cv_image().at<cv::Vec3b>(cv::Point(x, y));
+
+                                if (pair.second->get_image_msg()->encoding == "rgb8") {
+                                    pointRGB.r = color[0];
+                                    pointRGB.g = color[1];
+                                    pointRGB.b = color[2];
+                                } else if (pair.second->get_image_msg()->encoding == "bgr8") {
+                                    pointRGB.r = color[2];
+                                    pointRGB.g = color[1];
+                                    pointRGB.b = color[0];
+                                }
+                            }
+
+                            laserCloudSurfLast->push_back(pointRGB);
+                            cloud_surface.nextPoint();
+                        }
+                      });
+
         if (laserCloudCornerLast->empty() || laserCloudSurfLast->empty())
             return;
 
-        // Processing pipeline
         std::lock_guard<std::mutex> lock(mtx);
-        static double timeLastProcessing = -1;
 
-        if (timeLaserInfoCur - timeLastProcessing >= mappingProcessInterval) 
+        static double timeLastProcessing = -1;
+        if (timeLaserInfoCur - timeLastProcessing >= mappingProcessInterval)
         {
             timeLastProcessing = timeLaserInfoCur;
+
             updateInitialGuess();
+
             extractSurroundingKeyFrames();
+
             downsampleCurrentScan();
+
             scan2MapOptimization();
+
             saveKeyFramesAndFactor();
+
             correctPoses();
+
             publishOdometry();
+
             publishFrames();
         }
     }
-
-
-
-    //DEBUG FRUSTRUM OF CAMERA 
-    void publishCameraFrustum(const color_point_cloud::CameraTypePtr &camera, const std::string &camera_name) {
-        if (!camera->is_info_initialized() || !camera->is_transform_initialized())
-            return;
-
-        auto cam_info = camera->get_camera_info();
-        if (!cam_info) return;
-
-        double fx = cam_info->k[0];
-        double fy = cam_info->k[4];
-        double cx = cam_info->k[2];
-        double cy = cam_info->k[5];
-        int img_w = cam_info->width;
-        int img_h = cam_info->height;
-        double depth = 1.0; // can increase to 5.0+ for easier visualization
-
-        // Frustum corners in camera frame (optical)
-        Eigen::Vector3d top_left    ((0     - cx) / fx * depth, (0     - cy) / fy * depth, depth);
-        Eigen::Vector3d top_right   ((img_w - cx) / fx * depth, (0     - cy) / fy * depth, depth);
-        Eigen::Vector3d bottom_left ((0     - cx) / fx * depth, (img_h - cy) / fy * depth, depth);
-        Eigen::Vector3d bottom_right((img_w - cx) / fx * depth, (img_h - cy) / fy * depth, depth);
-        Eigen::Vector3d origin(0, 0, 0);
-
-        // LiDAR → Camera (already optical frame from TF)
-        Eigen::Matrix4d T_lidar_cam_optical = camera->get_lidar_to_camera_matrix();
-
-        // We have points in camera optical frame, need Camera→LiDAR
-        Eigen::Matrix4d T_cam_lidar = T_lidar_cam_optical.inverse();
-
-        // Transform points into LiDAR frame
-        std::vector<Eigen::Vector3d> pts_cam = {origin, top_left, top_right, bottom_left, bottom_right};
-        std::vector<Eigen::Vector3d> pts_lidar;
-        pts_lidar.reserve(pts_cam.size());
-        for (auto &p : pts_cam) {
-            Eigen::Vector4d p4(p[0], p[1], p[2], 1.0);
-            Eigen::Vector4d p_lidar = T_cam_lidar * p4;
-            pts_lidar.push_back(p_lidar.head<3>());
-        }
-
-        // Create marker
-        visualization_msgs::msg::Marker marker;
-        marker.header.frame_id = lidarFrame;
-        marker.header.stamp = this->now();
-        marker.ns = "camera_frustum";
-        marker.id = std::hash<std::string>{}(camera_name) % 1000;
-        marker.type = visualization_msgs::msg::Marker::LINE_LIST;
-        marker.action = visualization_msgs::msg::Marker::ADD;
-        marker.scale.x = 0.01;
-        marker.color.r = 1.0;
-        marker.color.g = 0.0;
-        marker.color.b = 0.0;
-        marker.color.a = 1.0;
-
-        // Connect origin to corners
-        marker.points.push_back(toPointMsg(pts_lidar[0])); marker.points.push_back(toPointMsg(pts_lidar[1]));
-        marker.points.push_back(toPointMsg(pts_lidar[0])); marker.points.push_back(toPointMsg(pts_lidar[2]));
-        marker.points.push_back(toPointMsg(pts_lidar[0])); marker.points.push_back(toPointMsg(pts_lidar[3]));
-        marker.points.push_back(toPointMsg(pts_lidar[0])); marker.points.push_back(toPointMsg(pts_lidar[4]));
-
-        // Connect corners to form rectangle
-        marker.points.push_back(toPointMsg(pts_lidar[1])); marker.points.push_back(toPointMsg(pts_lidar[2]));
-        marker.points.push_back(toPointMsg(pts_lidar[2])); marker.points.push_back(toPointMsg(pts_lidar[4]));
-        marker.points.push_back(toPointMsg(pts_lidar[4])); marker.points.push_back(toPointMsg(pts_lidar[3]));
-        marker.points.push_back(toPointMsg(pts_lidar[3])); marker.points.push_back(toPointMsg(pts_lidar[1]));
-
-        camera_frustum_pub_->publish(marker);
-    }
-
-    geometry_msgs::msg::Point toPointMsg(const Eigen::Vector3d &p) {
-        geometry_msgs::msg::Point pt;
-        pt.x = p.x();
-        pt.y = p.y();
-        pt.z = p.z();
-        return pt;
-    }
-    //DEBUG FRUSTRUM OF CAMERA  END
 
     void gpsHandler(const nav_msgs::msg::Odometry::SharedPtr gpsMsg)
     {

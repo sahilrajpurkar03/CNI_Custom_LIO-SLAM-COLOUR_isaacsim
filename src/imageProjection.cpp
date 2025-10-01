@@ -184,13 +184,14 @@ public:
         std::lock_guard<std::mutex> lock1(imuLock);
         imuQueue.push_back(thisImu);
 
-        RCLCPP_DEBUG(get_logger(), "IMU data received: accel(%f,%f,%f), gyro(%f,%f,%f)",
-            thisImu.linear_acceleration.x,
-            thisImu.linear_acceleration.y,
-            thisImu.linear_acceleration.z,
-            thisImu.angular_velocity.x,
-            thisImu.angular_velocity.y,
-            thisImu.angular_velocity.z);
+        //for debug
+        // RCLCPP_DEBUG(get_logger(), "IMU data received: accel(%f,%f,%f), gyro(%f,%f,%f)",
+        //     thisImu.linear_acceleration.x,
+        //     thisImu.linear_acceleration.y,
+        //     thisImu.linear_acceleration.z,
+        //     thisImu.angular_velocity.x,
+        //     thisImu.angular_velocity.y,
+        //     thisImu.angular_velocity.z);
     }
 
     void odometryHandler(const nav_msgs::msg::Odometry::SharedPtr odometryMsg)

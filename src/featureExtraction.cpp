@@ -80,11 +80,11 @@ public:
         markOccludedPoints();
 
         extractFeatures();
-        RCLCPP_INFO(this->get_logger(), "Raw cloud size: %zu", extractedCloud->points.size());
-        RCLCPP_INFO(this->get_logger(), "Extracted Features: Corners=%zu, Surfaces=%zu", cornerCloud->size(), surfaceCloud->size());
+        // RCLCPP_INFO(this->get_logger(), "Raw cloud size: %zu", extractedCloud->points.size());
+        // RCLCPP_INFO(this->get_logger(), "Extracted Features: Corners=%zu, Surfaces=%zu", cornerCloud->size(), surfaceCloud->size());
 
         publishFeatureCloud();
-        RCLCPP_INFO(this->get_logger(), "Input cloud dimensions: %.2dx%.2dx%.2zu", extractedCloud->width, extractedCloud->height, extractedCloud->points.size());
+        // RCLCPP_INFO(this->get_logger(), "Input cloud dimensions: %.2dx%.2dx%.2zu", extractedCloud->width, extractedCloud->height, extractedCloud->points.size());
     }
 
     void calculateSmoothness()

@@ -41,6 +41,11 @@ namespace color_point_cloud {
             cv::undistort(cv_ptr->image, cv_image_, get_camera_matrix_cv(), get_distortion_matrix_cv());
         }
 
+        void set_cv_image(const cv::Mat &img) {
+            if (img.empty()) return;
+            cv_image_ = img.clone();
+        }        
+
         void set_image_msg(const sensor_msgs::msg::Image::ConstSharedPtr &msg) {
             image_msg_ = msg;
         }

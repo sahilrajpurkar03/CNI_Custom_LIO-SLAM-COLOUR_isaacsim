@@ -30,6 +30,10 @@ find_package(GTSAM REQUIRED)
 find_package(Eigen REQUIRED)
 find_package(OpenMP REQUIRED)
 
+# ✅ new: explicitly find CURL and TBB
+find_package(CURL REQUIRED)
+find_package(TBB REQUIRED)
+
 include_directories(
   include/lio_sam
   include/color_cloud
@@ -63,7 +67,11 @@ ament_target_dependencies(${PROJECT_NAME}_imuPreintegration
   pcl_msgs pcl_conversions visualization_msgs tf2 tf2_ros tf2_eigen
   tf2_sensor_msgs tf2_geometry_msgs OpenCV PCL GTSAM Eigen
 )
-target_link_libraries(${PROJECT_NAME}_imuPreintegration gtsam)
+target_link_libraries(${PROJECT_NAME}_imuPreintegration
+  gtsam
+  CURL::libcurl    # ✅ ensure OpenSSL curl is linked
+  TBB::tbb         # ✅ ensure same TBB as OpenCV
+)
 rosidl_target_interfaces(${PROJECT_NAME}_imuPreintegration ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 add_executable(${PROJECT_NAME}_mapOptimization src/mapOptmization.cpp)
@@ -72,7 +80,11 @@ ament_target_dependencies(${PROJECT_NAME}_mapOptimization
   pcl_msgs pcl_conversions visualization_msgs tf2 tf2_ros tf2_eigen
   tf2_sensor_msgs tf2_geometry_msgs OpenCV PCL GTSAM
 )
-target_link_libraries(${PROJECT_NAME}_mapOptimization gtsam)
+target_link_libraries(${PROJECT_NAME}_mapOptimization
+  gtsam
+  CURL::libcurl    # ✅ ensure OpenSSL curl is linked
+  TBB::tbb
+)
 rosidl_target_interfaces(${PROJECT_NAME}_mapOptimization ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 install(

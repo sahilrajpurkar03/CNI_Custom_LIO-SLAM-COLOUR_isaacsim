@@ -65,6 +65,7 @@ def generate_launch_description():
             executable='lio_sam_mapOptimization',
             name='lio_sam_mapOptimization',
             parameters=[parameter_file, {'use_sim_time': True}],
+            arguments=['--ros-args', '--log-level', 'warn'],
             output='screen',
         ),
         Node(
