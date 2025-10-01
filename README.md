@@ -46,7 +46,6 @@ cd ~/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/
 source /opt/ros/humble/setup.bash
 colcon build
 source install/setup.bash
-
 ros2 launch lio_sam run.launch.py
 ```
 
@@ -58,7 +57,6 @@ ros2 launch lio_sam run.launch.py
 
 ```bash
 source /opt/ros/humble/setup.bash
-
 ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.2, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
 ```
 
@@ -70,11 +68,18 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 ---
 
-## 🌐 5. View the Transform Tree
+## 🌐 5. Save the map
+
+When mapping process is finished, run following command and save slam map to specified path. Be sure you are in LIO-SAM directory.
+```bash
+source install/setup.bash
+ros2 service call /lio_sam/save_map lio_sam/srv/SaveMap "{resolution: 0.2, destination: /Downloads/service_LOAM}"
+```
+
+## 🌐 6. View the Transform Tree
 
 ```bash
 source /opt/ros/humble/setup.bash
-
 ros2 run tf2_tools view_frames
 ```
 
