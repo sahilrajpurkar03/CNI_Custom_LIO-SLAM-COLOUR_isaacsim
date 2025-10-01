@@ -11,7 +11,7 @@ Ensure the following are properly installed:
 
 ---
 
-### 🚀 1. Launch IsaacSim
+## 🚀 1. Launch IsaacSim
 
 ```bash
 cd ~/isaacsim/
@@ -25,31 +25,19 @@ cd ~/isaacsim/
   ```
 - Press the **Play** button to begin simulation.
 
----
-
-## 🔄 2. Convert PointCloud Format to Velodyne
-
-```bash
-cd ~/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/ros2_ws/
-source /opt/ros/humble/setup.bash
-source install/setup.bash
-
-ros2 run isaac_sim_pointcloud_tool converter
-```
-
----
-
-## 🛰️ 3. Run LIO-SAM (Color)
+## 🔄 2. Build and Source the Project 
 
 ```bash
 cd ~/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/
 source /opt/ros/humble/setup.bash
-colcon build
-source install/setup.bash
-ros2 launch lio_sam run.launch.py
+colcon build && source install/setup.bash
 ```
 
----
+## 🛰️ 3. Run LIO-SAM (Color)
+
+```bash
+ros2 launch lio_sam full_lio_sam.launch.py
+```
 
 ## 🕹️ 4. Move the Robot in the Environment
 
@@ -66,8 +54,6 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.2, y: 0.0, z: 0.
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
----
-
 ## 🌐 5. Save the map
 
 When mapping process is finished, run following command and save slam map to specified path. Be sure you are in LIO-SAM directory.
@@ -76,7 +62,28 @@ source install/setup.bash
 ros2 service call /lio_sam/save_map lio_sam/srv/SaveMap "{resolution: 0.2, destination: /Downloads/service_LOAM}"
 ```
 
-## 🌐 6. View the Transform Tree
+---
+🐞 Debugging / Optional Steps
+
+## 🔄 6. Convert PointCloud Format to Velodyne (in terminal 1)
+
+```bash
+cd ~/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+ros2 run isaac_sim_pointcloud_tool converter
+```
+
+## 🛰️ 7. Run LIO-SAM (Color) (in terminal 2)
+
+```bash
+cd ~/CNI_Custom_LIO-SLAM-COLOUR_isaacsim/
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+ros2 launch lio_sam run.launch.py
+```
+
+## 🌐 8. View the Transform Tree
 
 ```bash
 source /opt/ros/humble/setup.bash
