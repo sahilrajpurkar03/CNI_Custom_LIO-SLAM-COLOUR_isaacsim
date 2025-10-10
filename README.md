@@ -26,7 +26,7 @@ cd ~/isaacsim/
 - Click **START**
 - Open the scene:  
   ```
-  /CNI_Custom_LIO-SLAM-COLOUR_isaacsim/test.usd
+  /CNI_Custom_LIO-SLAM-COLOUR_isaacsim/test_env1.usd
   ```
 - Press the **Play** button to begin simulation.
 

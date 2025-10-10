@@ -56,21 +56,21 @@
 
     # voxel filter parameters
     odometrySurfLeafSize: 0.2  
-    mappingCornerLeafSize: 0.025
-    mappingSurfLeafSize: 0.05
+    mappingCornerLeafSize: 0.1 #0.025
+    mappingSurfLeafSize: 0.2   #0.05
 
     # robot motion constraint
     z_tollerance: 1000.0
     rotation_tollerance: 1000.0
 
     # CPU Params
-    numberOfCores: 4
+    numberOfCores: 8 #4
     mappingProcessInterval: 0.15
 
     # Surrounding map
     surroundingkeyframeAddingDistThreshold: 1.0
     surroundingkeyframeAddingAngleThreshold: 0.2
-    surroundingKeyframeDensity: 1.0          # was 2.0
+    surroundingKeyframeDensity: 2.0          # was 1.0
     surroundingKeyframeSearchRadius: 80.0    # was 50.0
 
     # Loop closure
@@ -84,9 +84,9 @@
 
 
     # Visualization
-    globalMapVisualizationSearchRadius: 1000.0    # meters, global map visualization radius
+    globalMapVisualizationSearchRadius: 3000.0  #1000  # meters, global map visualization radius
     globalMapVisualizationPoseDensity: 10.0       # meters, global map visualization keyframe density
-    globalMapVisualizationLeafSize: 1.0           # meters, global map visualization cloud density
+    globalMapVisualizationLeafSize: 0.4     #1.0      # meters, global map visualization cloud density
 
     # Color Cloud
     cameraTopics: ["/front_owl", "/left_owl", "/right_owl", "/back_owl"]
