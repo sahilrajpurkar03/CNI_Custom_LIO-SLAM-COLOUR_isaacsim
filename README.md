@@ -61,7 +61,10 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.2, y: 0.0, z: 0.
 ```bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
-
+### Or use controller:
+```bash
+ros2 launch robot_controller robot_teleop.launch.py
+```
 
 ## 🌐 5. Save the map
 

@@ -2,35 +2,45 @@
 
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Twist
 from sensor_msgs.msg import Joy
+from ackermann_msgs.msg import AckermannDriveStamped
+
 
 class RobotTeleop(Node):
     def __init__(self):
         super().__init__('robot_teleop')
         
-        # Publishers and Subscribers
-        self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
+        # Publisher and Subscriber
+        self.cmd_pub = self.create_publisher(AckermannDriveStamped, '/ackermann_cmd', 10)
         self.joy_sub = self.create_subscription(Joy, '/joy', self.joy_callback, 10)
         
-        # Velocity parameters
-        self.linear_speed = 0.5   # m/s max linear speed
-        self.angular_speed = 1.0  # rad/s max angular speed
+        # Drive parameters
+        self.max_speed = 2.0               # m/s max linear speed
+        self.max_steering_angle = -0.4      # radians (~23 degrees)
+        self.max_acceleration = 1.0        # m/s²
+        self.max_steering_rate = 0.5       # rad/s
 
-        self.get_logger().info("Joystick teleop node started")
+        self.get_logger().info("Joystick Ackermann teleop node started")
 
     def joy_callback(self, msg: Joy):
-        # Typically:
-        #   Left stick vertical axis = msg.axes[1] (forward/backward)
-        #   Right stick horizontal axis = msg.axes[3] (turning)
-        linear_x = msg.axes[1] * self.linear_speed
-        angular_z = msg.axes[3] * self.angular_speed
+        """
+        Map joystick axes to AckermannDriveStamped command.
+        Typically:
+          - Left stick vertical axis = msg.axes[1] (forward/backward)
+          - Right stick horizontal axis = msg.axes[3] (steering)
+        """
 
-        twist = Twist()
-        twist.linear.x = linear_x
-        twist.angular.z = angular_z
+        speed = msg.axes[1] * self.max_speed
+        steering_angle = msg.axes[2] * self.max_steering_angle
 
-        self.cmd_pub.publish(twist)
+        drive_msg = AckermannDriveStamped()
+        drive_msg.drive.speed = speed
+        drive_msg.drive.steering_angle = steering_angle
+        drive_msg.drive.acceleration = self.max_acceleration
+        drive_msg.drive.steering_angle_velocity = self.max_steering_rate
+
+        self.cmd_pub.publish(drive_msg)
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -43,6 +53,6 @@ def main(args=None):
         node.destroy_node()
         rclpy.shutdown()
 
+
 if __name__ == '__main__':
     main()
-
