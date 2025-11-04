@@ -59,10 +59,13 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.2, y: 0.0, z: 0.
 ### Or use keyboard control:
 
 ```bash
+source /opt/ros/humble/setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 ### Or use controller:
 ```bash
+source /opt/ros/humble/setup.bash
+source install/setup.bash
 ros2 launch robot_controller robot_teleop.launch.py
 ```
 
