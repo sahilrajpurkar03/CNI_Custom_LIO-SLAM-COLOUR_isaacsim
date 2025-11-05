@@ -77,6 +77,61 @@ source install/setup.bash
 ros2 service call /lio_sam/save_map lio_sam/srv/SaveMap "{resolution: 0.2, destination: /Downloads/service_LOAM}"
 ```
 
+
+---
+## Usage Note
+
+Currently, the code includes a patch to handle **Isaac Sim (Omniverse) simulation**, where camera images are upside-down relative to ROS optical frame.  
+
+**Important:** When using a **real robot**, remember to **swap back to the original patch**.
+
+**Reason:** On a real robot, the camera images already match ROS camera optical frame, so the Isaac Sim vertical flip is unnecessary and will invert the colors.
+
+
+### Original Patch for Real Robot (LIO-SAM)
+
+**File:** `src/mapOptmization.cpp`  
+**Section:** Update ONLY the sampling section in both loops (corner points and surface points).
+
+```cpp
+// Project point to camera image and get color
+double x = point3d_transformed_camera[0] / point3d_transformed_camera[2];
+double y = point3d_transformed_camera[1] / point3d_transformed_camera[2];
+
+int px = static_cast<int>(std::round(x));
+int py = static_cast<int>(std::round(y));
+
+int width  = pair.second->get_image_width();
+int height = pair.second->get_image_height();
+
+if (px >= 0 && px < width &&
+    py >= 0 && py < height &&
+    point3d_transformed_camera[2] > 0)
+{
+    cv::Vec3b color =
+        pair.second->get_cv_image().at<cv::Vec3b>(cv::Point(px, py));
+
+    if (pair.second->get_image_msg()->encoding == "rgb8") 
+    {
+        pointRGB.r = color[0];
+        pointRGB.g = color[1];
+        pointRGB.b = color[2];
+    }
+    else if (pair.second->get_image_msg()->encoding == "bgr8")
+    {
+        pointRGB.r = color[2];
+        pointRGB.g = color[1];
+        pointRGB.b = color[0];
+    }
+    else
+    {
+        pointRGB.r = color[0];
+        pointRGB.g = color[1];
+        pointRGB.b = color[2];
+    }
+}
+```
+
 ---
 
 ## 🐞 Debugging / Optional Steps
@@ -109,5 +164,8 @@ ros2 run tf2_tools view_frames
 ```
 
 This generates a PDF of the TF tree.
+
+
+
 
 ---
