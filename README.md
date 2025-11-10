@@ -1,6 +1,6 @@
 # CNI_Custom_LIO-SLAM-COLOUR_isaacsim
 
-![image](docs/lio_sam_output1.gif)
+![image](docs/LIO-SLAM-result-20251105.gif)
 
 ## 🧠 Prerequisites
 
